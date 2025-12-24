@@ -1,0 +1,291 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* cmn class start*/
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cmn-btn {
+    display: inline-block;
+    padding: 10px 26px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #375DD9;
+    background-color: #fff;
+    border: 2px solid #375DD9;
+    border-radius: 100px;
+    text-transform: capitalize;
+}
+
+.cmn-btn:hover {
+    background-color: #375DD9;
+    color: #fff;
+}
+
+h1,
+.heading-1 {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    font-family: "DM Sans", sans-serif;
+}
+
+h2,
+.heading-2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    font-family: "DM Sans", sans-serif;
+}
+
+h3,
+.heading-3 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    font-family: "DM Sans", sans-serif;
+}
+
+h4,
+.heading-4 {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    font-family: "DM Sans", sans-serif;
+}
+
+h5,
+.heading-5 {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    font-family: "DM Sans", sans-serif;
+}
+
+h6,
+.heading-6 {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    font-family: "DM Sans", sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #0000007a;
+}
+
+.com-gap {
+    padding: 50px 0;
+}
+
+/* cmn class end */
+
+/* header sec start */
+.header-sec {
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    background-color: #E0E0E0;
+    padding: 25px 34px;
+    border-radius: 100px;
+}
+
+.nav-links li {
+    margin-right: 39px;
+}
+
+.nav-links li:nth-child(5) {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.home-links {
+    color: #375DD9 !important;
+}
+
+.nav-links li a:hover {
+    color: #375DD9;
+}
+
+.left-btn {
+    border: none;
+    margin-right: 27px;
+    color: #000;
+}
+
+/* header sec end */
+
+
+/* footer sec start */
+.footer-sec{
+    background-color: #F5F7FD;
+}
+
+.footer-child{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.footer-left {
+    width: 70%;
+    padding-right: 160px;
+}
+
+.footer-right{
+    width: 30%;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00000030;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 25px;
+}
+
+.social-links li:nth-child(3) {
+    margin-right: 0;
+}
+
+.footer-mid {
+    display: flex;
+}
+
+.cmn-footer {
+    width: 50%;
+}
+
+
+.footer-end {
+    text-transform: capitalize;
+    color: #000;
+    padding: 9px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-mid {
+    margin-bottom: 100px;
+}
+
+.privacy-terms p{
+    display: inline-block;
+    color: #000;
+    margin-right: 20px;
+}
+
+.footer-right{
+    background: url(../image/footer-right-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 685px;
+    width: 557px;
+    padding: 155px 70px;
+}
+
+.footer-right h2,p{
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+input[type="email"]{
+    display: block;
+    width: 100%;
+    border-radius: 54px;
+    padding: 15px 25px;
+}
+
+input[type="email"]::placeholder{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.email-btn{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer sec end */
