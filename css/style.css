@@ -149,7 +149,7 @@ p {
 .nav-links {
     display: flex;
     background-color: #E0E0E0;
-    padding: 25px 34px;
+    padding: 10px 34px;
     border-radius: 100px;
 }
 
@@ -167,9 +167,17 @@ p {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 40px;
+    transform: all .3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #fff;
 }
 
 .home-links {
+    background-color: #fff;
     color: #375DD9 !important;
 }
 
@@ -275,7 +283,7 @@ p {
     text-transform: capitalize;
 }
 
-.banner-bottom {
+.banner-sec .banner-btm-sec {
     background-color: #0D0E10;
     height: 270px;
 }
@@ -388,6 +396,38 @@ p {
 
 
 /* our vision sec end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer sec start */
 .footer-sec {
