@@ -68,7 +68,7 @@ h2,
     font-weight: 500;
     line-height: 1.2;
     text-transform: capitalize;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -120,7 +120,15 @@ p {
 }
 
 .cmn-gap {
-    padding: 50px 0;
+    padding: 60px 0;
+}
+
+:root {
+    --color-primary: #375DD9;
+    --color-black: #000000;
+    --color-white: #F5F7FD;
+    --color-light-blue: #DEE4F8;
+    --color-lightest-blue: #E9EDFB;
 }
 
 /* cmn class end */
@@ -176,6 +184,7 @@ p {
 }
 
 /* header sec end */
+/* banner sec start */
 .banner-sec {
     background-color: #fff;
 
@@ -253,7 +262,7 @@ p {
     font-weight: 400;
 }
 
-.banner-bottom p a{
+.banner-bottom p a {
     color: #0D99FF;
 }
 
@@ -271,6 +280,114 @@ p {
     height: 270px;
 }
 
+/* banner sec end */
+/* featured sec start */
+.featured-sec {
+    background-color: var(--color-white);
+}
+
+.featured-upper-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.featured-upper-child h2 {
+    margin-bottom: 0;
+}
+
+.featured-upper-child p {
+    width: 40%;
+}
+
+.featured-top img {
+    max-width: 350px;
+}
+
+.featured-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cmn-featured {
+    width: calc(25% - 73px);
+}
+
+.featured-heading {
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.featured-bottom span {
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.featured-bottom {
+    padding-top: 18px;
+}
+
+.featured-bottom span i {
+    color: var(--color-primary);
+}
+
+.featured-btn {
+    display: inline-block;
+    text-align: center;
+}
+
+.featured-btn-wrapper {
+    text-align: center;
+    margin-top: 42px;
+}
+
+/* featured sec end */
+/* our vision sec start */
+.our-vision-sec {
+    background-color: #375dd912;
+}
+
+.our-vision-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-vision-left,.our-vision-right{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.our-vision-right-inner-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* our vision sec end */
 
 /* footer sec start */
 .footer-sec {
