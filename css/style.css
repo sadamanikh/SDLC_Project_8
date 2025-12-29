@@ -148,7 +148,7 @@ p {
 
 .nav-links {
     display: flex;
-    background-color: #E0E0E0;
+    background-color: #e0e0e065;
     padding: 10px 34px;
     border-radius: 100px;
 }
@@ -366,16 +366,18 @@ p {
     flex-wrap: wrap;
 }
 
-.our-vision-left,.our-vision-right{
+.our-vision-left,
+.our-vision-right {
     width: 50%;
     padding: 0 15px;
 }
 
-.our-vision-right-inner-text{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+.our-vision-left-inner-text p {
+    margin-bottom: 31px;
 }
+
+.our-vision-left-inner-text,
+.our-vision-right-inner-text img {}
 
 
 
@@ -514,6 +516,10 @@ p {
     transform: scale(1.1);
 }
 
+.footer-links li a i:hover {
+    transform: scale(1.6);
+}
+
 .footer-links li a i {
     color: #375DD9;
     margin-right: 24px;
@@ -637,6 +643,25 @@ form {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+.location-perent {
+    display: flex;
+    align-items: flex-start;
+}
+
+.location-parent i {
+  flex: 0 0 20px;       /* 🔥 icon ki fixed width */
+  /* color: #375DD9; */
+  /* font-size: 18px; */
+  /* margin-top: 2px; */
+}
+
+.location-parent span {
+  display: block;
+  line-height: 1.4;
+}
+
+
 
 
 
