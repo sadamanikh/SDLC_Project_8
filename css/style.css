@@ -196,7 +196,7 @@ p {
 /* banner sec start */
 .banner-sec {
     background-color: #fff;
-
+    position: relative;
 }
 
 .banner-upper {
@@ -223,8 +223,9 @@ p {
 }
 
 .banner-center p {
-    width: 50%;
+    width: 48%;
     margin: 0 auto 28px;
+    text-transform: capitalize;
 }
 
 .banner-center p a {
@@ -257,41 +258,82 @@ p {
     margin-bottom: 7px;
 }
 
-.banner-bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.banner-bottom p {
-    width: 40%;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.banner-bottom p a {
-    color: #0D99FF;
-}
-
-.banner-bottom span {
-    font-size: 25px;
-    font-weight: 400;
-    width: 5%;
-    color: #fff;
-    padding-left: 100px;
-    text-transform: capitalize;
-}
-
 .banner-sec .banner-btm-sec {
     background-color: #0D0E10;
     height: 270px;
-}
-
-/* .banner-btm-sec, .container{
     display: flex;
     align-items: center;
-} */
+}
+
+.banner-lower {
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    margin-left: -65px;
+}
+
+.cmn-banner-img {
+    width: 14%;
+    padding: 6px;
+    box-shadow: 5px 5px 50px #55555581;
+    transform: rotate(15deg);
+    background-color: var(--color-white);
+    filter: grayscale(100%);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.cmn-banner-img:nth-child(-n+3) {
+    transform: rotate(-15deg);
+}
+
+.cmn-banner-img:nth-child(7) {
+    transform: rotate(-15deg);
+}
+
+.cmn-banner-img:nth-child(6) {
+    transform: rotate(-15deg);
+}
+
+.cmn-banner-img:nth-child(5) {
+    transform: rotate(-10deg);
+}
+
+.cmn-banner-img:nth-child(4) {
+    z-index: 100;
+    filter: grayscale(0);
+}
+
+.cmn-banner-img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    z-index: 200;
+}
+
+.banner-bottom-btn{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--color-white);
+}
+
+.banner-bottom span{
+    color: var(--color-primary);
+}
+
+.banner-bottom i{
+    padding: 10px;
+    margin-left: 22px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 20px;
+}
+
+.banner-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
 
 /* banner sec end */
 /* featured sec start */
@@ -325,7 +367,6 @@ p {
 }
 
 .featured-top {
-
     position: relative;
 }
 
@@ -544,7 +585,10 @@ p {
 .find-property-details-img {
     width: 21px;
     margin-right: 7px;
-    display: flex;
+}
+
+.find-property-details-img img {
+    display: block;
 }
 
 .cmn-find-property-inner h3 {
