@@ -304,35 +304,44 @@ p {
     filter: grayscale(0);
 }
 
-.cmn-banner-img:hover{
+.cmn-banner-img:hover {
     filter: grayscale(0);
     transform: scale(1.1);
     z-index: 200;
 }
 
-.banner-bottom-btn{
+.banner-bottom-btn {
+    display: flex;
+    align-items: center;
     font-size: 40px;
     font-weight: 500;
     text-transform: capitalize;
     color: var(--color-white);
 }
 
-.banner-bottom span{
+.banner-bottom span {
     color: var(--color-primary);
 }
 
-.banner-bottom i{
-    padding: 10px;
-    margin-left: 22px;
-    background-color: var(--color-white);
+.banner-bottom i {
     color: var(--color-primary);
-    border-radius: 20px;
+    font-size: 25px;
 }
 
-.banner-bottom{
+.banner-bottom {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+}
+
+.right-arrow-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-left: 22px;
+    padding: 10px;
+    background-color: var(--color-white);
 }
 
 /* banner sec end */
@@ -632,7 +641,99 @@ p {
 /* find property sec end */
 
 
+/* latest-blog-sec-starst */
+.latest-blog-card-main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.blog-card-img {
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+.blog-card-img img {
+    display: block;
+}
+
+.blog-date {
+    border-radius: 57px;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid rgb(77, 75, 75);
+    display: inline-block;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-blog-card-cmn {
+    padding: 0 20px;
+    text-align: start;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+.latest-blog-swiper-btn {
+    position: relative;
+    top: 0;
+    display: flex;
+}
+
+
+.swiper-button-next-own,
+.swiper-button-prev-own {
+    padding: 10px;
+    color: #0D99FF;
+    background: rgba(55, 93, 217, 0.164);
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3 ease;
+}
+.swiper-button-next-own:hover,
+.swiper-button-prev-own:hover {
+    background: rgba(55, 93, 217, 0.257);
+}
+
+.swiper-button-prev-own svg {
+    width: 40px;
+}
+
+.swiper-button-next-own svg {
+    width: 40px;
+}
+
+.latest-blog-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.latest-blog-top h2 {
+    margin: 0;
+}
+
+
+/* latest-blog-sec-ends */
 
 
 
