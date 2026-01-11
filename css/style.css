@@ -366,12 +366,13 @@ p {
     flex-wrap: wrap;
 }
 
-.our-vision-left,.our-vision-right{
+.our-vision-left,
+.our-vision-right {
     width: 50%;
     padding: 0 15px;
 }
 
-.our-vision-right-inner-text{
+.our-vision-right-inner-text {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -402,8 +403,25 @@ p {
 
 
 
+/* BLog Section */
+.blog-sec {
+    /* min-height: 100vh; */
+    padding: 165px 0;
+    background: url("../image/Blog-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
 
+.blog-sec .heading-1 {
+    font-size: 70px;
+    color: #fff;
+    margin: 0;
+}
 
 
 
