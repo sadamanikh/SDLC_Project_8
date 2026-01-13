@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- slick slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- google font -->
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
@@ -13,6 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- swiper-cdn -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- link style.css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -23,14 +32,16 @@
         <div class="container">
             <nav class="nav">
                 <a href="./index.html" class="nav-logo">
-                    <img src="./image/nav-logo.png" alt="nav-logo">
+                    <img src="./image/Home-page-images/nav-logo.png" alt="nav-logo">
                 </a>
                 <ul class="nav-links">
-                    <li><a href="./index.html" class="home-links">home</a></li>
+                    <li><a href="./index.html" class="active-page-select">home</a></li>
                     <li><a href="./about_us.html">about us</a></li>
-                    <li><a href="./features.html">features</a></li>
-                    <li><a href="./overview.html">overview</a></li>
-                    <li><a href="./realtor.html">realtor</a></li>
+                    <li><a href="./for-buyers.html">for buyers <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./services.html">services <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./news-&-Guide.html">news & Guide</a></li>
                 </ul>
                 <div class="nav-right">
                     <div class="nav-right-2">
@@ -44,6 +55,7 @@
     <!-- header sec end -->
     <!-- main start -->
     <main>
+
         <!-- banner sec start -->
         <section class="banner-sec com-gap">
             <div class="container">
@@ -63,10 +75,12 @@
                         </div>
                         <!-- banner center -->
                         <div class="banner-center">
-                            <h1>home is where you story beings.</h1>
-                            <p>unlock your dream house explore possibilities with <a
-                                    href="./index.html">EstateVistra</a>
-                                your preminer real estate destination</p>
+                            <h1>find your perfect home from the <span class="highlight-text-color">best property
+                                    portal</span>
+                                in india</h1>
+                            <p>unlock your dream house with <span class="highlight-text-color">EstateVistra</span> Your
+                                Premier Online
+                                Real Estate Platform in India</p>
                             <a href="#" class="banner-btn cmn-btn">find properties</a>
                         </div>
                         <!-- banner right -->
@@ -81,27 +95,52 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="banner-lower">
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-1.jpg" alt="">
+                        </div>
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-2.jpg" alt="">
+                        </div>
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-3.jpg" alt="">
+                        </div>
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-4.jpg" alt="">
+                        </div>
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-5.jpg" alt="">
+                        </div>
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-6.jpg" alt="">
+                        </div>
+                        <div class="cmn-banner-img">
+                            <img src="./image/Home-page-images/banner-img-3.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- banner bottom -->
             <div class="banner-btm-sec">
-                <div class="container">
+                <div class="container ">
                     <div class="banner-bottom">
-                        <span>letest archievement</span>
-                        <p>Discover <a href="./index.html">EstateVistra’s</a> latest achievements — milestones that
-                            showcase our
-                            dedication, growth, and commitment to excellence in every step we take.</p>
+                        <a href="#" class="banner-bottom-btn">discover <span class="highlight-text-color"> latest
+                                archievement</span>
+                            <div class="right-arrow-icon">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- banner sec end -->
+
         <!-- featured listing sec start -->
         <section class="featured-sec cmn-gap">
             <div class="container">
                 <div class="featured-upper-child">
-                    <h2>featured listing</h2>
+                    <h2>featured <span class="highlight-text-color">listing</span></h2>
                     <p>Explore EstateVistra’s featured listings — handpicked properties that combine style, comfort, and
                         value to match your dream lifestyle.</p>
                 </div>
@@ -109,7 +148,10 @@
                     <!-- featured-card-1 -->
                     <div class="cmn-featured">
                         <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
+                            <div class="featured-image">
+                                <img src="./image/Home-page-images/featured-listing-img-1.png" alt="card-img">
+                            </div>
+                            <span>$2,547</span>
                         </div>
                         <div class="featured-bottom">
                             <div class="featured-heading">serenity meadows</div>
@@ -119,7 +161,10 @@
                     <!-- featured-card-2 -->
                     <div class="cmn-featured">
                         <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
+                            <div class="featured-image">
+                                <img src="./image/Home-page-images/featured-listing-img-2.png" alt="card-img">
+                            </div>
+                            <span>$2,547</span>
                         </div>
                         <div class="featured-bottom">
                             <div class="featured-heading">serenity meadows</div>
@@ -129,7 +174,10 @@
                     <!-- featured-card-3 -->
                     <div class="cmn-featured">
                         <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
+                            <div class="featured-image">
+                                <img src="./image/Home-page-images/featured-listing-img-3.png" alt="card-img">
+                            </div>
+                            <span>$2,547</span>
                         </div>
                         <div class="featured-bottom">
                             <div class="featured-heading">serenity meadows</div>
@@ -139,7 +187,10 @@
                     <!-- featured-card-4 -->
                     <div class="cmn-featured">
                         <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
+                            <div class="featured-image">
+                                <img src="./image/Home-page-images/featured-listing-img-4.png" alt="card-img">
+                            </div>
+                            <span>$2,547</span>
                         </div>
                         <div class="featured-bottom">
                             <div class="featured-heading">serenity meadows</div>
@@ -152,29 +203,34 @@
                 </div>
         </section>
         <!-- featured listing sec end -->
+
         <!-- our vision sec start -->
         <section class="our-vision-sec cmn-gap">
             <div class="container">
                 <div class="our-vision-child">
                     <div class="our-vision-left">
                         <div class="our-vision-left-inner-text">
-                            <h2>our vision</h2>
+                            <h2 class="heading-3">our <span class="highlight-text-color">vision</span></h2>
                             <p>At EstateVistra, our vision is to redefine modern living by creating spaces that inspire,
                                 connect, and enhance everyday life. We strive to build trust, deliver excellence, and
                                 shape communities where every home tells a story of comfort and pride.</p>
-                            <div class="our-vision-img">
-                                <figure>
-                                    <img src="./image/our-vision-left-img.png" alt="our-vision-img">
-                                </figure>
+                            <div class="testing">
+                                <div class="our-vision-img">
+                                    <figure>
+                                        <!-- <img src="./image/Home-page-images/our-vision-left-img.png" alt="our-vision-img"> -->
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="our-vision-right">
                         <div class="our-vision-right-inner-text">
-                            <figure>
-                                <img src="./image/our-vision-left-img.png" alt="our-vision-img">
-                            </figure>
-                            <h2>our mission</h2>
+                            <div class="our-vision-img our-vision-img-2">
+                                <figure>
+                                    <!-- <img src="./image/Home-page-images/our-vision-right-img.png" alt="our-vision-img"> -->
+                                </figure>
+                            </div>
+                            <h2 class="heading-3">our <span class="highlight-text-color">mission</span></h2>
                             <p>At EstateVistra, our mission is to provide exceptional real estate solutions that blend
                                 innovation, transparency, and customer satisfaction. We aim to help every client find
                                 their ideal space while ensuring a seamless and trustworthy property experience.</p>
@@ -185,6 +241,441 @@
         </section>
         <!-- our vition sec end -->
 
+        <!-- explore our Services sec start -->
+        <section class="explore-our-Services-sec cmn-gap">
+            <div class="container">
+                <div class="explore-our-Services-upper-child">
+                    <h2 class="heading-3">explore our <span class="highlight-text-color">Services</span></h2>
+                    <p>Simplify your property journey with <span class="highlight-text-color">EstateVista</span> — buy,
+                        sell, rent, and
+                        finance homes with confidence.</p>
+                </div>
+                <div class="explore-our-Services-child">
+                    <!-- cmn-explore-our-Services-1 -->
+                    <div class="cmn-explore-our-Services">
+                        <div class="explore-our-Services-img">
+                            <img src="./image/Home-page-images/explore-our-Services-img-1.png" alt="">
+                        </div>
+                        <div class="explore-our-Services-content">
+                            <h3>finance a home</h3>
+                            <p>get quick home loan pre-approval and be ready to buy the right property without delays.
+                            </p>
+                            <a href="#" class="explore-our-Services-btn cmn-btn">learn more <span></span></a>
+                        </div>
+                    </div>
+                    <!-- cmn-explore-our-Services-2 -->
+                    <div class="cmn-explore-our-Services">
+                        <div class="explore-our-Services-img">
+                            <img src="./image/Home-page-images/explore-our-Services-img-2.png" alt="">
+                        </div>
+                        <div class="explore-our-Services-content">
+                            <h3>sell a home</h3>
+                            <p>list your property easily and reach serious buyers faster with a seamless selling
+                                experience.</p>
+                            <a href="#" class="explore-our-Services-btn cmn-btn">learn more <span></span></a>
+                        </div>
+                    </div>
+                    <!-- cmn-explore-our-Services-3 -->
+                    <div class="cmn-explore-our-Services">
+                        <div class="explore-our-Services-img">
+                            <img src="./image/Home-page-images/explore-our-Services-img-3.png" alt="">
+                        </div>
+                        <div class="explore-our-Services-content">
+                            <h3>rent a home</h3>
+                            <p>search verified rental properties and find a home that fits your lifestyle and budget</p>
+                            <a href="#" class="explore-our-Services-btn cmn-btn">learn more <span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- explore our Services sec end -->
+
+        <!-- find property sec start -->
+        <section class="find-property-sec cmn-gap">
+            <div class="container">
+                <div class="find-property-upper-child">
+                    <h2>Find Property <span class="highlight-text-color">near you</span></h2>
+                    <p>Find featured residential and commercial properties near you, offering modern amenities and
+                        strong <span class="highlight-text-color">investment potential.</span></p>
+                </div>
+                <div class="find-property-child">
+                    <div class="cmn-find-property property-1">
+                        <div class="cmn-find-property-inner">
+                            <h3>harmony heights</h3>
+                            <div class="room-details">
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-1.png" alt="">
+                                    </div>
+                                    <span>1,245sq ft</span>
+                                </div>
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-2.png" alt="">
+                                    </div>
+                                    <span>4 bedroom</span>
+                                </div>
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-3.png" alt="">
+                                    </div>
+                                    <span>4 bathroom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cmn-find-property property-2">
+                        <div class="cmn-find-property-inner">
+                            <h3>curtis adamas</h3>
+                            <div class="room-details">
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-1.png" alt="">
+                                    </div>
+                                    <span>1,345sq ft</span>
+                                </div>
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-2.png" alt="">
+                                    </div>
+                                    <span>4 bedroom</span>
+                                </div>
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-3.png" alt="">
+                                    </div>
+                                    <span>3 bathroom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cmn-find-property property-3">
+                        <div class="cmn-find-property-inner">
+                            <h3>marlene leppanen</h3>
+                            <div class="room-details">
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-1.png" alt="">
+                                    </div>
+                                    <span>1,455sq ft</span>
+                                </div>
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-2.png" alt="">
+                                    </div>
+                                    <span>8 bedroom</span>
+                                </div>
+                                <div class="cmn-room-details">
+                                    <div class="find-property-details-img">
+                                        <img src="./image/Home-page-images/find-property-details-img-3.png" alt="">
+                                    </div>
+                                    <span>5 bathroom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="find-property-btn-wrapper">
+                    <a href="#" class="cmn-btn">explore more properties</a>
+                </div>
+            </div>
+        </section>
+        <!-- find property sec end -->
+
+        <!-- why with us sec start -->
+        <section class="why-with-us-sec cmn-gap">
+            <div class="container">
+                <div class="why-child">
+                    <div class="why-left">
+                        <div class="why-inner-text">
+                            <div class="why-icon-wrapper">
+                                <i class="fa-regular fa-circle"></i>
+                                <span class="why-abobe-tag">WHY WITH US</span>
+                            </div>
+
+                            <h2>Trusted <span class="highlight-text-color">Real Estate Experts</span> for Luxury Homes &
+                                Investment Properties</h2>
+
+                            <p>Experience seamless property buying, selling, and investment with our expert real estate
+                                team. From luxury estates to high-value investment properties, we offer <span
+                                    class="highlight-text-color">market insights, premium</span> listings, and
+                                personalized guidance. Whether you are looking for your <span
+                                    class="highlight-text-color">dream home or profitable real estate
+                                    opportunities</span>, our proven expertise ensures a smooth, <span
+                                    class="highlight-text-color">stress-free process</span> and <span
+                                    class="highlight-text-color">maximum value</span>.</p>
+                        </div>
+                        <div class="why-profile-wrapper">
+                            <div class="profile-image">
+                                <img src="./image/Home-page-images/why-with-us-img.png" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h3 class="heading-5">thomas</h3>
+                                <span class="highlight-text-color">CEO, Portland Realty</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-right">
+                        <div class="why-right-inner-image">
+                            <img src="./image/Home-page-images/why-with-us-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- why with us sec end -->
+
+        <!-- testimonials sec start -->
+        <section class="testimonials-sec cmn-gap">
+            <div class="testimonials-upper-child">
+                <div class="container">
+                    <h2 class="heading-3">Client Testimonials That Reflect Estatevistra’s Commitment</h2>
+                    <p>Real client experiences that showcase our commitment to quality, trust, and excellence in
+                        property development.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="testimonials-child center">
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-btn">
+                    <div class="prev-btn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="next-btn"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+            </div>
+        </section>
+        <!-- testimonials sec end -->
+
+        <!-- latest-blog-sec-starts -->
+        <section class="latest-blog-sec cmn-gap">
+            <div class="container">
+                <div class="latest-blog-child">
+                    <div class="latest-blog-top">
+                        <h2>Latest <span class="highlight-text-color">Blogs & Trends</span></h2>
+                        <div class="latest-blog-swiper-btn">
+                            <div class="swiper-button-prev-own"><i class="fa-solid fa-arrow-left"></i></div>
+                            <div class="swiper-button-next-own"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-2.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-3.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-2.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-3.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-3.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="latest-blog-card-cmn">
+                                    <div class="blog-card-img">
+                                        <figure>
+                                            <img src="./image/Home-page-images/latest-blogs-img-3.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="blog-card-btm">
+                                        <div class="blog-date">
+                                            4 days ago
+                                        </div>
+                                        <p>
+                                            Legal Essentials: Understanding Real Estate Documentation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- latest-blog-sec-ends -->
+
     </main>
     <!-- main end -->
     <!-- footer sec start -->
@@ -193,7 +684,7 @@
             <div class="footer-child">
                 <div class="footer-left">
                     <div class="footer-upper">
-                        <a href="./index.html" class="footer-logo"><img src="./image/nav-logo.png"
+                        <a href="./index.html" class="footer-logo"><img src="./image/Home-page-images/nav-logo.png"
                                 alt="footer-logo"></a>
                         <ul class="social-links">
                             <li><a href="#"><i class="fa-brands fa-facebook"></i> facebook</a></li>
@@ -258,6 +749,63 @@
             </div>
     </footer>
     <!-- footer sec end -->
+
+
+
+
+
+
+    <!-- testimonials CDN AND JS -->
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 5,
+                arrows: true,
+                prevArrow: $('.prev-btn'),
+                nextArrow: $('.next-btn')
+            });
+        });
+    </script>
+
+
+
+
+    <!-- leatest blog CDN AND JS -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next-own',
+                prevEl: '.swiper-button-prev-own',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+
 </body>
 
 </html>

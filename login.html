@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slick CDN Test</title>
+
+  <!-- Slick CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <style>
+    body {
+      padding: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    .center .slick-slide {
+      opacity: 0.4;
+      transform: scale(0.85);
+      transition: 0.3s;
+    }
+
+    .center .slick-center {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .card {
+      background: #ddd;
+      padding: 60px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .testimonials-cmn-card {
+    /* width: calc(20% - 50px); */
+    background-color: rgba(55, 93, 217, 0.12);
+    padding: 30px 40px 50px 15px;
+    border-radius: 45px;
+    margin-right: 20px;
+}
+
+.testimonials-bottom p {
+    margin-bottom: 45px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.testimonials-name {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.testimonials-bottom span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.center .slick-slide {
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: all 0.3s ease;
+}
+
+.center .slick-center {
+  opacity: 1;
+  transform: scale(1);
+}
+  </style>
+</head>
+<body>
+
+  <div class="testimonials-child center">
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+                    <div class="testimonials-cmn-card">
+                        <div class="testimonials-top">
+                            <img src="./image/Home-page-images/testimonials-card-img.png" alt="">
+                        </div>
+                        <div class="testimonials-bottom">
+                            <p>from the moment we talk throung the door of our new house new city daunting
+                            </p>
+                            <div class="testimonials-name">william smith</div>
+                            <span>manager master card</span>
+                        </div>
+                    </div>
+                </div>
+
+  <!-- jQuery (CDN) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Slick JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3
+      });
+    });
+  </script>
+
+</body>
+</html>

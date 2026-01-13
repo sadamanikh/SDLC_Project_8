@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Us</title>
+
+    <!-- slick slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- google font -->
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
@@ -13,24 +17,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- swiper-cdn -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- link style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link contactus.css -->
     <link rel="stylesheet" href="./css/contactus.css">
 </head>
 
 <body>
-    <!-- header sec start -->
+    <!--Header Section Start-->
     <header class="header-sec">
         <div class="container">
             <nav class="nav">
                 <a href="./index.html" class="nav-logo">
-                    <img src="./image/nav-logo.png" alt="nav-logo">
+                    <img src="./image/Home-page-images/nav-logo.png" alt="nav-logo">
                 </a>
                 <ul class="nav-links">
-                    <li><a href="./index.html" class="home-links">home</a></li>
+                    <li><a href="./index.html">home</a></li>
                     <li><a href="./about_us.html">about us</a></li>
-                    <li><a href="./features.html">features</a></li>
-                    <li><a href="./overview.html">overview</a></li>
-                    <li><a href="./realtor.html">realtor</a></li>
+                    <li><a href="./for-buyers.html">for buyers <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./services.html">services <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./news-&-Guide.html">news & Guide</a></li>
                 </ul>
                 <div class="nav-right">
                     <div class="nav-right-2">
@@ -41,159 +54,161 @@
             </nav>
         </div>
     </header>
-    <!-- header sec end -->
-    <!-- main start -->
-    <main>
-        <!-- banner sec start -->
-        <section class="banner-sec com-gap">
-            <div class="container">
-                <div class="banner-child">
-                    <!-- banner upper -->
-                    <div class="banner-upper">
-                        <!-- banner-left -->
-                        <div class="banner-left">
-                            <div class="happy-customers">
-                                <div class="cmn-number">408+</div>
-                                <span>happy customers</span>
-                            </div>
-                            <div class="google-rating">
-                                <div class="cmn-number">4.9</div>
-                                <span>google rating</span>
+    <!-- Header sec end -->
+    <!-- Main start -->
+   <main>
+    <!--Banner Section Start-->
+    <section class="contactus-banner-section">
+        <div class="contactus-container">
+            <h1>Contact us</h1>
+        </div>
+    </section>
+    <!--Banner Section End-->
+    <!--Form Section Start-->
+    <section class="contactus-form-section">
+        <div class="contactus-container">
+            <div class="row">
+                <div class="col7 contact-left card-style">
+                    <h2>Get Help From Us</h2>
+                    <p class="subheading">Tincidunt Dui Ut Ornare Lectus Sed Blandit Libero Volutpat.</p>
+                    <form class="contact-form">
+                        <div class="flex-row">
+                            <input type="text" placeholder="Your Name…" required>
+                            <input type="text" placeholder="Phone Number…" required>
+                        </div>
+                        <div class="flex-row">
+                            <input type="email" placeholder="Email Address…" required>
+                            <input type="text" placeholder="Message Title…" required>
+                        </div>
+                        <textarea placeholder="Provide The Message Content…" required></textarea>
+                        <div class="checkbox-row">
+                            <label>
+                                <input type="checkbox" required> I Accept The 
+                                <a href="#">Terms And Service</a>
+                            </label>
+                        </div>
+                        <a href="" class="cmn-btn">Send Message</a>
+                        <!-- <a type="submit" class="btn-send cmn-btn">Send Message</a> -->
+                    </form>
+                </div>
+                <div class="col5">
+                    <div class="info-box card-style">
+                        <div class="info-line">
+                            <span class="icon">    
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_344_1597)">
+                            <path d="M28.2625 29.75C25.3111 29.75 22.3951 29.1068 19.5146 27.8205C16.634 26.5342 14.0132 24.71 11.6521 22.3479C9.29097 19.9859 7.46725 17.365 6.18092 14.4854C4.89458 11.6058 4.25094 8.68983 4.25 5.7375C4.25 5.3125 4.39167 4.95833 4.675 4.675C4.95833 4.39167 5.3125 4.25 5.7375 4.25H11.475C11.8056 4.25 12.1007 4.36239 12.3604 4.58717C12.6201 4.81194 12.7736 5.07733 12.8208 5.38333L13.7417 10.3417C13.7889 10.7194 13.7771 11.0382 13.7063 11.2979C13.6354 11.5576 13.5056 11.7819 13.3167 11.9708L9.88125 15.4417C10.3535 16.3153 10.914 17.1591 11.5628 17.9733C12.2117 18.7874 12.9261 19.5727 13.7063 20.3292C14.4382 21.0611 15.2056 21.7402 16.0083 22.3663C16.8111 22.9925 17.6611 23.5648 18.5583 24.0833L21.8875 20.7542C22.1 20.5417 22.3777 20.3825 22.7205 20.2767C23.0633 20.171 23.3996 20.1412 23.7292 20.1875L28.6167 21.1792C28.9472 21.2736 29.2187 21.445 29.4312 21.6934C29.6437 21.9418 29.75 22.219 29.75 22.525V28.2625C29.75 28.6875 29.6083 29.0417 29.325 29.325C29.0417 29.6083 28.6875 29.75 28.2625 29.75Z" fill="#375DD9"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_344_1597">
+                            <rect width="34" height="34" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </span>
+                            <div>
+                                <h4>Office Phone</h4>
+                                <p>+44 126–6632</p>
                             </div>
                         </div>
-                        <!-- banner center -->
-                        <div class="banner-center">
-                            <h1>home is where you story beings.</h1>
-                            <p>unlock your dream house explore possibilities with <a
-                                    href="./index.html">EstateVistra</a>
-                                your preminer real estate destination</p>
-                            <a href="#" class="banner-btn cmn-btn">find properties</a>
-                        </div>
-                        <!-- banner right -->
-                        <div class="banner-right">
-                            <div class="awards-winning">
-                                <div class="cmn-number">324+</div>
-                                <span>awards winning</span>
-                            </div>
-                            <div class="property-ready">
-                                <div class="cmn-number">100+</div>
-                                <span>property ready</span>
-                            </div>
+                        <div class="info-line">
+                            <span class="icon">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_344_1605)">
+                                <path d="M34 7.73092V27.4353C34 28.716 32.963 29.753 31.6823 29.753H26.2721V16.6177L17 23.5735L7.72792 16.6177V29.7544H2.31767C2.01319 29.7544 1.71169 29.6944 1.43041 29.5779C1.14912 29.4613 0.893562 29.2905 0.678328 29.0751C0.463094 28.8597 0.292406 28.6041 0.176016 28.3227C0.0596252 28.0413 -0.000185679 27.7398 4.33006e-07 27.4353V7.73092C4.33006e-07 4.865 3.27108 3.22875 5.56325 4.94858L7.72792 6.5735L17 13.5265L26.2721 6.57067L28.4367 4.94858C30.7275 3.23017 34 4.865 34 7.73092Z" fill="#375DD9"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_344_1605">
+                                <rect width="34" height="34" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </span>
+                        <div>
+                            <h4>Business Email</h4>
+                            <p>estatevistra@yourbusiness.com</p>
                         </div>
                     </div>
+                    <div class="info-line">
+                        <span class="icon">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_344_1612)">
+                            <path d="M16.9997 16.2918C16.0604 16.2918 15.1595 15.9187 14.4953 15.2545C13.8311 14.5903 13.458 13.6895 13.458 12.7502C13.458 11.8109 13.8311 10.91 14.4953 10.2458C15.1595 9.58163 16.0604 9.2085 16.9997 9.2085C17.939 9.2085 18.8398 9.58163 19.504 10.2458C20.1682 10.91 20.5413 11.8109 20.5413 12.7502C20.5413 13.2153 20.4497 13.6758 20.2717 14.1055C20.0938 14.5352 19.8329 14.9256 19.504 15.2545C19.1751 15.5834 18.7847 15.8443 18.355 16.0222C17.9253 16.2002 17.4648 16.2918 16.9997 16.2918ZM16.9997 2.8335C14.3696 2.8335 11.8473 3.87828 9.98753 5.73802C8.1278 7.59776 7.08301 10.1201 7.08301 12.7502C7.08301 20.1877 16.9997 31.1668 16.9997 31.1668C16.9997 31.1668 26.9163 20.1877 26.9163 12.7502C26.9163 10.1201 25.8716 7.59776 24.0118 5.73802C22.1521 3.87828 19.6297 2.8335 16.9997 2.8335Z" fill="#375DD9"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_344_1612">
+                            <rect width="34" height="34" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </span>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>Brisket Avenue III, London, UK</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="map-box card-style">
+                    <iframe
+                    src="https://maps.google.com/maps?q=London&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    allowfullscreen>
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Form Section End-->
+    <!--Promotion Section Start-->
+    <section class="contactus-promotion-section">
+        <div class="contactus-container">
+            <div class="row">
+                <div class="col2">
+                    <div class="img-container">
+                        <img src="./image/contact-us-image/Frame 1261153547.png" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="img-container">
+                        <img src="./image/contact-us-image/Frame 1261153544.png" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="img-container">
+                        <img src="./image/contact-us-image/Frame 1261153545.png" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="img-container">
+                        <img src="./image/contact-us-image/Frame 1261153546.png" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="img-container">
+                        <img src="./image/contact-us-image/Frame 1261153546.png" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="img-container">
+                        <img src="./image/contact-us-image/Frame 1261153547.png" alt="">
+                    </div>
+                </div>
+            </div>
 
-                </div>
-            </div>
-            <!-- banner bottom -->
-            <div class="banner-btm-sec">
-                <div class="container">
-                    <div class="banner-bottom">
-                        <span>letest archievement</span>
-                        <p>Discover <a href="./index.html">EstateVistra’s</a> latest achievements — milestones that
-                            showcase our
-                            dedication, growth, and commitment to excellence in every step we take.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- banner sec end -->
-        <!-- featured listing sec start -->
-        <section class="featured-sec cmn-gap">
-            <div class="container">
-                <div class="featured-upper-child">
-                    <h2>featured listing</h2>
-                    <p>Explore EstateVistra’s featured listings — handpicked properties that combine style, comfort, and
-                        value to match your dream lifestyle.</p>
-                </div>
-                <div class="featured-child">
-                    <!-- featured-card-1 -->
-                    <div class="cmn-featured">
-                        <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
-                        </div>
-                        <div class="featured-bottom">
-                            <div class="featured-heading">serenity meadows</div>
-                            <span><i class="fa-solid fa-location-dot"></i> malibu, california</span>
-                        </div>
-                    </div>
-                    <!-- featured-card-2 -->
-                    <div class="cmn-featured">
-                        <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
-                        </div>
-                        <div class="featured-bottom">
-                            <div class="featured-heading">serenity meadows</div>
-                            <span><i class="fa-solid fa-location-dot"></i> malibu, california</span>
-                        </div>
-                    </div>
-                    <!-- featured-card-3 -->
-                    <div class="cmn-featured">
-                        <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
-                        </div>
-                        <div class="featured-bottom">
-                            <div class="featured-heading">serenity meadows</div>
-                            <span><i class="fa-solid fa-location-dot"></i> malibu, california</span>
-                        </div>
-                    </div>
-                    <!-- featured-card-4 -->
-                    <div class="cmn-featured">
-                        <div class="featured-top">
-                            <img src="./image/featured-listing-img-1.png" alt="card-img">
-                        </div>
-                        <div class="featured-bottom">
-                            <div class="featured-heading">serenity meadows</div>
-                            <span><i class="fa-solid fa-location-dot"></i> malibu, california</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-btn-wrapper">
-                    <a href="#" class="featured-btn cmn-btn">see more</a>
-                </div>
-        </section>
-        <!-- featured listing sec end -->
-        <!-- our vision sec start -->
-        <section class="our-vision-sec cmn-gap">
-            <div class="container">
-                <div class="our-vision-child">
-                    <div class="our-vision-left">
-                        <div class="our-vision-left-inner-text">
-                            <h2>our vision</h2>
-                            <p>At EstateVistra, our vision is to redefine modern living by creating spaces that inspire,
-                                connect, and enhance everyday life. We strive to build trust, deliver excellence, and
-                                shape communities where every home tells a story of comfort and pride.</p>
-                            <div class="our-vision-img">
-                                <figure>
-                                    <img src="./image/our-vision-left-img.png" alt="our-vision-img">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="our-vision-right">
-                        <div class="our-vision-right-inner-text">
-                            <figure>
-                                <img src="./image/our-vision-left-img.png" alt="our-vision-img">
-                            </figure>
-                            <h2>our mission</h2>
-                            <p>At EstateVistra, our mission is to provide exceptional real estate solutions that blend
-                                innovation, transparency, and customer satisfaction. We aim to help every client find
-                                their ideal space while ensuring a seamless and trustworthy property experience.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- our vition sec end -->
-
-    </main>
-    <!-- main end -->
-    <!-- footer sec start -->
+        </div>
+    </section>
+    <!--Promotion Section End-->
+    
+   </main>
+    <!--Main End-->
+    <!--Footer Section Start -->
     <footer class="footer-sec">
         <div class="container">
             <div class="footer-child">
                 <div class="footer-left">
                     <div class="footer-upper">
-                        <a href="./index.html" class="footer-logo"><img src="./image/nav-logo.png"
+                        <a href="./index.html" class="footer-logo"><img src="./image/Home-page-images/nav-logo.png"
                                 alt="footer-logo"></a>
                         <ul class="social-links">
                             <li><a href="#"><i class="fa-brands fa-facebook"></i> facebook</a></li>
@@ -257,7 +272,64 @@
                 </div>
             </div>
     </footer>
-    <!-- footer sec end -->
+    <!--Footer Section End -->
+
+
+
+
+
+
+    <!-- Testimonials CDN AND JS -->
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 5,
+                arrows: true,
+                prevArrow: $('.prev-btn'),
+                nextArrow: $('.next-btn')
+            });
+        });
+    </script>
+
+
+
+
+    <!-- leatest blog CDN AND JS -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next-own',
+                prevEl: '.swiper-button-prev-own',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+
 </body>
 
 </html>
