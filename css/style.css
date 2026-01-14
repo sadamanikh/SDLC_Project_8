@@ -85,8 +85,8 @@ h3,
 
 h4,
 .heading-4 {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
     line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 10px;
@@ -116,7 +116,7 @@ h6,
 p {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.5;
     color: #0000007b;
 }
 
@@ -274,7 +274,8 @@ p {
     position: absolute;
     display: flex;
     bottom: 20%;
-    margin-left: -65px;
+    width: 1750px;
+    margin-left: -50px;
 }
 
 .cmn-banner-img {
@@ -686,6 +687,7 @@ p {
 .why-icon-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -703,15 +705,24 @@ p {
 .why-left {
     width: 70%;
     padding-right: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .why-right {
     width: 30%;
 }
 
+.why-right-inner-image {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
 .why-profile-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .why-abobe-tag {
@@ -732,6 +743,7 @@ p {
 
 .profile-text {
     margin-left: 25px;
+    text-align: start;
 }
 
 .why-inner-text h2 {
@@ -770,16 +782,16 @@ p {
     color: var(--color-white);
 }
 
-.testimonials-upper-child .container{
+.testimonials-upper-child .container {
     width: 54%;
 }
 
 .testimonials-top {
-    width: 80px;
+    width: 60px;
     margin-bottom: 30px;
 }
 
-.testimonials-child{
+.testimonials-child {
     display: flex;
     /* flex-wrap: wrap; */
 }
@@ -796,6 +808,9 @@ p {
     margin-bottom: 45px;
     text-transform: capitalize;
     font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 1);
 }
 
 .testimonials-name {
@@ -811,64 +826,100 @@ p {
 }
 
 .center .slick-slide {
-      opacity: 0.4;
-      transform: scale(0.85);
-      transition: 0.3s;
-    }
+    opacity: 0.4;
+    transform: scale(0.85);
+    transition: 0.3s;
+}
 
-    .center .slick-center {
-      opacity: 1;
-      transform: scale(1);
-    }
+.center .slick-center {
+    opacity: 1;
+    transform: scale(1);
+}
 
-.testimonial-btn{
+.testimonial-btn {
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
 
-.prev-btn,.next-btn{
+.prev-btn,
+.next-btn {
     background-color: var(--color-primary);
     border-radius: 50%;
     padding: 10px;
-}
-.prev-btn i,.next-btn i{
-    font-size: 16px;
-    color: var(--color-white);
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
-.prev-btn{
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #b8d7ea;
+}
+
+.prev-btn i,
+.next-btn i {
+    font-size: 16px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.prev-btn:hover i,
+.next-btn:hover i {
+    color: var(--color-black);
+}
+
+.prev-btn {
     margin-right: 10px;
 }
 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* testimonials sec end */
 
+/* question sec start */
+
+.sec-heading {
+    width: 26%;
+}
+
+.questions-upper-child h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.questions-upper-child {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.questions-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.questions-child {
+    display: flex;
+    justify-content: center;
+}
+
+.questions-inner-text {
+    max-width: 65%;
+}
+
+.questions-accordion-cmn {
+    margin-top: 45px;
+}
+
+.questions-accordion-cmn p {
+    width: 95%;
+}
+
+.unvisible {
+    display: none;
+}
+
+/* question sec end */
 
 /* latest-blog-sec-starst */
 .blog-card-img {
@@ -879,15 +930,22 @@ p {
 
 .blog-card-img img {
     display: block;
-    height: 350px;
+    height: 300px;
 }
 
 .blog-date {
     border-radius: 57px;
-    padding: 10px;
+    padding: 10px 20px;
     margin-bottom: 18px;
+    font-weight: 600;
     border: 1px solid rgb(77, 75, 75);
     display: inline-block;
+    color: rgba(12, 28, 39, 1);
+}
+
+.blog-card-btm p {
+    font-weight: 500;
+    color: rgba(12, 28, 39, 1);
 }
 
 .swiper {
@@ -914,38 +972,33 @@ p {
 }
 
 .latest-blog-swiper-btn {
-    position: relative;
-    top: 0;
     display: flex;
+    margin-right: 60px;
 }
 
 
 .swiper-button-next-own,
 .swiper-button-prev-own {
-    padding: 10px;
-    color: #0D99FF;
-    background: rgba(55, 93, 217, 0.164);
+    background-color: rgba(55, 93, 217, 0.09);
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all .3 ease;
+    padding: 17px 15px;
+}
+
+.swiper-button-next-own i,
+.swiper-button-prev-own i {
+    font-size: 25px;
+    color: var(--color-primary);
+}
+
+.swiper-button-next-own {
+    margin-left: 15px;
 }
 
 .swiper-button-next-own:hover,
 .swiper-button-prev-own:hover {
     background: rgba(55, 93, 217, 0.257);
-}
-
-.swiper-button-prev-own i {
-    font-size: 30px;
-}
-
-.swiper-button-next-own i {
-    /* width: 40px; */
-    font-size: 30px;
 }
 
 .latest-blog-top {
@@ -1072,7 +1125,6 @@ p {
 
 .footer-links li a:hover {
     color: #375DD9;
-    transform: scale(1.1);
 }
 
 .footer-links li a i:hover {
@@ -1081,7 +1133,7 @@ p {
 
 .footer-links li a i {
     color: #375DD9;
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .gmail {
@@ -1113,7 +1165,7 @@ p {
 }
 
 .brand-a {
-    color: #000;
+    color: var(--color-primary);
     font-weight: 600;
 }
 
@@ -1150,7 +1202,9 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 155px 70px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
 }
 
 .footer-right h2 {
@@ -1164,7 +1218,7 @@ p {
 }
 
 input[type="email"] {
-    /* display: block; */
+    font-size: 18px;
     width: 100%;
     border-radius: 54px;
     padding: 15px 25px;
@@ -1181,15 +1235,18 @@ input[type="email"]::placeholder {
     width: 100%;
     background-color: #375DD9;
     color: #fff;
+    border: none;
+    padding: 15px 0;
 }
 
 .email-btn:hover {
-    background-color: lightblue;
-    border: 1px solid lightblue;
+    background-color: var(--color-white);
+    color: var(--color-primary);
 }
 
-.email-btn img {
+.email-btn i {
     vertical-align: middle;
+    font-size: 16px;
 }
 
 form {
