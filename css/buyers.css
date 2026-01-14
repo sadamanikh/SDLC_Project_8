@@ -1,0 +1,277 @@
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col4 {
+  width: calc(8.33% * 4);
+  padding: 0 15px;
+} */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-3 {
+  width: calc(8.33% * 3);
+  padding: 0 15px;
+}
+
+/* 
+======================
+BUYERS MAIN SEC
+======================
+ */
+.buyers-sec {
+  padding: 50px;
+}
+.buyers-hdr-wrapper {
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.buyers-heading {
+  max-width: 804px;
+  font-size: 64px !important;
+  font-weight: bold !important;
+  color: var(--color-black);
+  line-height: calc(83 / 64);
+  font-family: "DM Sans", sans-serif;
+  margin: auto;
+  text-transform: capitalize;
+}
+.buyers-sec span {
+  color: #375dd9;
+  margin-left: 15px;
+}
+
+.buyers-hdr-pera {
+  max-width: 586px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 15px auto 50px;
+  line-height: calc(26 / 20);
+  color: #535353;
+  text-transform: capitalize;
+}
+
+/* search box */
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 777px;
+  margin: auto;
+}
+.search-box input {
+  width: 100%;
+  height: 60px;
+  padding-left: 65px;
+  border-radius: 10px;
+  border: 0.5px solid #535353;
+  outline: none;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.search-box svg {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* buyers menu */
+.buyers-menu-list {
+  margin: 50px auto 0;
+}
+.buyers-menu-list a {
+  border: 0.5px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--color-black);
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+.last-menu {
+  margin: 0;
+}
+.buyers-menu-list .active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* BUYERS CARD PART */
+.buyers-card-hdr-wrpr {
+  margin-left: auto;
+}
+
+.title-3 {
+  max-width: 331px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: " DM Sans" sans-serif;
+  text-transform: capitalize;
+  line-height: calc(47 / 36);
+  color: var(--color-black);
+  margin-bottom: 15px;
+}
+.buyers-subtitle {
+  max-width: 271px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #535353;
+  line-height: calc(26 / 20);
+  text-transform: capitalize;
+  font-family: " DM Sans" sans-serif;
+}
+/* card card img part */
+.buyer-crad-part {
+  margin-top: 50px;
+}
+.buyers-img-part {
+  margin-top: 50px;
+}
+
+.buyers-card-img {
+  max-width: 387px;
+  position: relative;
+  overflow: hidden;
+}
+.buyers-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+/* desc */
+.buyers-card-descriptions {
+  border: 0.5px solid var(--color-black);
+  border-top: 0;
+  margin: 0;
+  padding: 10px 10px 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+.buyers-property-price {
+  color: var(--color-orange);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: " DM Sans" sans-serif;
+  margin-bottom: 20px;
+}
+
+.buyers-card-txet {
+  max-width: 308px;
+  font-size: 18px;
+  font-family: " DM Sans" sans-serif;
+  color: var(--color-black);
+  line-height: calc(26 / 20);
+  margin-bottom: 20px;
+}
+
+.buyers-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.buyers-location p {
+  font-size: 15px;
+  margin-left: 8px;
+  color: #535353;
+  text-transform: capitalize;
+}
+.buyers-bottom-icons {
+  display: flex;
+  align-items: center;
+}
+.buyers-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.buyers-icons svg {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+}
+
+.buyers-icons span {
+  font-size: 18px;
+  color: var(--color-black);
+  line-height: 1;
+  margin-left: 8px;
+}
+
+/* button */
+.buyers-card-btn {
+  display: block;
+  width: fit-content;
+  background: var(--color-primary);
+  padding: 10px 60px;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+
+.buyers-card-btn a {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+.buyers-card-btn svg {
+  margin-left: 20px;
+}
+
+/* wish icon */
+.wishlist-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 45px;
+  height: 45px;
+  background: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.wishlist-icon svg {
+  font-size: 18px;
+  color: var(--color-black);
+}
+
+/* villa right*/
+.property-villa {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--color-orange);
+  color: var(--color-white) !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  z-index: 2;
+}
+.buyers-card{
+    margin-bottom: 30px;
+}
