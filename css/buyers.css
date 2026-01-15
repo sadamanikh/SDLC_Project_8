@@ -6,21 +6,13 @@
   --color-border: #bdbdbd;
   --color-orange: #ff6600;
 }
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-}
-.col4 {
-  width: calc(8.33% * 4);
-  padding: 0 15px;
-} */
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
-.col-3 {
+.col-33 {
   width: calc(8.33% * 3);
   padding: 0 15px;
 }
