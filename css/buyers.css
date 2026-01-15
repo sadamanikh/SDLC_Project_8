@@ -167,7 +167,7 @@ BUYERS MAIN SEC
 
 /* desc */
 .buyers-card-descriptions {
-  border: 0.5px solid var(--color-black);
+  border: 0.5px solid #535353;
   border-top: 0;
   margin: 0;
   padding: 10px 10px 35px; 
@@ -314,6 +314,8 @@ BUYERS MAIN SEC
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
 }
+
+
 
 /*
 ========================
