@@ -132,19 +132,30 @@ BUYERS MAIN SEC
   text-transform: capitalize;
   font-family: " DM Sans" sans-serif;
 }
+
+
 /* card card img part */
-.buyer-crad-part {
-  margin-top: 50px;
-}
-.buyers-img-part {
-  margin-top: 50px;
+.buyers-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 40px;
 }
 
+.buyers-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* image */
 .buyers-card-img {
   max-width: 387px;
+  height: 230px;              
   position: relative;
   overflow: hidden;
 }
+
 .buyers-card-img img {
   width: 100%;
   height: 100%;
@@ -158,25 +169,29 @@ BUYERS MAIN SEC
   border: 0.5px solid var(--color-black);
   border-top: 0;
   margin: 0;
-  padding: 10px 10px 15px;
+  padding: 10px 10px 35px; 
   border-radius: 0 0 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .buyers-property-price {
   color: var(--color-orange);
   font-size: 30px;
   font-weight: bold;
-  font-family: " DM Sans" sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin-bottom: 20px;
 }
 
 .buyers-card-txet {
   max-width: 308px;
   font-size: 18px;
-  font-family: " DM Sans" sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: var(--color-black);
   line-height: calc(26 / 20);
   margin-bottom: 20px;
+  min-height: 52px;
 }
 
 .buyers-location {
@@ -184,16 +199,19 @@ BUYERS MAIN SEC
   align-items: center;
   margin-bottom: 20px;
 }
+
 .buyers-location p {
   font-size: 15px;
   margin-left: 8px;
   color: #535353;
   text-transform: capitalize;
 }
+
 .buyers-bottom-icons {
   display: flex;
   align-items: center;
 }
+
 .buyers-icons {
   display: flex;
   align-items: center;
@@ -221,7 +239,10 @@ BUYERS MAIN SEC
   background: var(--color-primary);
   padding: 10px 60px;
   border-radius: 10px;
-  margin: 30px auto;
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buyers-card-btn a {
@@ -258,7 +279,7 @@ BUYERS MAIN SEC
   color: var(--color-black);
 }
 
-/* villa right*/
+/* villa right */
 .property-villa {
   position: absolute;
   top: 15px;
@@ -271,7 +292,4 @@ BUYERS MAIN SEC
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
   z-index: 2;
-}
-.buyers-card{
-    margin-bottom: 30px;
 }
