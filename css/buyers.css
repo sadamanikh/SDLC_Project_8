@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-33 {
+  width: calc(8.33% * 3);
+  padding: 0 15px;
+}
+
+/* 
+======================
+BUYERS MAIN SEC
+======================
+ */
+.buyers-sec {
+  padding: 50px;
+}
+.buyers-img-part{
+  margin-top: 50px;
+}
+.buyers-hdr-wrapper {
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.buyers-heading {
+  max-width: 804px;
+  font-size: 64px !important;
+  font-weight: bold !important;
+  color: var(--color-black);
+  line-height: calc(83 / 64);
+  font-family: "DM Sans", sans-serif;
+  margin: auto;
+  text-transform: capitalize;
+}
+.buyers-sec span {
+  color: #375dd9;
+  margin-left: 15px;
+}
+
+.buyers-hdr-pera {
+  max-width: 586px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 15px auto 50px;
+  line-height: calc(26 / 20);
+  color: #535353;
+  text-transform: capitalize;
+}
+
+/* search box */
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 777px;
+  margin: auto;
+}
+.search-box input {
+  width: 100%;
+  height: 60px;
+  padding-left: 65px;
+  border-radius: 10px;
+  border: 0.5px solid #535353;
+  outline: none;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.search-box svg {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* buyers menu */
+.buyers-menu-list {
+  margin: 50px auto 0;
+}
+.buyers-menu-list a {
+  border: 0.5px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--color-black);
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+.last-menu {
+  margin: 0;
+}
+.buyers-menu-list .active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* BUYERS CARD PART */
+.buyers-card-hdr-wrpr {
+  margin-left: auto;
+}
+
+.title-3 {
+  max-width: 331px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: " DM Sans" sans-serif;
+  text-transform: capitalize;
+  line-height: calc(47 / 36);
+  color: var(--color-black);
+  margin-bottom: 15px;
+}
+.buyers-subtitle {
+  max-width: 271px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #535353;
+  line-height: calc(26 / 20);
+  text-transform: capitalize;
+  font-family: " DM Sans" sans-serif;
+}
+
+
+/* card card img part */
+.buyers-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.buyers-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* image */
+.buyers-card-img {
+  max-width: 387px;
+  height: 230px;              
+  position: relative;
+  overflow: hidden;
+}
+
+.buyers-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+/* desc */
+.buyers-card-descriptions {
+  border: 0.5px solid #535353;
+  border-top: 0;
+  margin: 0;
+  padding: 10px 10px 35px; 
+  border-radius: 0 0 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.buyers-property-price {
+  color: var(--color-orange);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.buyers-card-txet {
+  max-width: 308px;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  color: var(--color-black);
+  line-height: calc(26 / 20);
+  margin-bottom: 20px;
+  min-height: 52px;
+}
+
+.buyers-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buyers-location p {
+  font-size: 15px;
+  margin-left: 8px;
+  color: #535353;
+  text-transform: capitalize;
+}
+
+.buyers-bottom-icons {
+  display: flex;
+  align-items: center;
+}
+
+.buyers-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.buyers-icons svg {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+}
+
+.buyers-icons span {
+  font-size: 18px;
+  color: var(--color-black);
+  line-height: 1;
+  margin-left: 8px;
+}
+
+/* button */
+.buyers-card-btn {
+  display: block;
+  width: fit-content;
+  background: var(--color-primary);
+  padding: 10px 60px;
+  border-radius: 10px;
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buyers-card-btn a {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+.buyers-card-btn svg {
+  margin-left: 20px;
+}
+
+/* wish icon */
+.wishlist-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 45px;
+  height: 45px;
+  background: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.wishlist-icon svg {
+  font-size: 18px;
+  color: var(--color-black);
+}
+
+/* villa right */
+.property-villa {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--color-orange);
+  color: var(--color-white) !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+
+/* see more btn */
+.seemore-btn{
+  background: var(--color-primary);
+  padding: 20px 25px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;         
+  margin: 70px auto;          
+}
+
+.seemore-btn a{
+  color: var(--color-white);
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+}
+
+
+
+/*
+========================
+ LOOKING FOR SEC 
+========================
+*/
+.looking-for-sec{
+  padding: 50px 0;
+  background: url("../image/buyers-section/looking-for-bg-img.png") no-repeat center/cover;
+  min-height: 437px;                 
+  align-items: center;  
+  margin-bottom: 50px; 
+  display: flex;   
+  justify-content: center;   
+  align-items: center;     
+}
+
+.looking-for-textcontent{
+  text-align: center;
+ 
+}
+.looking-for-heading{
+  max-width: 630px;
+  color: var(--color-white);
+  font-size: 36px;
+  font-weight: bold;
+   font-family: "Inter", sans-serif;
+   text-transform: capitalize;
+   line-height: calc(44/36);
+    margin: auto;
+  
+}
+.looking-for-pera{
+   max-width: 990px;
+  color: var(--color-white);
+  font-size: 24px;
+   font-family: "Inter", sans-serif;
+   text-transform: capitalize;
+   line-height: calc(29/24);
+    margin: 35px auto ;
+}
+/* btn */
+.looking-for-btn{
+  background: var(--color-white);
+  padding: 20px 25px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+.looking-for-btn a{
+  color: var(--color-primary);
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+}
+
+
+
+
+
