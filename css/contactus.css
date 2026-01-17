@@ -36,8 +36,16 @@
   width: calc(8.33% * 7);
   padding: 0 15px;
 }
+.col8 {
+  width: calc(8.33% * 7);
+  padding: 0 15px;
+}
+.col20{
+  width: 20%;
+  padding: 0 15px;
+}
 
-/*Banner Section*/
+/*Banner Section Start*/
 .contactus-banner-section {
   display: flex;
   align-items: center;
@@ -48,7 +56,9 @@
     center/cover;
   margin-bottom: 50px;
 }
-/*Form Section*/
+/*Banner Section End*/
+
+/*Form Section Start*/
 .contactus-form-section {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -160,6 +170,8 @@
   border-radius: 12px;
   border: none;
 }
+/*Form Section End*/
+
 /*Promotion Section Start*/
 
 .contactus-promotion-section{
@@ -178,3 +190,117 @@
 .img-container>img:hover{
   transform: scale(1.1);
 }
+/*Promotion Section End*/
+
+/*Service Section Start*/
+.contactus-service-section{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /* border-radius: 50%; */
+}
+.service-content{
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  width: 509px;
+  height: 448px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  gap: 0;
+  
+  /* margin: 0 auto; */
+  
+}
+.service-content > p{
+  /* width: 330px;
+  height: 184px; */
+  padding: 85px 89.5px ;
+  font-size: 35px;
+  color: var(--color-white);
+}
+.service-content > a{
+  display: inline-block;
+  flex-direction: row;
+ 
+  /* justify-content: center;
+  align-items: center; */
+}
+.service-btn{
+  margin: 0 118px;
+  margin-bottom: 85px;
+  /* margin-top: 10px; */
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 14.5px 79px 14.5px 40px!important;
+  /* border: 2px solid var(--color-white); */
+  border-radius: 68px;
+  transition: all ease 0.3s;
+}
+.service-btn:hover{
+  border: 2px solid var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.service-btn > span > svg:hover{
+  color: var(--color-white);
+}
+.service-btn  span svg{
+  margin-left: 15px;
+}
+.image-box{
+  width: 1111px;
+  height: 448px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.image-box > img{
+  width: 100%;
+  height: 100%;
+}
+
+/*Review Section End*/
+.contactus-review-section{
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+/* .contactus-review-section  .col20{
+  margin-right: 140px;
+} */
+.review-content{
+  /* width: 200px; */
+  height: 114px;
+  margin-right: 140px;
+  justify-content: space-around;
+  align-items: center;
+  transition: all ease 0.3;
+}
+/* .review-content  span svg{
+  align-items: center;
+  justify-content: center;
+} */
+/* .review-content:hover{
+  transform: scale(1.1);
+} */
+
+/*Review Section End*/
+
+/*App Section Start*/
+.contactus-app-section{
+  margin: 50px 0;
+}
+.left-content{
+  display: flex;
+
+}
+.mobile-image{
+  width: 274px;
+  height: 526px;
+}
+.mobile-image > img{
+  width: 100%;
+  height: 100%;
+}
+
+/*App Section End*/
