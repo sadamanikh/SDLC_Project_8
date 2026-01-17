@@ -532,6 +532,7 @@ p {
 .explore-our-Services-img {
     width: 64px;
     margin-bottom: 31px;
+    display: block;
 }
 
 .explore-our-Services-upper-child {
@@ -546,14 +547,14 @@ p {
 }
 
 .cmn-explore-our-Services {
-    width: calc(33.33% - 88px);
+    width: calc(33.33% - 25px);
     background-color: rgba(55, 93, 217, 0.1);
     border-radius: 50px;
-    padding: 64px 40px 64px 23px;
+    padding: 64px 40px;
 }
 
 .explore-our-Services-content p {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .explore-our-Services-btn {
@@ -567,7 +568,11 @@ p {
     border-top: 1px solid #375DD9;
     width: 92px;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 6px;
+}
+
+.explore-our-Services-btn:hover span {
+    border-color: #555;
 }
 
 .explore-our-Services-btn:hover {
@@ -687,7 +692,6 @@ p {
 .why-icon-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -705,7 +709,6 @@ p {
 .why-left {
     width: 70%;
     padding-right: 150px;
-    text-align: center;
     display: flex;
     align-items: center;
 }
@@ -719,10 +722,13 @@ p {
     overflow: hidden;
 }
 
+.why-right-inner-image img {
+    display: block;
+}
+
 .why-profile-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .why-abobe-tag {
@@ -877,7 +883,7 @@ p {
 /* question sec start */
 
 .sec-heading {
-    width: 26%;
+    width: 23%;
 }
 
 .questions-upper-child h2 {
