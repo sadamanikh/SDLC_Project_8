@@ -79,20 +79,20 @@
 
 .property-price {
     color: #ff6a00;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .property-title {
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .property-location {
     color: #666;
-    font-size: 15px;
+    font-size: 36px;
     margin-bottom: 25px;
 }
 
@@ -119,19 +119,19 @@
 }
 
 .feature-item i {
-    font-size: 20px;
+    font-size: 26px;
     margin-bottom: 6px;
     color: #444;
 }
 
 .feature-item span {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .feature-item small {
     color: #777;
-    font-size: 13px;
+    font-size: 24px;
 }
 
 .property-about h4 {
@@ -274,18 +274,18 @@
 }
 
 .info-box i {
-    font-size: 22px;
+    font-size: 26px;
     color: #3b5ddd;
 }
 
 .info-box small {
-    font-size: 12px;
+    font-size: 22px;
     color: #777;
     display: block;
 }
 
 .info-box strong {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 600;
 }
 
