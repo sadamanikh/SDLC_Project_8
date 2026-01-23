@@ -135,12 +135,12 @@
 }
 
 .property-about h4 {
-    font-size: 20px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .property-about p {
-    font-size: 16px;
+    font-size: 18px;
     color: #666;
     line-height: 1.7;
 }
@@ -151,17 +151,22 @@
     background: #f5f6f8;
     padding: 25px;
     border-radius: 12px;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 .interest-title {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .btn {
     width: 100%;
-    padding: 12px;
-    font-size: 14px;
+    padding: 16px;
+    font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 12px;
@@ -171,12 +176,22 @@
     background: #3b5ddd;
     color: #fff;
     border: none;
+    transition: all .3s ease;
+}
+
+.primary-btn:hover {
+    background: #2747ba;
 }
 
 .outline-btn {
     background: transparent;
     border: 1px solid #3b5ddd;
     color: #3b5ddd;
+    transition: all .3s ease;
+}
+
+.outline-btn:hover {
+    background-color: #aca6a64e;
 }
 
 .agent-box {
@@ -186,6 +201,7 @@
 .agent-title {
     font-weight: 600;
     margin-bottom: 12px;
+    font-size: 20px;
 }
 
 .agent-contact {
@@ -195,7 +211,7 @@
     padding: 10px;
     background: #fff;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 20px;
     color: #333;
     text-decoration: none;
     margin-bottom: 10px;
@@ -203,6 +219,7 @@
 
 .agent-contact i {
     color: #3b5ddd;
+    font-size: 22px;
 }
 
 .agent-note {
@@ -211,6 +228,7 @@
     color: #888;
     margin-top: 10px;
 }
+
 .property-extra {
     padding: 60px 0;
 }
@@ -227,7 +245,7 @@
 }
 
 .key-features h2,
-.property-info h3{
+.property-info h3 {
     margin-bottom: 50px;
 }
 
@@ -306,7 +324,7 @@
 
 .map-box {
     width: 100%;
-    height: 577px;
+    height: 622px;
     border-radius: 14px;
     overflow: hidden;
 }
