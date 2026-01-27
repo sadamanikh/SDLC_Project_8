@@ -142,8 +142,8 @@ label {
 
 .otp-btn {
     position: absolute;
-    top: 50%;
-    right: 3%;
+    top: 31%;
+    right: 0;
     transform: translateY(-50%);
     border: none;
     background: transparent;
