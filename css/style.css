@@ -170,7 +170,7 @@ p {
     font-weight: 500;
     padding: 10px 20px;
     border-radius: 40px;
-    transform: all .3s ease;
+    transition: all .3s ease;
 }
 
 .nav-links li a:hover {
@@ -556,10 +556,15 @@ p {
     margin-bottom: 25px;
 }
 
+.explore-our-Services-content h3 {
+    color: var(--color-black);
+}
+
 .explore-our-Services-btn {
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .explore-our-Services-btn span {
