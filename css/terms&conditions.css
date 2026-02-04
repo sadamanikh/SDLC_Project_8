@@ -1,0 +1,29 @@
+
+.policy-section h2 {
+    font-weight: 600;
+    margin: 35px 0 12px;
+    color: #111;
+}
+
+.policy-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 14px;
+}
+
+.banner-sec {
+    background: url(../image/terms&conditions/Frame\ 1261153530\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-sec h1 {
+    color: white;
+    text-transform: capitalize;
+    
+}

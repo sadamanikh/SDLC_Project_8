@@ -62,12 +62,15 @@
             <div class="container">
                 <div class="sign-up-child">
                     <div class="sign-up-left">
-                        <div class="sign-up-image">
+                        <div class="sign-up-image fade">
                             <img src="./image/sign-up-page-images/sign-up-left-img.png" alt="">
+                            <img src="./image/Home-page-images/banner-img-3.jpg" alt="">
+                            <img src="./image/Home-page-images/banner-img-5.jpg" alt="">
+                            <img src="./image/Home-page-images/banner-img-6.jpg" alt="">
                         </div>
                         <div class="sign-up-btn-wrapper">
-                            <div class="sign-swipe-btn cmn-btn"><i class="fa-solid fa-arrow-left"></i></div>
-                            <div class="sign-swipe-btn cmn-btn"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="sign-swipe-btn-left cmn-btn"><i class="fa-solid fa-arrow-left"></i></div>
+                            <div class="sign-swipe-btn-right cmn-btn"><i class="fa-solid fa-arrow-right"></i></div>
                         </div>
                     </div>
                     <div class="sign-up-right">
@@ -82,13 +85,13 @@
                                     <input type="text" id="name-input" placeholder="">
                                     <label for="name-input" class="label-text">Your Name</label>
                                 </div>
-                                    <div class="input-box">
-                                        <div class="form-grp">
-                                            <input type="email" id="email-input" placeholder="">
-                                            <label for="email-input">Enter email address</label>
-                                            <button class="otp-btn" type="button">Get OTP</button>
-                                        </div>
+                                <div class="input-box">
+                                    <div class="form-grp">
+                                        <input type="email" id="email-input" placeholder="">
+                                        <label for="email-input">Enter email address</label>
+                                        <button class="otp-btn" type="button">Get OTP</button>
                                     </div>
+                                </div>
                                 <div class="form-grp">
                                     <input type="password" id="password" placeholder="">
                                     <label for="password" class="label-text">password</label>
@@ -98,7 +101,7 @@
                                     <label for="phone-number" class="label-text">phone number</label>
                                 </div>
                                 <div class="form-grp">
-                                    <input type="tel" name="otp" placeholder="">
+                                    <input type="tel" id="otp" placeholder="">
                                     <label for="otp" class="label-text">OTP</label>
                                 </div>
                                 <!-- create acc btn -->
@@ -192,6 +195,28 @@
     </footer>
     <!-- footer sec end -->
 
+
+
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.fade').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                arrows: true,
+                prevArrow: $('.sign-swipe-btn-left'),
+                nextArrow: $('.sign-swipe-btn-right')
+            });
+        });
+    </script>
 
 </body>
 

@@ -33,14 +33,6 @@
   width: calc(8.33% * 4);
   padding: 0 30px;
 }
-<<<<<<< HEAD
-.col40 {
-  width: 40%;
-  padding: 0 15px;
-}
-.col60 {
-  width: 60%;
-=======
 
 .col5 {
   width: calc(8.33% * 5);
@@ -49,7 +41,6 @@
 
 .col7 {
   width: calc(8.33% * 7);
->>>>>>> 97a6ab369b01ab04e7ead7e0c03e6d194a9cd8d4
   padding: 0 15px;
 }
 
@@ -105,27 +96,17 @@
   align-items: flex-start;
 }
 
-<<<<<<< HEAD
-
-
-.col60  h2 {
-=======
 .col7 {
   flex: 2;
 }
 
 .col7 h2 {
->>>>>>> 97a6ab369b01ab04e7ead7e0c03e6d194a9cd8d4
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-<<<<<<< HEAD
-.col60 .subheading {
-=======
 .col7 .subheading {
->>>>>>> 97a6ab369b01ab04e7ead7e0c03e6d194a9cd8d4
   font-size: 15px;
   color: #7a7a7a;
   margin-bottom: 24px;
@@ -330,17 +311,10 @@
 .service-btn span svg {
   margin-left: 15px;
 }
-<<<<<<< HEAD
-.image-box{
-  width: 100%;
-  he
-  /* height: 448px; */
-=======
 
 .image-box {
   width: 1111px;
   height: 448px;
->>>>>>> 97a6ab369b01ab04e7ead7e0c03e6d194a9cd8d4
   object-fit: cover;
   border-radius: 50px;
 }
@@ -385,18 +359,153 @@
 
 .left-content {
   display: flex;
+  /* position: relative; */
+  align-items: center;
+  max-width: 992px;
   background: url(../image/contact-us-image/Frame\ 1261153518\ \(1\).png);
-
+  border-radius: 50px;
+}
+.left-content .col4{
+  margin-left:220px;
 }
 
 .mobile-image {
   width: 274px;
   height: 526px;
+  margin-left:100px;
+}
+.mobile-text h4{
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.mobile-text p{
+  margin-bottom: 40px;
 }
 
-.mobile-image>img {
+.mobile-image > img {
+  width: 100%;
+  height: 100%;
+}
+.appstore-image{
+  display: flex;
+}
+.appstore-image .applestore{
+  margin-right: 24px;
+}
+.right-content{
+  background: url(../image/contact-us-image/Frame\ 1261153542.png) no-repeat center/cover;
+  height: 588px;
+  width: 565px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.right-content p{
+  color: var(--color-white);
+  text-align: left;
+  font-size: 35px;
+  margin: 30px 327px 0px 35px;
+}
+.right-content a{
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-btn {
+  width: 194px;
+  height: 58px;
+  padding: 14.5px 69px 14.5px 30px;
+  background: #ffffff 80%;
+  color: black;
+  border:none;
+  margin-left: 35px;
+  margin-top:99px;
+}
+/*App Section End*/
+/*Club Section Start*/
+.contactus-club-section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.club-content-banner{
+  position: relative;
+  width: 1620px;
+  height: 593px;
+  background: url(../image/contact-us-image/Frame\ 1261153518.png) no-repeat;
+  border-radius: 50px;
+}
+.club-content{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  height: 259px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  /* background-color: var(--color-white); */
+  border-radius: 50px;
+  left: 45px;
+  bottom: 50px;
+}
+.club-content p{
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 22px;
+}
+.club-review{
+  display: flex;
+  align-items: center;
+  /*justify-content: center;   */
+  
+  height: 38px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.club-image{
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+}
+.club-image > img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-white);
+  border-radius: 100%;
+}
+.club-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.club-text p{
+  font-size: 17px;
+ 
+}
+.review{
+  width: 81px;
+  height: 13px;
+}
+.review > img{
   width: 100%;
   height: 100%;
 }
 
-/*App Section End*/
+/*Club Section End*/
+/*Question Section Start*/
+.question-section{
+  display: flex;
+  margin: 50px 0;
+}
+.question-section p{
+  color: black;
+  display: flex;
+  margin: 0 auto;
+}
+/*Question Section End*/

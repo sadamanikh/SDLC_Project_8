@@ -44,7 +44,7 @@ main {
 .sign-up-btn-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: -60px -10px;
+    margin: -87px -10px;
     background-color: #ffffff;
     position: absolute;
     width: 18%;
@@ -58,9 +58,11 @@ main {
     padding: 0 35px;
 }
 
-.sign-swipe-btn {
+.sign-swipe-btn-left,
+.sign-swipe-btn-right {
     border-radius: 10px;
     padding: 7px 18px 7px 13px;
+    cursor: pointer;
 }
 
 .login-wrapper {
@@ -78,17 +80,13 @@ main {
 }
 
 .sign-up-right form input {
-    padding: 35px 20px;
+    padding: 20px 20px;
     outline: none;
     border: 2px solid #375dd958;
     width: 100%;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     border-radius: 10px;
-}
-
-#email-input {
-    margin-bottom: 0;
 }
 
 .create-btn {
@@ -99,7 +97,7 @@ main {
     font-size: 28px;
     font-weight: 650;
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .create-btn:hover {
@@ -108,7 +106,6 @@ main {
 }
 
 .input-box {
-    margin-bottom: 30px;
     position: relative;
 }
 
@@ -145,8 +142,8 @@ label {
 
 .otp-btn {
     position: absolute;
-    top: 50%;
-    right: 3%;
+    top: 31%;
+    right: 0;
     transform: translateY(-50%);
     border: none;
     background: transparent;

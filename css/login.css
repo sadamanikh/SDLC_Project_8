@@ -1,0 +1,193 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+main {
+    font-family: "Roboto Slab", serif;
+}
+
+/* variable color */
+:root {
+    --color-primary: #375DD9;
+    --color-black: #000000;
+    --color-white: #F5F7FD;
+    --color-light-blue: #DEE4F8;
+    --color-lightest-blue: #E9EDFB;
+}
+
+
+.sign-up-sec {
+    background-color: #fff;
+    padding: 76px 78px;
+}
+
+.sign-up-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -35px;
+}
+
+.sign-up-left {
+    position: relative;
+}
+
+.sign-up-image {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.sign-up-image img {
+    display: block;
+}
+
+.sign-up-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: -87px -10px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 18%;
+    padding: 10px;
+    border-radius: 0 20px 0 0;
+}
+
+.sign-up-left,
+.sign-up-right {
+    width: 50%;
+    padding: 0 35px;
+}
+
+.sign-swipe-btn-left,
+.sign-swipe-btn-right {
+    border-radius: 10px;
+    padding: 7px 18px 7px 13px;
+    cursor: pointer;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.login-wrapper p {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.sign-up-right form input {
+    padding: 20px 20px;
+    outline: none;
+    border: 2px solid #375dd958;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 45px;
+    border-radius: 10px;
+}
+
+.create-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 28px 20px !important;
+    border-radius: 15px;
+    font-size: 28px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.create-btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.input-box {
+    position: relative;
+}
+
+.form-grp {
+    position: relative;
+}
+
+.sign-up-right-inner-text h1 {
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--color-primary);
+    font-family: "Roboto Slab", serif;
+}
+
+label {
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    padding: 0 5px;
+    background-color: #fff;
+    color: #55555597;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+    transform: translateY(0);
+    transition: all .3s ease-out;
+}
+
+.form-grp input:focus+label,
+.form-grp input:not(:placeholder-shown)~label {
+    transform: translateY(-120%);
+}
+
+.otp-btn {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    padding-right: 25px;
+    text-transform: capitalize;
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 10px;
+}
+
+.login-btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+.logo-grp {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-grp img {
+    width: 50px;
+}
+
+.gmail-logo,
+.facebook-logo {
+    padding: 5px 28px;
+    border: 1px solid #375dd958;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.gmail-logo:hover,
+.facebook-logo:hover {
+    background-color: #c5daec;
+}
+
+.gmail-logo {
+    margin-right: 25px;
+}

@@ -4,3 +4,8 @@
 29th Dec 2025 - for buyers page - susanta
 29th Dec 2025 - product details page - Sajid
 29th Dec 2025 - landing page - Sadamanik
+
+
+
+22/01/26 - about us page - Nishat
+22/01/26 - terms & condition & policy - Sajid 
