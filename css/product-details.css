@@ -334,3 +334,209 @@
     height: 100%;
     border: none;
 }
+
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+
+    header,
+    footer {
+        display: none;
+    }
+
+    .banner-btm-img img {
+        max-width: 165px;
+        display: block;
+    }
+
+    .property-price {
+        font-size: 44px;
+    }
+
+    .property-title {
+        font-size: 36px;
+    }
+
+    .property-wrapper {
+
+        gap: 0px;
+
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .agent-contact {
+        font-size: 16px;
+    }
+
+    .property-about h4 {
+        font-size: 36px;
+    }
+
+    .property-details {
+        padding: 50px 0;
+    }
+
+    .property-extra-wrapper {
+        gap: 25px;
+    }
+
+    .map-badge {
+        font-size: 20px;
+    }
+
+    .feature-box {
+        font-size: 18px;
+    }
+
+    .info-box small {
+        font-size: 20px;
+    }
+
+    .info-box strong {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner-btm-img img {
+        max-width: 82px;
+        display: block;
+    }
+
+    .small-img-1 {
+        margin-right: 24px;
+
+    }
+
+    .property-title {
+        font-size: 30px;
+    }
+
+    .property-price {
+        font-size: 40px;
+    }
+
+    .property-left {
+        padding-right: 18px;
+    }
+
+    .property-left {
+        /* flex: 1; */
+        width: 60%;
+        padding-right: 25px;
+    }
+
+    .property-right {
+        width: 40%;
+    }
+
+    .property-about p {
+        font-size: 16px;
+    }
+
+    .property-location {
+        font-size: 24px;
+    }
+
+    .property-extra-left {
+        width: 100%;
+    }
+
+    .property-extra-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .property-extra-left {
+        flex: none;
+    }
+
+    .property-extra-right {
+        width: 100%;
+        padding: 0 70px;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-btm-img img {
+        max-width: 60px;
+    }
+
+    .small-img-1 {
+        margin-right: 10px;
+    }
+
+    .property-price {
+        font-size: 35px;
+    }
+
+    .property-left {
+        /* flex: 1; */
+        width: 100%;
+    }
+
+    .property-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .property-right {
+        width: 100%;
+    }
+
+    .feature-item small {
+        font-size: 16px;
+    }
+
+    .property-extra-right {
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .page-top-part {
+        padding: 28px 0 28px 0;
+    }
+
+    .back-to-listing {
+        font-size: 16px;
+    }
+
+    .property-details {
+        padding: 40px 0;
+    }
+
+    .property-price {
+        font-size: 30px;
+    }
+
+    .property-title {
+        font-size: 22px;
+    }
+
+    .property-location {
+        font-size: 20px;
+    }
+
+    .property-left {
+        padding: 0;
+    }
+
+    .map-box {
+        height: 500px;
+    }
+
+}

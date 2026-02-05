@@ -1323,6 +1323,214 @@ input[type="email"]::placeholder {
     ...
 }
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+/* footer sec end */
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .banner-lower {
+        width: 1239px;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+    }
+
+    .nav {
+        justify-content:
+            start;
+    }
+
+    .left-btn {
+        margin-right: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .footer-left {
+        width: 70%;
+        padding: 50px 47px 36px 0;
+    }
+
+    .footer-right {
+        padding: 0 22px;
+    }
+
+    h3,
+    .heading-3 {
+        font-size: 34px;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .menu-bar i {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .banner-lower {
+        width: 1000px;
+    }
+
+    .room-details {
+        padding: 14px 15px;
+    }
+
+    .cmn-room-details span {
+        font-size: 10px;
+    }
+
+    .cmn-find-property-inner {
+        padding: 0 0 25px 15px;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .banner-lower {
+        width: 805px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 54px;
+    }
+
+    .banner-upper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 156px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .banner-lower {
+        width: 805px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 54px;
+    }
+
+    .banner-upper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 156px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .banner-lower {
+        width: 805px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 54px;
+    }
+
+    .banner-upper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 156px;
+    }
+
+    .banner-lower {
+        width: 680px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 45px;
+    }
+
+    .room-details {
+        display: none;
+    }
+
+    .banner-lower {
+        width: 630px;
+    }
+
+    .banner-bottom-btn {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: var(--color-white);
+    }
+
+    h2,
+    .heading-2 {
+        font-size: 35px;
+    }
+
+    .cmn-featured {
+        width: calc(50% - 30px);
+        margin-bottom: 20px;
+    }
+
+    .our-vision-left,
+    .our-vision-right {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .cmn-explore-our-Services {
+        width: calc(50% - 15px);
+        margin-bottom: 15px;
+    }
+
+    .cmn-explore-our-Services {
+        padding: 40px 30px;
+    }
+
+    .footer-left {
+        padding: 50px 2px 36px 0;
+    }
+
+
+
+=======
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
     .banner-lower {
@@ -1332,4 +1540,5 @@ input[type="email"]::placeholder {
         width: 100%;
         margin-left: -50px;
     }
+>>>>>>> d9ce8fa94f096250d4eb06cb2f5b6f3bcd239fde
 }
