@@ -34,8 +34,8 @@ BUYERS MAIN SEC
 }
 .buyers-heading {
   max-width: 804px;
-  font-size: 64px !important;
-  font-weight: bold !important;
+  font-size: 64px ;
+  font-weight: bold ;
   color: var(--color-black);
   line-height: calc(83 / 64);
   font-family: "DM Sans", sans-serif;
@@ -98,15 +98,21 @@ BUYERS MAIN SEC
 /* buyers menu */
 .buyers-menu-list {
   margin: 50px auto 0;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 .buyers-menu-list a {
   border: 0.5px solid var(--color-border);
   padding: 10px 20px;
   border-radius: 50px;
   color: var(--color-black);
-  margin-right: 10px;
+   margin: 5px 10px 5px 0; 
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
+   white-space: nowrap;
+
 }
 .last-menu {
   margin: 0;
@@ -175,7 +181,6 @@ BUYERS MAIN SEC
 
 /* descriptions */
 .buyers-card-descriptions {
-  /* border: 0.5px solid #535353; */
   padding: 20px 30px 40px;
   background: var(--color-white);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -311,40 +316,124 @@ BUYERS MAIN SEC
   text-transform: capitalize;
 }
 
-/* see more btn */
-/* .seemore-btn {
-  background: var(--color-primary);
-  padding: 20px 25px;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  margin: 0 auto;
+/* 
+===========================
+BUYERS MAIN SEC RESPONSIVE
+===========================
+ */
+
+  /* -------1200------- */
+ @media screen and (max-width:1200px){
+  .col-33{
+    width: 50%;
+  }
+
+ }
+ /* -------992------- */
+ @media screen and (max-width:992px){
+  .buyers-heading{
+    font-size: 48px;
+  }
+
+    .search-box {
+    max-width: 90%;
+    padding: 16px 8px;
+  }
+
+  .search-box input {
+    font-size: 15px;
+  }
+
+  /* buyers menu*/
+   .buyers-menu-list a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+/* card */
+.col-33{
+  width: 50%;
 }
 
-.seemore-btn a {
-  color: var(--color-white);
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
-  text-transform: capitalize;
-} */
-.cmn-btn {
-  display: inline-block;
-  padding: 10px 26px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #375dd9;
-  background-color: #fff;
-  border: 2px solid #375dd9;
-  border-radius: 100px;
-  text-transform: capitalize;
-  transition: all 0.3s ease;
-}
+ }
 
-.cmn-btn:hover {
-  background-color: #375dd9;
-  color: #fff;
+/* --------768-------- */
+  @media screen and (max-width:768px){
+  .buyers-heading{
+    font-size: 36px;
+  }
+  .buyers-hdr-pera{
+    font-size: 18px;
+  }
+  
+  /* card */
+
+  .col-33{
+  width: 100%;
 }
+  
+ }
+
+
+ /* --------576-------- */
+  @media screen and (max-width:576px){
+  .buyers-heading{
+    font-size: 28px;
+  }
+   .buyers-hdr-pera{
+    font-size: 14px;
+  }
+
+    .search-box {
+    max-width: 100%;
+    padding: 12px 6px;
+    border-radius: 8px;
+  }
+
+  .search-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .search-box input::placeholder {
+    font-size: 13px;
+  }
+
+
+  /* buyers menu */
+    .buyers-menu-list {
+    flex-wrap: wrap;        
+    overflow-x: hidden;    
+    justify-content: center;
+  }
+
+  .buyers-menu-list a {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  
+ }
+
+
+  /* --------320-------- */
+  @media screen and (max-width:320px){
+  .buyers-heading{
+    font-size: 22px;
+  }
+
+  /* buyers menu */
+  .buyers-menu-list a {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-right: 6px;
+  }
+  
+ }
 
 /*
 ========================
@@ -355,7 +444,6 @@ BUYERS MAIN SEC
   padding: 50px 0;
   background: url("../image/buyers-section/looking-for-bg-img.png") no-repeat
     center/cover;
-  /* min-height: 437px; */
   align-items: center;
   margin-bottom: 50px;
   display: flex;
