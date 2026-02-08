@@ -87,38 +87,113 @@
 
     <!-- main start -->
     <main>
-      <!-- finance hero section -->
+      <!-- FINACE HERO SECTION -->
       <section class="finance-hero-sec">
         <div class="container">
           <h1 class="heading-1">Finance</h1>
         </div>
       </section>
 
-      <!-- loan details section -->
+      <!-- LOAN DETAILS SECTION -->
       <section class="loan-details-section">
         <div class="container">
           <div class="loan-details-wrapper">
             <div class="loan-details-img">
               <img src="./image/finance-page-img/loan-details-img.png" alt="" />
+
+              <div class="right-loan-details-card">
+                <h3 class="heading-3">enter the loan details</h3>
+
+                <form action="">
+                  <!-- property amount -->
+                  <div class="form-group custom-dropdown">
+                    <div class="dropdown-head">
+                      <span class="selected-text">select property amount</span>
+
+                      <!-- arrow -->
+                      <svg
+                        width="20"
+                        height="12"
+                        viewBox="0 0 20 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.5"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.88906 11.5229L0 2.30425L2.22187 0L10 8.0665L17.7781 0L20 2.30425L11.1109 11.5229C10.8163 11.8284 10.4167 12 10 12C9.58334 12 9.18373 11.8284 8.88906 11.5229Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown-list">
+                      <li>upto 15 lacs</li>
+                      <li>15-25 lacs</li>
+                      <li>60-75 lacs</li>
+                      <li>75 lacs+</li>
+                    </ul>
+                  </div>
+
+                  <!-- select city -->
+                  <div class="form-group custom-dropdown">
+                    <div class="dropdown-head">
+                      <span class="selected-text">Select city</span>
+                      <!-- arrow -->
+                      <svg
+                        width="20"
+                        height="12"
+                        viewBox="0 0 20 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.5"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.88906 11.5229L0 2.30425L2.22187 0L10 8.0665L17.7781 0L20 2.30425L11.1109 11.5229C10.8163 11.8284 10.4167 12 10 12C9.58334 12 9.18373 11.8284 8.88906 11.5229Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown-list">
+                      <li>Mumbai</li>
+                      <li>Bengaluru</li>
+                      <li>Chennai</li>
+                      <li>Delhi</li>
+                      <li>Kolkata</li>
+                      <li>Ahmedabad</li>
+                    </ul>
+                  </div>
+
+                  <!-- pin code -->
+                  <div class="form-group">
+                    <input type="text" placeholder="Pin Code" />
+                  </div>
+
+                  <!-- property identified -->
+                  <div class="form-group property-identyfy">
+                    <label>property identified</label>
+                    <div class="radio-btns">
+                      <button type="button" class="radio-btn">Yes</button>
+                      <button type="button" class="radio-btn">No</button>
+                    </div>
+                  </div>
+
+                  <!-- next btn -->
+                  <div class="nextbtn">
+                    <a href="">Next</a>
+                  </div>
+                </form>
+              </div>
             </div>
 
-            <div class="right-loan-details-card">
-                <h2 class="heading-2">enter the loan details</h2>
-            <form class="loan-details-form" action="">
-                <div>
-                    
-                </div>
-                
-            </form>
-             
-
-
-            </div>
+            <!-- card end -->
           </div>
         </div>
       </section>
-
-
     </main>
 
     <!-- main end -->
@@ -241,7 +316,31 @@
           nextArrow: $(".next-btn"),
         });
       });
+
+      // FINANCE PAGE LOAN DETAILS CARD DROP DOWN JS START //
+      document.addEventListener("click", (e) => {
+        const d = e.target.closest(".custom-dropdown");
+        const h = e.target.closest(".dropdown-head");
+        const i = e.target.closest(".dropdown-list li");
+
+        if (!d) {
+          document
+            .querySelectorAll(".custom-dropdown")
+            .forEach((x) => x.classList.remove("open"));
+          return;
+        }
+
+        if (i) {
+          d.querySelector(".selected-text").textContent = i.textContent;
+          d.classList.remove("open");
+          return;
+        }
+
+        if (h) d.classList.toggle("open");
+      });
+      // FINANCE PAGE LOAN DETAILS CARD DROP DOWN JS END //
     </script>
+
 
     <!-- leatest blog CDN AND JS -->
     <!-- Swiper JS -->
