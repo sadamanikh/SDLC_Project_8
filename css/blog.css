@@ -8,14 +8,14 @@
     /* width: calc(8.33% * 8); */
     width: 80%;
     padding: 0 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .col-6 {
     /* width: calc(8.33% * 6); */
     width: 60%;
     padding: 0 15px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .col-50 {
@@ -67,21 +67,26 @@ Agent Intelligence Blog Section
 }
 
 .img-box {
-    /* max-width: 1024px; */
+    max-width: 1024px;
     width: 100%;
+    height: 500px;
 }
 
 .img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    border-radius: 2.604vw;
 }
 
 .agent-intelligence-text {
     padding: 34px 20px 36px 34px;
     border-radius: 20px 20px 20px 0;
     background: #FFFFFF;
+    max-width: 100%;
+    width: 812px;
+    height: 424px;
 }
 
 .sub-head {
@@ -168,7 +173,8 @@ Best Real Estate Website Section
 
 .best-real-state-wrapper {
     /* min-height: 502px; */
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    border-radius: 2.604vw;
     background: url('../image/blog-page-img/Best-real-estate-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -257,6 +263,10 @@ Latest Blogs Section
 
 .card-content {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
 }
 
 .card-content .heading-3 {
@@ -275,11 +285,21 @@ Latest Blogs Section
 
 .blog-card {
     overflow: hidden;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .blog-card:hover .blog-img img {
     transform: scale(1.2);
+}
+
+.latest-blogs-sec .read-more-btn {
+    margin-top: auto;
+}
+
+.latest-blog-col {
+    margin-bottom: 50px;
 }
 
 
@@ -300,7 +320,8 @@ Get Expert Guidance Section
     padding: 50px 98px;
     background: rgba(217, 217, 217, 7%);
     backdrop-filter: blur(50px);
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    border-radius: 2.604vw;
 }
 
 .expert-guidence-wrapper .heading-2 {
@@ -309,6 +330,7 @@ Get Expert Guidance Section
     color: #ffff;
     text-align: center;
     line-height: 79.872px;
+    margin-bottom: 0;
 }
 
 .expert-guidence-wrapper .heading-2 a {
@@ -332,7 +354,6 @@ Instagram Post Section
 */
 .insta-post-sec {
     padding: 60px 0;
-    margin: 50px 0;
 }
 
 .insta-post-sec .heading-2 {
@@ -416,8 +437,22 @@ Instagram Post Section
 Media Query
 ######################################
 */
+@media screen and (max-width: 1300px) {
 
-@media screen and (max-width: 1450px) {}
+    /* Instagram Post Section */
+    .insta-post-sec .col-16 {
+        width: 30%;
+    }
+
+    .insta-post-sec .insta-story {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .insta-post-row {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -430,8 +465,168 @@ Media Query
         font-size: 50px;
     }
 
+    /* Agent Intelligence Blog Section */
+    .agent-intelligence-text .heading-2 {
+        font-size: 28px;
+    }
+
+    .agent-intelligence-text p {
+        font-size: 18px;
+    }
+
+    /* Best Real Estate Website Section */
+    .best-real-state-wrapper {
+        padding: 74px 50px 20px;
+    }
+
+    /* Latest Blogs Section */
+    .latest-blogs-sec .heading-2 {
+        font-size: 48px;
+        margin-bottom: 33px;
+    }
+
+    /* Instagram Post Section */
+    .insta-post-sec .heading-2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
 }
 
+@media screen and (max-width: 992px) {
+
+    /* Agent Intelligence Blog Section */
+    .agent-intelligence-row {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .agent-intelligence-sec .col-8,
+    .agent-intelligence-sec .col-6 {
+        width: 100%;
+    }
+
+    .float-box-1 {
+        margin-left: 0;
+    }
+
+    .float-box-2 {
+        margin-right: 0px;
+    }
+
+    .agent-intelligence-sec .img-box {
+        height: 100%;
+    }
+
+
+    .agent-intelligence-text {
+        max-width: 100%;
+        height: auto;
+        padding: 20px 25px;
+    }
+
+    /* Best Real Estate Website Section */
+    .right-content .heading-2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* Latest Blogs Section */
+    .latest-blogs-sec .col-25 {
+        width: 50%;
+    }
+
+    .latest-blogs-sec .blog-img {
+        max-width: 100%;
+    }
+
+    /* Get Expert Guidance Section */
+    .expert-guidence-wrapper .heading-2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .expert-guidence-wrapper .heading-2 a i {
+        font-size: 22px;
+    }
+
+    .expert-guidence-wrapper {
+        padding: 50px 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Best Real Estate Website Section */
+    .best-real-state-wrapper {
+        padding: 74px 15px 20px;
+    }
+
+    .best-real-state-row {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .best-real-state-row .col-50 {
+        width: 100%;
+    }
+
+    .best-real-state-row .right-content {
+        text-align: center;
+    }
+
+    .best-real-state-row .right-content p {
+        margin: 0 auto;
+    }
+
+    .best-real-state-wrapper .read-more-btn {
+        margin-top: 15px;
+    }
+
+    .best-real-state-row .left-img {
+        margin: 0 auto;
+    }
+
+    /* Latest Blogs Section */
+    .sub-head {
+        font-size: 12px;
+    }
+
+    .card-content .heading-3 {
+        font-size: 18px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+    }
+
+    .read-more-btn {
+        font-size: 16px;
+    }
+
+    /* Get Expert Guidance Section */
+    .expert-guidence-wrapper {
+        padding: 50px 40px;
+    }
+
+    .expert-guidence-wrapper .heading-2 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .expert-guidence-wrapper .heading-2 a i {
+        font-size: 18px;
+    }
+
+    .expert-guidence-sec {
+        padding: 70px 0;
+    }
+
+    /* Instagram Post Section */
+    .insta-post-sec .col-16 {
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 576px) {
 
@@ -443,13 +638,139 @@ Media Query
     .blog-hero-sec .heading-1 {
         font-size: 40px;
     }
-}
 
+    /* Agent Intelligence Blog Section */
+    .agent-intelligence-text {
+        max-width: 100%;
+        padding: 20px 0px;
+    }
+
+    .agent-intelligence-text .heading-2 {
+        font-size: 22px;
+    }
+
+    .agent-intelligence-text p {
+        font-size: 14px;
+    }
+
+    .agent-intelligence-sec .sub-head {
+        font-size: 12px;
+    }
+
+    .agent-intelligence-sec .read-more-btn {
+        font-size: 14px;
+    }
+
+    /* Best Real Estate Website Section */
+    .best-real-state-sec {
+        padding-top: 0;
+    }
+
+    /* Latest Blogs Section */
+    .latest-blogs-sec {
+        padding: 30px 0px;
+    }
+
+    .latest-blogs-sec .col-25 {
+        width: 100%;
+    }
+
+    .latest-blogs-sec .heading-2 {
+        font-size: 38px;
+    }
+
+    .latest-blogs-sec .blog-img {
+        border-radius: 30px;
+    }
+
+    /* Get Expert Guidance Section */
+    .expert-guidence-wrapper .heading-2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .expert-guidence-wrapper .heading-2 a i {
+        font-size: 15px;
+    }
+
+    .expert-guidence-wrapper {
+        padding: 30px 12px;
+    }
+
+    /* Instagram Post Section */
+    .insta-post-sec .heading-2 {
+        font-size: 38px;
+    }
+}
 
 @media screen and (max-width: 480px) {
 
     /* Blog Hero Section */
     .blog-hero-sec {
         padding: 50px 0;
+    }
+
+    /* Best Real Estate Website Section */
+    .right-content .heading-2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .right-content p {
+        font-size: 16px;
+    }
+
+    .best-real-state-wrapper .read-more-btn {
+        font-size: 14px;
+    }
+
+    /* Instagram Post Section */
+    .insta-post-sec .col-16 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    /* Agent Intelligence Blog Section */
+    .agent-intelligence-text .heading-2 {
+        font-size: 18px;
+    }
+
+    .agent-intelligence-text p {
+        font-size: 12px;
+    }
+
+    .agent-intelligence-sec .read-more-btn {
+        font-size: 12px;
+    }
+
+    .bottom-row {
+        margin-top: 30px;
+    }
+
+    /* Latest Blogs Section */
+    .latest-blogs-sec .heading-2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* Get Expert Guidance Section */
+    .expert-guidence-sec {
+        padding: 50px 0;
+    }
+
+    .expert-guidence-wrapper .heading-2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .expert-guidence-wrapper {
+        padding: 25px 26px;
+    }
+
+    /* Instagram Post Section */
+    .insta-post-sec .heading-2 {
+        font-size: 30px;
     }
 }
