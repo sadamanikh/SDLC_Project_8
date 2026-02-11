@@ -1,0 +1,42 @@
+/* 
+==========================
+FINACE HERO SECTION
+==========================
+ */
+.finance-hero-sec {
+  background: url("../image/finance-page-img/finance-hero-bg.png") no-repeat
+    center/cover;
+  padding: 165px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.finance-hero-sec .heading-1 {
+  color: white;
+  margin: 0;
+}
+
+/* 
+==========================
+LOAN DETAILS SECTION
+==========================
+*/
+.loan-details-section{
+    padding: 100px 0;
+}
+.loan-details-img{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.loan-details-img img{
+  width: 100%;
+  height: 500px;      
+  object-fit: cover;  
+  display: block;
+  border-radius: 15px;
+}
+
