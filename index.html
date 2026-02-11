@@ -37,12 +37,15 @@
                 <ul class="nav-links">
                     <li><a href="./index.html" class="active-page-select">home</a></li>
                     <li><a href="./about_us.html">about us</a></li>
-                    <!-- <li><a href="#exampless">about us</a></li> -->
+                    <!-- <li><a href="#exampless">about us</a></li>
                     <li><a href="./for-buyers.html">for buyers <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./services.html">services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./news-&-Guide.html">news & Guide</a></li>
+                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li> -->
+                    <li><a href="./services.html">our services <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./services.html">Contact us </a></li>
+                    <li><a href="./services.html">properties </a></li>
+                    <!-- <li><a href="./services.html">blogs <i class="fa-solid fa-angle-down"></i></a></li> -->
+                    <!-- <li><a href="./news-&-Guide.html">news & Guide</a></li> -->
                 </ul>
                 <div class="nav-right">
                     <div class="nav-right-2">
@@ -51,9 +54,9 @@
                     </div>
                 </div>
                 <!-- menu-bar -->
-                 <div class="menu-bar">
+                <div class="menu-bar">
                     <i class="fa-solid fa-bars"></i>
-                 </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -281,8 +284,8 @@
                         </div>
                     </a>
                     <!-- cmn-explore-our-Services-3 -->
-                     <a href="#" class="cmn-explore-our-Services">
-                         <div class="explore-our-Services-img">
+                    <a href="#" class="cmn-explore-our-Services">
+                        <div class="explore-our-Services-img">
                             <img src="./image/Home-page-images/explore-our-Services-img-3.png" alt="">
                         </div>
                         <div class="explore-our-Services-content">
@@ -290,7 +293,7 @@
                             <p>search verified rental properties and find a home that fits your lifestyle and budget</p>
                             <button class="explore-our-Services-btn cmn-btn">learn more<span></span></button>
                         </div>
-                     </a>
+                    </a>
                 </div>
             </div>
         </section>
@@ -845,20 +848,29 @@
                 slidesToShow: 5,
                 arrows: true,
                 prevArrow: $('.prev-btn'),
-                nextArrow: $('.next-btn')
+                nextArrow: $('.next-btn'),
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3
+                        },
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
         });
     </script>
-
-
-
 
     <!-- leatest blog CDN AND JS -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
         var swiper = new Swiper('.swiper', {
             slidesPerView: 3,
             direction: getDirection(),
@@ -879,7 +891,42 @@
 
             return direction;
         }
+    </script> -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            direction: getDirection(),
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                575: {
+                    slidesPerView: 2
+                },
+                793: {
+                    slidesPerView: 3
+                },
+                
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next-own',
+                prevEl: '.swiper-button-prev-own',
+            },
+
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            return window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+        }
     </script>
+
 
 </body>
 
