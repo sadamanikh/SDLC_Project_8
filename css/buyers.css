@@ -360,11 +360,27 @@ BUYERS MAIN SEC RESPONSIVE
     padding: 8px 16px;
   }
 
-  /* card part heading */
+  .buyers-menu-list {
+    display: flex;
+    flex-wrap: nowrap;         
+    overflow-x: auto;           
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .buyers-menu-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buyers-menu-list a {
+    flex-shrink: 0;           
+    margin: 0 10px 0 0;        
+  }
+
+    /* card part heading */
   .buyers-card-hdr-wrpr .title-3 {
     font-size: 30px;
   }
-
   /* crad */
   .col-33 {
     width: 50%;
@@ -445,8 +461,8 @@ BUYERS MAIN SEC RESPONSIVE
 
   /* buyers menu */
   .buyers-menu-list {
-    flex-wrap: wrap;
-    overflow-x: hidden;
+    flex-wrap: nowrap;
+    /* overflow-x: hidden; */
     justify-content: center;
   }
 
@@ -625,6 +641,8 @@ BUYERS MAIN SEC RESPONSIVE
   }
 
 }
+
+
 
 
 

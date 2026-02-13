@@ -1,3 +1,27 @@
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-25 {
+  width: 25%;
+  padding: 0 15px;
+}
+.col-33{
+  width: calc(33.33%);
+  padding: 0 15px;
+}
+.col-50{
+  width: calc(50%);
+  padding: 0 15px;
+}
 /* 
 ==========================
 FINACE HERO SECTION
@@ -22,21 +46,744 @@ FINACE HERO SECTION
 LOAN DETAILS SECTION
 ==========================
 */
+
 .loan-details-section{
-    padding: 100px 0;
+  padding: 100px 0;
 }
-.loan-details-img{
-  width: 80%;
+
+/* wrapper */
+.loan-details-wrapper{
+
   display: flex;
   justify-content: center;
-  margin: auto;
+  align-items: center;
+}
+
+/* image container */
+.loan-details-img{
+  width:75%;
+  margin: 0 auto;
+    position: relative;
 }
 
 .loan-details-img img{
   width: 100%;
-  height: 500px;      
-  object-fit: cover;  
+  height: 500px;
+  object-fit: cover;
   display: block;
   border-radius: 15px;
 }
 
+
+.right-loan-details-card{
+  position: absolute;
+  top: 40%;
+  right: 10%;              
+  transform: translateY(-50%); 
+  width: 420px;
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* heading */
+.right-loan-details-card .heading-3{
+  text-align: center;
+}
+
+/* form group */
+.form-group{
+  position: relative;
+  margin-bottom: 28px;
+}
+
+
+   /* CUSTOM DROPDOWN */
+
+
+.custom-dropdown{
+  position: relative;
+}
+
+/* dropdown head (looks like input) */
+.dropdown-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 15px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #626161;
+ font-family: "DM Sans", sans-serif;}
+
+/* arrow */
+.dropdown-head svg{
+  width: 16px;
+    height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.custom-dropdown.open .dropdown-head svg{
+  transform: rotate(180deg);
+}
+
+/* dropdown list */
+.dropdown-list{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: none;
+  z-index: 10;
+ text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+}
+
+.custom-dropdown.open .dropdown-list{
+  display: block;
+}
+
+/* dropdown items */
+.dropdown-list li{
+  padding: 12px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover{
+  background: var(--color-primary);
+}
+
+/* property identified */
+.property-identyfy label{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+
+/* Pin Code */ 
+.form-group input[type="text"]{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 10px 0;         
+  font-size: 18px;
+  font-family: inherit;
+  color: #000;
+  background: transparent;
+  outline: none;
+}
+
+/* placeholder look */
+.form-group input[type="text"]::placeholder{
+  color: #9a9a9a;
+  font-size: 16px;
+}
+
+.property-identyfy label{
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* .form-group input[type="text"]:focus{
+  border-bottom-color: #3f63e0;
+} */
+
+
+.radio-btns{
+  display: flex;
+}
+
+.radio-btn{
+  padding: 10px 26px;
+  border-radius: 25px;
+  border: 1px solid var(--color-primary);
+  background: #fff;
+  color: var(--color-primary);
+  cursor: pointer;
+  margin-right: 12px;
+  transition: all 0.2s ease;
+  font-size:14px;
+  color: var(--color-black);
+}
+
+.radio-btn:last-child{
+  margin-right: 0;
+}
+
+.radio-btn:focus{
+  background: var(--color-primary);
+  color: #fff;
+  outline: none;
+}
+
+/* next button */
+.nextbtn{
+  margin-top: 30px;
+}
+
+.nextbtn a{
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 30px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 16px;
+  text-decoration: none;
+   font-family: "DM Sans", sans-serif;
+}
+
+
+ /*
+ ======================
+ HOW IT WORKS SECTION
+ ======================
+*/
+.how-it-work-sec{
+  padding: 100px 0;
+}
+.how-it-work-sec .heading-2{
+  color: var(--color-black);
+}
+.how-it-work-sec .heading-2 span{
+  color: var(--color-primary);
+}
+
+.how-itwork-card{
+  background: rgba(55,93,217,10%);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(55, 93, 217, 20%);
+}
+.how-itwork-card svg{
+  width: 50px;
+  height: 50px;
+}
+/* .how-it-work-card-desc{
+  margin-top: 20px;
+} */
+.how-it-work-card-desc .card-heading{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-black);
+  text-transform: capitalize;
+  line-height: calc(31/24);
+  margin: 20px 0 16px 0;
+  font-family: "DM Sans", sans-serif;
+}
+ .how-it-work-card-pera{
+  font-size: 18px;
+  font-weight: 600px;
+  list-style: calc(23/18);
+  color: var(--color-black);
+  text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 20px 5px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-white);
+  width: 100%;
+  max-width: 777px;
+  margin: 0 auto;
+}
+
+/* search icon */
+.search-icon svg {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* input text */
+.search-box input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  flex: 1;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.search-box input::placeholder {
+  color: #535353;
+}
+.how-it-work-sec .search-box{
+  margin-top: 40px;
+}
+
+
+/* finance menu */
+.finance-menu-list {
+  margin: 50px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.finance-menu-list a {
+  border: 0.5px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--color-black);
+  margin: 5px 10px 5px 0;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  white-space: nowrap;
+}
+.last-menu {
+  margin: 0;
+}
+.finace-menu-list .active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.finance-menu-list a:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/*
+============================
+BANK INFORMATION SECTION
+============================
+ */
+
+/* .bank-information-sec{
+  padding: 100px 0;
+} */
+.bank-information-sec .heading-2{
+  color: var(--color-black);
+}
+.bank-information-sec .heading-2 span{
+  color: var(--color-primary);
+}
+
+.bank-information-row{
+  display: flex;
+  flex-wrap: wrap;       
+}
+
+/* card */
+.bank-information-card {
+  background: rgba(55,93,217,10%);
+  border: 1.5px solid rgba(55,93,217,70%);
+  border-radius: 20px;
+  padding: 28px;
+ margin-bottom: 24px;
+}
+
+.bank-card-header {
+  display: flex;
+  align-items: center;     
+  margin-bottom: 22px;
+}
+
+.bank-card-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;         
+  margin-right: 15px;      
+}
+
+.bank-card-header h3 {
+  margin: 0;               
+  font-size: 36px;
+  font-weight: 600;
+  line-height: calc(47/36);         
+  color: var(--color-black);
+   font-family: "DM Sans", sans-serif;
+}
+
+
+/* list style */
+.card-informations {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-informations li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+
+.card-informations li span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+   font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+  color: #555;
+}
+
+
+.card-informations li span svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-right: 10px;   
+}
+
+.card-informations li strong {
+    font-size: 20px;
+   font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+/* bottom text */
+.bank-information-card p {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #666;
+  line-height: calc(26/20);
+}
+
+/*
+============================
+ LOAN BUYING PROCESS SECTION 
+============================
+*/
+.loan-buying-process-sec{
+  padding: 100px 0;
+}
+.loan-buying-process-header .heading-2{
+  color: var(--color-black);
+  margin: 0;
+}
+.loan-buying-process-header .heading-2 span{
+  color: var(--color-primary);
+}
+.loan-buying-process-header p{
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4A4A4A;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 50px;
+}
+
+/* cards */
+.loan-buying-process-card-wrapper{
+  margin-top: 40px;
+}
+.loan-buying-card img{
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 24px;
+}
+.loan-buying-card{
+  display: flex;
+  align-items: center;
+}
+.loan-process-description p{
+  font-size: 16px;
+  font-weight: 500;
+   font-family: "DM Sans", sans-serif;
+   color: #4A4A4A;
+   line-height: calc(26/20);
+}
+
+.loan-process-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 
+===========================
+EMI CALCULATOR SECTION 
+===========================
+*/
+
+.emi-calculator-sec{
+  padding: 100px 0;
+}
+
+.emi-calculator-sec .heading-2{
+  color: var(--color-black);
+}
+.emi-calculator-sec .heading-2 span{
+  color: var(--color-primary);
+}
+
+
+
+/* 
+.row{
+  display:flex;
+  justify-content:space-between;
+}
+
+.col-50{
+  width:48%;
+} */
+
+/* LEFT */
+/* .heading-2{
+  font-size:38px;
+  font-weight:700;
+  margin-bottom:28px;
+} */
+/* .heading-2 span{
+  color:#3f5bd8;
+} */
+
+/* .select-bank{
+  margin-bottom:48px;
+}
+
+.select-bank label{
+  color:#3f5bd8;
+  font-size:15px;
+  font-weight:500;
+  display:block;
+  margin-bottom:6px;
+} */
+
+/* .bank-dropdown{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#3f5bd8;
+  cursor:pointer;
+} */
+
+/* .arrow{
+  width:9px;
+  height:9px;
+  border-right:2px solid #3f5bd8;
+  border-bottom:2px solid #3f5bd8;
+  transform:rotate(45deg);
+  margin-top:-4px;
+} */
+
+/* EMI FIELD */
+.emi-field{
+  padding:30px 0 32px;
+  border-top:1px solid #cdcaca;
+}
+
+.field-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.field-top label{
+  font-weight:600;
+  font-size:24px;
+  text-transform: capitalize;
+     font-family: "DM Sans", sans-serif;
+}
+
+.amount-value{
+  border:1px solid rgba(55,93,217,30%);
+  padding:10px 20px;
+  border-radius:50px;
+  font-size: 18px;
+  font-weight:600;
+}
+
+/* RANGE */
+input[type="range"]{
+  width:100%;
+  height:15px;
+  background:#AFADAD;
+  border-radius:20px;
+  appearance:none;
+  outline:none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  appearance:none;
+  width:35px;
+  height:35px;
+  background: var(--color-primary);
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.range-info{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+  color:var(--color-primary);
+  font-size:16px;
+  font-weight:500;
+}
+
+/* RIGHT PART */
+/* .emi-calculator-right-part{
+  text-align:center;
+}
+
+.emi-result p{
+  font-size:20px;
+  font-weight:600;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+
+.emi-result h3{
+  margin:12px 0 36px;
+}
+
+
+.emi-chart{
+  width:300px;
+  height:300px;
+  margin:0 auto 30px;
+  border-radius:50%;
+  background:conic-gradient(
+    #375DD9 0% 81.38%,
+    #00CCFF 81.38% 99.59%,
+    #FF00B7 99.59% 100%
+  );
+}
+
+.emi-breakdown{
+  list-style:none;
+  max-width:320px;
+  margin:auto;
+  text-align:center;
+}
+
+.emi-breakdown li{
+  margin-bottom:20px;
+  font-size:16px;
+  color:#666;
+}
+
+.emi-breakdown strong{
+  display:block;
+  margin-top:8px;
+  font-size:16px;
+  font-weight:700;
+  color:var(--color-black);
+}
+
+
+.dot{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:10px;
+}
+
+.dot.loan{background:#3f5bd8;}
+.dot.interest{background:#00CCFF;}
+.dot.fee{background:#FF00B7;}
+
+
+
+
+
+.emi-chart{
+  background: conic-gradient(
+    #3f5bd8 0% 70%,
+    #05c6f9 70% 90%,
+    #ff00b8 90% 100%
+  );
+  
+} */
+/* RIGHT PART */
+.emi-calculator-right-part{
+  text-align:center;
+}
+
+/* EMI RESULT */
+.emi-result p{
+  font-size:20px;
+  font-weight:600;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+
+.emi-result h3{
+  margin:12px 0 36px;
+  font-size:36px;
+  font-weight:700;
+  color: var(--color-black);
+}
+
+/* CHART */
+.emi-chart{
+  width:300px;
+  height:300px;
+  margin:0 auto 30px;
+  border-radius:50%;
+  background: conic-gradient(
+    #3f5bd8 0% 81.38%,
+    #00CCFF 81.38% 99.59%,
+    #FF00B7 99.59% 100%
+  );
+}
+
+/* BREAKDOWN */
+.emi-breakdown{
+  list-style:none;
+  max-width:320px;
+  margin:0 auto;
+  padding:0;
+}
+
+.emi-breakdown li{
+  margin-bottom:22px;
+  font-size:16px;
+  color:#666;
+  text-align:left;
+}
+
+.emi-breakdown strong{
+  display:block;
+  margin-top:6px;
+  font-size:16px;
+  font-weight:700;
+  color:var(--color-black);
+}
+
+/* DOT */
+.dot{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:10px;
+}
+
+.dot.loan{background:#3f5bd8;}
+.dot.interest{background:#00CCFF;}
+.dot.fee{background:#FF00B7;}
