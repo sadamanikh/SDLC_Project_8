@@ -1550,9 +1550,36 @@ input[type="email"]::placeholder {
 }
 
 @media screen and (max-width: 992px) {
-    .nav-links {
-        display: none;
+
+    .menu-bar {
+        display: block;
     }
+
+    .nav-links {
+        display: inline-block;
+        position: fixed;
+        top: 87px;
+        background-color: white;
+        width: 60%;
+        text-align: center;
+        right: 0;
+        transform: translateX(100%);
+        padding-block: 15px;
+        height: calc(100vh - 87px);
+        transition: all .3s ease;
+        z-index: 100000;
+        border-radius: 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 20px;
+
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
 
     .banner-lower {
         width: 800px;
@@ -1997,9 +2024,9 @@ input[type="email"]::placeholder {
         margin-bottom: 15px;
     }
 
-.footer-end {
-    flex-wrap: wrap;
-}
+    .footer-end {
+        flex-wrap: wrap;
+    }
 
 
 
@@ -2017,6 +2044,4 @@ input[type="email"]::placeholder {
 
 }
 
-@media screen and (max-width: 420px) {
-    --
-}
+@media screen and (max-width: 420px) {}
