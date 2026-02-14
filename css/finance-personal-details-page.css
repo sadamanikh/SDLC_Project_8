@@ -49,10 +49,10 @@ a {
   text-transform: capitalize;
 }
 
-.finance-personal-details-section .personal-details-hdr {
+.personal-details-hdr {
   text-align: center;
-  margin: auto;
 }
+
 .finance-personal-details-section .heading-2 span {
   color: var(--color-primary);
 }
@@ -60,43 +60,42 @@ a {
 .personal-details-hdr p {
   margin-top: 10px;
   font-size: 20px;
-  font-weight: normal;
-  text-transform: capitalize;
   color: var(--color-black);
 }
 
 .personal-details-wrpr {
   background: rgba(55, 93, 217, 0.2);
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
   max-width: 900px;
   margin: 50px auto;
 }
 
-.personal-details-wrpr.heading-3 {
+.personal-details-wrpr .heading-3 {
   text-align: center;
-  margin: auto;
+  margin-bottom: 25px;
 }
 
-/* FORM */
 .personal-details-form {
   width: 100%;
 }
 
-/* INPUT GROUP */
 .input-group {
   display: flex;
   align-items: center;
-  background: var(--color-white);
+  background: #fff;
   padding: 16px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   transition: 0.3s ease;
 }
+.input-group input::placeholder {
+  text-transform: capitalize;
+}
 
 .input-group .icon {
-  font-size: 25px;
+  font-size: 22px;
   color: var(--color-primary);
   margin-right: 12px;
 }
@@ -108,7 +107,6 @@ a {
   font-size: 18px;
   background: transparent;
   font-family: inherit;
-  text-transform: capitalize;
 }
 
 .input-group:focus-within {
@@ -122,20 +120,21 @@ a {
   margin: 25px 0;
   font-size: 18px;
 }
+.checkbox-group label {
+  text-transform: capitalize;
+}
 
 .checkbox-group input {
   width: 20px;
   height: 20px;
-  cursor: pointer;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .checkbox-group label {
   cursor: pointer;
-  text-transform: capitalize;
 }
 
-/* BUTTON */
 .submit-btn {
   width: 100%;
   padding: 18px;
@@ -143,7 +142,7 @@ a {
   border: none;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-white);
+  color: #fff;
   cursor: pointer;
   background: var(--color-primary);
   transition: 0.3s ease;
@@ -154,22 +153,116 @@ a {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59, 91, 214, 0.3);
 }
-/* BUTTON */
-.submit-btn a {
-  display: block;
-  width: 100%;
-  padding: 18px;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background: var(--color-primary);
-  transition: 0.3s ease;
+
+/* 
+==========================
+TABLET
+==========================
+ */
+@media (max-width: 992px) {
+  .personal-details-wrpr {
+    max-width: 700px;
+    padding: 30px;
+  }
+  .personal-details-wrpr .heading-3 {
+    font-size: 32px;
+  }
+  .loan-amount-text {
+    font-size: 20px;
+  }
+
+  .personal-details-hdr p {
+    font-size: 18px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+  }
 }
 
-.submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(59, 91, 214, 0.3);
+/* 
+==========================
+MOBILE
+==========================
+ */
+@media (max-width: 768px) {
+  .finance-personal-details-section {
+    padding: 70px 0;
+  }
+
+  .loan-amount-bar {
+    margin-bottom: 60px;
+  }
+
+  .loan-amount-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .personal-details-wrpr {
+    margin: 40px 15px;
+    padding: 25px;
+  }
+
+  .personal-details-hdr p {
+    font-size: 16px;
+  }
+
+  .input-group {
+    padding: 14px;
+  }
+
+  .input-group input {
+    font-size: 15px;
+  }
+
+  .checkbox-group {
+    font-size: 16px;
+  }
+}
+
+/*
+ ==========================
+SMALL MOBILE
+========================== 
+*/
+@media (max-width: 480px) {
+  .finance-personal-details-section {
+    padding: 50px 0;
+  }
+
+  .loan-amount-text {
+    font-size: 16px;
+  }
+
+  .personal-details-hdr .heading-2 {
+    font-size: 20px;
+  }
+  .personal-details-wrpr .heading-3 {
+    font-size: 28px;
+  }
+  .personal-details-hdr p {
+    font-size: 14px;
+  }
+
+  .input-group {
+    padding: 12px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .input-group .icon {
+    font-size: 18px;
+  }
+
+  .checkbox-group {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 14px;
+  }
 }

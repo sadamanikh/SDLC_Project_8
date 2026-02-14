@@ -38,15 +38,42 @@ FINACE HERO SECTION
 .finance-hero-sec {
   background: url("../image/finance-page-img/finance-hero-bg.png") no-repeat
     center/cover;
-  padding: 165px 0;
+  min-height: 460px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.hero-wrapper {
+  width: 100%;
   text-align: center;
 }
+
+/* Back button */
+.btn-back {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-back a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn-back a svg {
+  display: block;
+  margin-right: 6px;
+  height: 14px;
+}
+
 .finance-hero-sec .heading-1 {
   color: white;
-  margin: 0;
 }
 
 /* FINACE HERO SECTION RESPONSIVE */
@@ -294,7 +321,7 @@ LOAN DETAILS SECTION
   }
 }
 
-/* Mobile 768 */
+/* 768 */
 @media (max-width: 768px) {
   .loan-details-wrapper {
     flex-direction: column;
@@ -317,7 +344,7 @@ LOAN DETAILS SECTION
   }
 }
 
-/* Small Mobile 480*/
+/* Mobile 480*/
 @media (max-width: 480px) {
   .loan-details-section {
     padding: 60px 0;

@@ -25,6 +25,7 @@ a {
   width: calc(50%);
   padding: 0 15px;
 }
+
 /* 
  ============================
  FINANCE BEST OFFER SECTION
@@ -136,4 +137,53 @@ a {
   background: #2f57d9;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(55, 93, 217, 0.35);
+}
+
+@media screen and (max-width: 1200px) {
+  .col-33 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col-33 {
+    width: 50%;
+  }
+  .loan-amount-text {
+    font-size: 20px;
+  }
+  .loan-amount-text strong {
+    font-size: 28px;
+  }
+  .offer-card-hdr .heading-3 {
+    font-size: 28px;
+  }
+  .best-loan-offer-card-informations li {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-33 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col-33 {
+    width: 100%;
+  }
+
+  .loan-amount-text {
+    font-size: 18px;
+  }
+  .loan-amount-text strong {
+    font-size: 24px;
+  }
+  .offer-card-hdr .heading-3 {
+    font-size: 24px;
+  }
+  .best-loan-offer-card-informations li {
+    font-size: 18px;
+  }
 }
