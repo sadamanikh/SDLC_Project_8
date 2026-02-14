@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- link finace.css -->
     <link rel="stylesheet" href="./css/finance.css" />
+    <!-- link finace all.css -->
+    <link rel="stylesheet" href="./css/finance-all.css" />
   </head>
 
   <body>
@@ -95,6 +97,8 @@
       </section>
 
       <!-- LOAN DETAILS SECTION -->
+
+      <!-- LOAN DETAILS SECTION -->
       <section class="loan-details-section">
         <div class="container">
           <div class="loan-details-wrapper">
@@ -102,89 +106,71 @@
               <img src="./image/finance-page-img/loan-details-img.png" alt="" />
 
               <div class="right-loan-details-card">
-                <h3 class="heading-3">enter the loan details</h3>
+                <!-- Back Button -->
+                <div class="back-btn">
+                  <a href="./finance.html">
+                    <svg
+                      width="8"
+                      height="14"
+                      viewBox="0 0 8 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.9"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.318083 6.22234L6.46383 0L8 1.55531L2.62233 7L8 12.4447L6.46383 14L0.318083 7.77766C0.114415 7.57139 0 7.29166 0 7C0 6.70834 0.114415 6.42861 0.318083 6.22234Z"
+                        fill="black"
+                      />
+                    </svg>
+                    back
+                  </a>
+                </div>
 
                 <form action="">
-                  <!-- property amount -->
-                  <div class="form-group custom-dropdown">
-                    <div class="dropdown-head">
-                      <span class="selected-text">select property amount</span>
-
-                      <!-- arrow -->
-                      <svg
-                        width="20"
-                        height="12"
-                        viewBox="0 0 20 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          opacity="0.5"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M8.88906 11.5229L0 2.30425L2.22187 0L10 8.0665L17.7781 0L20 2.30425L11.1109 11.5229C10.8163 11.8284 10.4167 12 10 12C9.58334 12 9.18373 11.8284 8.88906 11.5229Z"
-                          fill="black"
-                        />
-                      </svg>
-                    </div>
-
-                    <ul class="dropdown-list">
-                      <li>upto 15 lacs</li>
-                      <li>15-25 lacs</li>
-                      <li>60-75 lacs</li>
-                      <li>75 lacs+</li>
-                    </ul>
-                  </div>
-
-                  <!-- select city -->
-                  <div class="form-group custom-dropdown">
-                    <div class="dropdown-head">
-                      <span class="selected-text">Select city</span>
-                      <!-- arrow -->
-                      <svg
-                        width="20"
-                        height="12"
-                        viewBox="0 0 20 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          opacity="0.5"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M8.88906 11.5229L0 2.30425L2.22187 0L10 8.0665L17.7781 0L20 2.30425L11.1109 11.5229C10.8163 11.8284 10.4167 12 10 12C9.58334 12 9.18373 11.8284 8.88906 11.5229Z"
-                          fill="black"
-                        />
-                      </svg>
-                    </div>
-
-                    <ul class="dropdown-list">
-                      <li>Mumbai</li>
-                      <li>Bengaluru</li>
-                      <li>Chennai</li>
-                      <li>Delhi</li>
-                      <li>Kolkata</li>
-                      <li>Ahmedabad</li>
-                    </ul>
-                  </div>
-
-                  <!-- pin code -->
+                  <!-- Name -->
                   <div class="form-group">
-                    <input type="text" placeholder="Pin Code" />
+                    <input type="text" placeholder="your full name" />
+                  </div>
+
+                  <!-- Your age -->
+                  <div class="form-group">
+                    <input type="text" placeholder="your age" />
                   </div>
 
                   <!-- property identified -->
                   <div class="form-group property-identyfy">
-                    <label>property identified</label>
+                    <label>your gender</label>
                     <div class="radio-btns">
-                      <button type="button" class="radio-btn">Yes</button>
-                      <button type="button" class="radio-btn">No</button>
+                      <button type="button" class="radio-btn">male</button>
+                      <button type="button" class="radio-btn">female</button>
                     </div>
+                  </div>
+
+                  <!-- Phone number -->
+                  <div class="form-group">
+                    <input type="text" placeholder="your mobile number" />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="your email address"
+                    />
+                  </div>
+
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="nri" />
+                    <label for="nri">i’m a non resident indian</label>
                   </div>
 
                   <!-- next btn -->
                   <div class="nextbtn">
-                    <a href="./finance-all.html">Next</a>
+                    <a href="./finance-find-best-offer.html">Next</a>
                   </div>
                 </form>
               </div>
@@ -195,12 +181,14 @@
         </div>
       </section>
 
+      <!-- END END -->
+
       <!-- HOW IT WORKS SECTION -->
       <section class="how-it-work-sec">
         <div class="container">
           <h2 class="heading-2">How It <span>Works</span></h2>
 
-          <div class="row how-it-work-row">
+          <div class="row">
             <!-- 1st card -->
             <div class="col-25">
               <div class="how-itwork-card">
@@ -386,6 +374,7 @@
               />
             </div>
             <!-- menu -->
+
             <div class="finance-menu-list">
               <a class="active" href="./finance-all.html">All</a>
               <a href="./finance-bank-information.html">Bank Information</a>

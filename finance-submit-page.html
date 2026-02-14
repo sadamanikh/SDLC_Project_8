@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- slick slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swiper-cdn -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- link style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- link finace.css -->
+    <link rel="stylesheet" href="./css/finance.css" />
+    <!-- link finance-best-offer.css -->
+    <link rel="stylesheet" href="./css/finance-best-offer.css" />
+    <!-- link finance-personal-details.css -->
+    <link rel="stylesheet" href="./css/finance-personal-details-page.css" />
+    <!-- link finance-submit.css -->
+    <link rel="stylesheet" href="./css/finance-submit-page.css" />
+  </head>
+
+  <body>
+    <!-- header sec start -->
+    <!-- <header class="header-sec">
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html" class="nav-logo">
+            <img src="./image/Home-page-images/nav-logo.png" alt="nav-logo" />
+          </a>
+          <ul class="nav-links">
+            <li><a href="./index.html" class="active-page-select">home</a></li>
+            <li><a href="./about_us.html">about us</a></li> -->
+    <!-- <li><a href="#exampless">about us</a></li> -->
+    <!-- <li>
+              <a href="./for-buyers.html"
+                >for buyers <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./for-sellers.html"
+                >for sellers <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./for-tenants.html"
+                >for tenants <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./services.html"
+                >services <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li><a href="./news-&-Guide.html">news & Guide</a></li>
+          </ul>
+          <div class="nav-right">
+            <div class="nav-right-2">
+              <a href="./login.html" class="left-btn cmn-btn">login</a>
+              <a href="./sign_up.html" class="cmn-btn">sign up</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header> -->
+    <!-- header sec end -->
+
+    <!-- main start -->
+    <main>
+      <!-- FINANCE BEST OFFER HERO SECTION -->
+      <section class="finance-hero-sec">
+        <div class="container">
+          <h1 class="heading-1">Finance</h1>
+        </div>
+      </section>
+
+      <!-- FINANCE SUBMIT SECTION -->
+      <section class="submit-section">
+        <div class="container">
+          <div class="submit-card">
+            <div class="success-icon">
+              <svg
+                width="68"
+                height="48"
+                viewBox="0 0 68 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 24L24 44L64 4"
+                  stroke="#FFF8F8"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <h3 class="heading-3">Application Submitted!</h3>
+            <p>
+              Thank you! Your loan application has been successfully submitted.
+              One of our representatives will contact you soon to guide you
+              through the loan process.
+            </p>
+
+            <div class="back-to-home-btn">
+              <a href="./finance.html">Back to Home</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- testimonials CDN AND JS -->
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".center").slick({
+          centerMode: true,
+          centerPadding: "20px",
+          slidesToShow: 5,
+          arrows: true,
+          prevArrow: $(".prev-btn"),
+          nextArrow: $(".next-btn"),
+        });
+      });
+
+      // FINANCE PAGE LOAN DETAILS CARD DROP DOWN JS START //
+      document.addEventListener("click", (e) => {
+        const d = e.target.closest(".custom-dropdown");
+        const h = e.target.closest(".dropdown-head");
+        const i = e.target.closest(".dropdown-list li");
+
+        if (!d) {
+          document
+            .querySelectorAll(".custom-dropdown")
+            .forEach((x) => x.classList.remove("open"));
+          return;
+        }
+
+        if (i) {
+          d.querySelector(".selected-text").textContent = i.textContent;
+          d.classList.remove("open");
+          return;
+        }
+
+        if (h) d.classList.toggle("open");
+      });
+
+      // FINANCE PAGE LOAN DETAILS CARD DROP DOWN JS END //
+
+      <!-- FINANCE PAGE ACCORDIAN JS START -->
+      document
+        .querySelectorAll(".faq-toggle")
+        .forEach(
+          (toggle) =>
+            (toggle.onclick = () =>
+              toggle.closest(".faq-item").classList.toggle("active")),
+        );
+      <!-- FINANCE PAGE ACCORDIAN JS END -->
+    </script>
+
+    <!-- leatest blog CDN AND JS -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next-own",
+          prevEl: ".swiper-button-prev-own",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+        return direction;
+      }
+    </script>
+
+    <!-- accordian sec js -->
+    <script>
+      let plusIcon = document.querySelector("#click");
+      let unvisible = document.querySelector(".unvisible");
+      plusIcon.addEventListener("click", function () {
+        unvisible.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

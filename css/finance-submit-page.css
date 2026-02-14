@@ -1,0 +1,65 @@
+.submit-section {
+  margin: 100px 0;
+}
+
+.submit-card {
+  background: rgba(55, 93, 217, 20%);
+  padding: 100px 50px 30px;
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  position: relative;
+}
+.success-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  background: #5a926b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-icon svg {
+  width: 60px;
+  height: 60px;
+}
+
+.submit-section .heading-3 {
+  color: #5a926b;
+  margin-bottom: 30px;
+}
+.submit-section p {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  max-width: 700px;
+  margin: auto;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+/* BUTTON */
+.back-to-home-btn a {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: var(--color-primary);
+  transition: 0.3s ease;
+}
+
+.back-to-home-btn a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 91, 214, 0.3);
+}

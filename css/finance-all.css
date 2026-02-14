@@ -1,0 +1,112 @@
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+
+/* Back Button */
+.back-btn {
+  margin-bottom: 10px;
+}
+
+.back-btn a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: rgba(55, 92, 217, 0.2);
+  color: var(--color-black);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.back-btn a svg {
+  margin-right: 8px;
+  width: 8px;
+  height: 14px;
+}
+
+.back-btn a:hover {
+  background: #dbe3ff;
+  transform: translateX(-3px);
+}
+
+.form-group input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: inherit;
+  color: #000;
+  background: transparent;
+  outline: none;
+}
+.form-group input[type="text"]::placeholder {
+  color: #626161;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.form-group input[type="email"]::placeholder {
+  color: #626161;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.radio-btn {
+  text-transform: capitalize;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin: 28px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3f5bd9;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox-group input:checked {
+  background: #3f5bd9;
+}
+
+.checkbox-group input:checked::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.checkbox-group label {
+  line-height: calc(26 / 20);
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.checkbox-group input:hover {
+  box-shadow: 0 0 0 3px rgba(63, 91, 217, 0.15);
+}

@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+/* BUTTON GROUP */
+.btn-group {
+  margin-top: 15px;
+}
+.btn-group,
+.salary-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.btn-group label,
+.salary-group label {
+  padding: 8px 18px;
+  border-radius: 25px;
+  border: 1.5px solid #375dd9;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.btn-group label:last-child,
+.salary-group label:last-child {
+  margin-right: 0;
+}
+
+.btn-group input:checked + label,
+.salary-group input:checked + label {
+  background: #375dd9;
+  color: #fff;
+}
+
+.nextbtn a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 30px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
