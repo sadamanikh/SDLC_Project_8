@@ -1250,37 +1250,47 @@ HOME LOAN NEWS SECTION
 .home-loan-news-section {
   margin: 100px 0;
 }
+
 .home-loan-news-section .heading-2 {
   color: var(--color-black);
 }
+
 .home-loan-news-section .heading-2 span {
   color: var(--color-primary);
 }
 
-.home-loan-news-card img {
+.img-wrapper {
+  border-radius: 35px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.img-wrapper img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  transition: transform 0.5s ease;
 }
+
+.home-loan-news-card:hover .img-wrapper img {
+  transform: scale(1.08);
+}
+
 .home-loan-card-description-heading {
   font-size: 24px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
-  text-transform: capitalize;
   text-align: left;
   color: var(--color-black);
-  line-height: calc(31 / 24);
+  line-height: 1.4;
   margin-bottom: 16px;
 }
+
 .home-loan-news-card-descriptions-pera {
   font-size: 18px;
-  font-weight: normal;
   font-family: "DM Sans", sans-serif;
-  text-transform: capitalize;
   color: #4a4a4a;
-  line-height: calc(26 / 20);
+  line-height: 1.6;
   text-align: left;
 }
 
@@ -1289,22 +1299,43 @@ HOME LOAN NEWS SECTION
 HOME LOAN NEWS SECTION RESPONSIVE
 ===============================================
  */
+
 @media (max-width: 992px) {
+  .img-wrapper img {
+    height: 220px;
+  }
+
+  .home-loan-card-description-heading {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .home-loan-news-card-descriptions-pera {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* 576 */
+@media (max-width: 576px) {
+  .img-wrapper img {
+    height: 200px;
+  }
+
   .home-loan-card-description-heading {
     font-size: 18px;
   }
-  .home-loan-news-card-descriptions-pera {
-    font-size: 16px;
-  }
-}
-@media (max-width: 480px) {
-  .home-loan-card-description-heading {
-    font-size: 16px;
-  }
+
   .home-loan-news-card-descriptions-pera {
     font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .img-wrapper {
+    margin-bottom: 15px;
   }
 }
+
 /* 
 ========================
 ACCORDION SECTION
