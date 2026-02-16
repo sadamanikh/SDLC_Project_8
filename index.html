@@ -37,16 +37,12 @@
                 <ul class="nav-links">
                     <li><a href="./index.html" class="active-page-select">home</a></li>
                     <li><a href="./about_us.html">about us</a></li>
-                    <!-- <li><a href="#exampless">about us</a></li>
+                    <!-- <li><a href="#exampless">about us</a></li> -->
                     <li><a href="./for-buyers.html">for buyers <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li> -->
-                    <li><a href="./services.html">our services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./services.html">Contact us </a></li>
-                    <!-- <li><a href="./services.html">Contact us </a></li> -->
-                    <li><a href="./services.html">properties </a></li>
-                    <!-- <li><a href="./services.html">blogs <i class="fa-solid fa-angle-down"></i></a></li> -->
-                    <!-- <li><a href="./news-&-Guide.html">news & Guide</a></li> -->
+                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./services.html">services <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="./news-&-Guide.html">news & Guide</a></li>
                 </ul>
                 <div class="nav-right">
                     <div class="nav-right-2">
@@ -55,7 +51,9 @@
                     </div>
                 </div>
                 <!-- menu-bar -->
-                <a class="menu-bar" id="menu-bar"><i class="fa-solid fa-bars"></i></a>
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -208,6 +206,7 @@
                 <div class="featured-btn-wrapper">
                     <a href="#" class="featured-btn cmn-btn">see more</a>
                 </div>
+            </div>
         </section>
         <!-- featured listing sec end -->
 
@@ -824,6 +823,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
     <!-- footer sec end -->
 
@@ -847,29 +847,20 @@
                 slidesToShow: 5,
                 arrows: true,
                 prevArrow: $('.prev-btn'),
-                nextArrow: $('.next-btn'),
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3
-                        },
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
+                nextArrow: $('.next-btn')
             });
         });
     </script>
+
+
+
 
     <!-- leatest blog CDN AND JS -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <!-- <script>
+    <script>
         var swiper = new Swiper('.swiper', {
             slidesPerView: 3,
             direction: getDirection(),
@@ -890,75 +881,8 @@
 
             return direction;
         }
-    </script> -->
-    <script>
-        var swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
-            direction: getDirection(),
-
-            breakpoints: {
-                0: {
-                    slidesPerView: 1
-                },
-                575: {
-                    slidesPerView: 2
-                },
-                793: {
-                    slidesPerView: 3
-                },
-
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next-own',
-                prevEl: '.swiper-button-prev-own',
-            },
-
-            on: {
-                resize: function () {
-                    swiper.changeDirection(getDirection());
-                },
-            },
-        });
-
-        function getDirection() {
-            return window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-        }
     </script>
 
- <!-- toggler-js -->
-    <script>
-        const toggleBtn = document.getElementById('menu-bar');
-        const navLinks = document.querySelector('.nav-links');
-        const icon = toggleBtn.querySelector('i');
-
-        toggleBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-
-            if (navLinks.classList.contains('active')) {
-                // Menu open
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-                document.body.style.overflow = 'hidden';
-            } else {
-                // Menu close
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Reset menu on window resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 991.98) {
-                // Desktop view - reset everything
-                navLinks.classList.remove('active');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
 </body>
 
 </html>

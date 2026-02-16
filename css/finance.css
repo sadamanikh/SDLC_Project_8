@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --color-primary: #375dd9;
   --color-black: #000000;
@@ -22,6 +23,8 @@
   width: calc(50%);
   padding: 0 15px;
 }
+=======
+>>>>>>> parent of c832fa8 (update)
 /* 
 ==========================
 FINACE HERO SECTION
@@ -46,34 +49,25 @@ FINACE HERO SECTION
 LOAN DETAILS SECTION
 ==========================
 */
-
 .loan-details-section{
-  padding: 100px 0;
+    padding: 100px 0;
 }
-
-/* wrapper */
-.loan-details-wrapper{
-
+.loan-details-img{
+  width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-/* image container */
-.loan-details-img{
-  width:75%;
-  margin: 0 auto;
-    position: relative;
+  margin: auto;
 }
 
 .loan-details-img img{
   width: 100%;
-  height: 500px;
-  object-fit: cover;
+  height: 500px;      
+  object-fit: cover;  
   display: block;
   border-radius: 15px;
 }
 
+<<<<<<< HEAD
 
 .right-loan-details-card{
   position: absolute;
@@ -787,3 +781,5 @@ input[type="range"]::-webkit-slider-thumb{
 .dot.loan{background:#3f5bd8;}
 .dot.interest{background:#00CCFF;}
 .dot.fee{background:#FF00B7;}
+=======
+>>>>>>> parent of c832fa8 (update)
