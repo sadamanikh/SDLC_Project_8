@@ -1,0 +1,189 @@
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-25 {
+  width: 25%;
+  padding: 0 15px;
+}
+.col-33 {
+  width: calc(33.33%);
+  padding: 0 15px;
+}
+.col-50 {
+  width: calc(50%);
+  padding: 0 15px;
+}
+
+/* 
+ ============================
+ FINANCE BEST OFFER SECTION
+ ============================
+ */
+.finance-best-offer-section {
+  padding: 100px 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.loan-amount-bar {
+  width: 100%;
+  background: rgba(55, 93, 217, 0.2);
+  margin-bottom: 100px;
+}
+
+.loan-amount-text {
+  padding: 14px 0;
+  margin: 0;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+
+.loan-amount-text strong {
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.finance-best-offer-section .heading-2 span {
+  color: var(--color-primary);
+}
+
+.finance-best-offer-card {
+  border: 1.5px solid rgba(55, 93, 217, 0.7);
+  padding: 30px 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.offer-card-hdr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.offer-card-hdr svg {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.finance-best-offer-section .heading-3 {
+  font-size: 36px;
+  line-height: calc(47 / 36);
+  margin: 0;
+}
+
+.best-loan-offer-card-informations {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.best-loan-offer-card-informations li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+
+.best-loan-offer-card-informations li:last-child {
+  margin-bottom: 0;
+}
+
+.best-loan-offer-card-informations li strong:last-child {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* btn */
+.apply-btn {
+  margin-top: 35px;
+}
+
+.apply-btn a {
+  display: block;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 14px 0;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.apply-btn a:hover {
+  background: #2f57d9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(55, 93, 217, 0.35);
+}
+
+@media screen and (max-width: 1200px) {
+  .col-33 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col-33 {
+    width: 50%;
+  }
+  .loan-amount-text {
+    font-size: 20px;
+  }
+  .loan-amount-text strong {
+    font-size: 28px;
+  }
+  .offer-card-hdr .heading-3 {
+    font-size: 28px;
+  }
+  .best-loan-offer-card-informations li {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-33 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col-33 {
+    width: 100%;
+  }
+
+  .loan-amount-text {
+    font-size: 18px;
+  }
+  .loan-amount-text strong {
+    font-size: 24px;
+  }
+  .offer-card-hdr .heading-3 {
+    font-size: 24px;
+  }
+  .best-loan-offer-card-informations li {
+    font-size: 18px;
+  }
+}

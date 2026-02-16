@@ -1,0 +1,268 @@
+:root {
+  --color-primary: #375dd9;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-border: #bdbdbd;
+  --color-orange: #ff6600;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-25 {
+  width: 25%;
+  padding: 0 15px;
+}
+.col-33 {
+  width: calc(33.33%);
+  padding: 0 15px;
+}
+.col-50 {
+  width: calc(50%);
+  padding: 0 15px;
+}
+/* 
+ ============================
+ FINANCE BEST OFFER SECTION
+ ============================
+ */
+.finance-personal-details-section {
+  padding: 100px 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.loan-amount-bar {
+  width: 100%;
+  background: rgba(55, 93, 217, 0.2);
+  margin-bottom: 100px;
+}
+
+.loan-amount-text {
+  padding: 14px 0;
+  margin: 0;
+  font-size: 24px;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+
+.personal-details-hdr {
+  text-align: center;
+}
+
+.finance-personal-details-section .heading-2 span {
+  color: var(--color-primary);
+}
+
+.personal-details-hdr p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+.personal-details-wrpr {
+  background: rgba(55, 93, 217, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.personal-details-wrpr .heading-3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.personal-details-form {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.input-group input::placeholder {
+  text-transform: capitalize;
+}
+
+.input-group .icon {
+  font-size: 22px;
+  color: var(--color-primary);
+  margin-right: 12px;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: transparent;
+  font-family: inherit;
+}
+
+.input-group:focus-within {
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 91, 214, 0.15);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  font-size: 18px;
+}
+.checkbox-group label {
+  text-transform: capitalize;
+}
+
+.checkbox-group input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: var(--color-primary);
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 91, 214, 0.3);
+}
+
+/* 
+==========================
+TABLET
+==========================
+ */
+@media (max-width: 992px) {
+  .personal-details-wrpr {
+    max-width: 700px;
+    padding: 30px;
+  }
+  .personal-details-wrpr .heading-3 {
+    font-size: 32px;
+  }
+  .loan-amount-text {
+    font-size: 20px;
+  }
+
+  .personal-details-hdr p {
+    font-size: 18px;
+  }
+
+  .input-group input {
+    font-size: 16px;
+  }
+}
+
+/* 
+==========================
+MOBILE
+==========================
+ */
+@media (max-width: 768px) {
+  .finance-personal-details-section {
+    padding: 70px 0;
+  }
+
+  .loan-amount-bar {
+    margin-bottom: 60px;
+  }
+
+  .loan-amount-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .personal-details-wrpr {
+    margin: 40px 15px;
+    padding: 25px;
+  }
+
+  .personal-details-hdr p {
+    font-size: 16px;
+  }
+
+  .input-group {
+    padding: 14px;
+  }
+
+  .input-group input {
+    font-size: 15px;
+  }
+
+  .checkbox-group {
+    font-size: 16px;
+  }
+}
+
+/*
+ ==========================
+SMALL MOBILE
+========================== 
+*/
+@media (max-width: 480px) {
+  .finance-personal-details-section {
+    padding: 50px 0;
+  }
+
+  .loan-amount-text {
+    font-size: 16px;
+  }
+
+  .personal-details-hdr .heading-2 {
+    font-size: 20px;
+  }
+  .personal-details-wrpr .heading-3 {
+    font-size: 28px;
+  }
+  .personal-details-hdr p {
+    font-size: 14px;
+  }
+
+  .input-group {
+    padding: 12px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .input-group .icon {
+    font-size: 18px;
+  }
+
+  .checkbox-group {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+}

@@ -6,6 +6,14 @@
   --color-border: #bdbdbd;
   --color-orange: #ff6600;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -15,11 +23,11 @@
   width: 25%;
   padding: 0 15px;
 }
-.col-33{
+.col-33 {
   width: calc(33.33%);
   padding: 0 15px;
 }
-.col-50{
+.col-50 {
   width: calc(50%);
   padding: 0 15px;
 }
@@ -33,15 +41,61 @@ FINACE HERO SECTION
 .finance-hero-sec {
   background: url("../image/finance-page-img/finance-hero-bg.png") no-repeat
     center/cover;
-  padding: 165px 0;
+  min-height: 460px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.hero-wrapper {
+  width: 100%;
   text-align: center;
 }
+
+/* Back button */
+.btn-back {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-back a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn-back a svg {
+  display: block;
+  margin-right: 6px;
+  height: 14px;
+}
+
 .finance-hero-sec .heading-1 {
   color: white;
-  margin: 0;
+}
+
+/* FINACE HERO SECTION RESPONSIVE */
+@media screen and (max-width: 992px) {
+  .heading-1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .heading-1 {
+    font-size: 40px;
+  }
 }
 
 /* 
@@ -49,6 +103,7 @@ FINACE HERO SECTION
 LOAN DETAILS SECTION
 ==========================
 */
+<<<<<<< HEAD
 .loan-details-section{
     padding: 100px 0;
 }
@@ -57,9 +112,28 @@ LOAN DETAILS SECTION
   display: flex;
   justify-content: center;
   margin: auto;
+=======
+
+.loan-details-section {
+  padding: 130px 0;
 }
 
-.loan-details-img img{
+/* wrapper */
+.loan-details-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image container */
+.loan-details-img {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+>>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825
+}
+
+.loan-details-img img {
   width: 100%;
   height: 500px;      
   object-fit: cover;  
@@ -68,41 +142,38 @@ LOAN DETAILS SECTION
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .right-loan-details-card{
+=======
+.right-loan-details-card {
+>>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825
   position: absolute;
-  top: 40%;
-  right: 10%;              
-  transform: translateY(-50%); 
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
   width: 420px;
   background: white;
   padding: 35px 30px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
-/* heading */
-.right-loan-details-card .heading-3{
+.right-loan-details-card .heading-3 {
   text-align: center;
 }
 
-/* form group */
-.form-group{
+.form-group {
   position: relative;
   margin-bottom: 28px;
 }
 
-
-   /* CUSTOM DROPDOWN */
-
-
-.custom-dropdown{
+.custom-dropdown {
   position: relative;
 }
 
-/* dropdown head (looks like input) */
-.dropdown-head{
+.dropdown-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,21 +184,20 @@ LOAN DETAILS SECTION
   text-transform: capitalize;
   font-size: 18px;
   color: #626161;
- font-family: "DM Sans", sans-serif;}
+  font-family: "DM Sans", sans-serif;
+}
 
-/* arrow */
-.dropdown-head svg{
+.dropdown-head svg {
   width: 16px;
-    height: 20px;
+  height: 20px;
   transition: transform 0.3s ease;
 }
 
-.custom-dropdown.open .dropdown-head svg{
+.custom-dropdown.open .dropdown-head svg {
   transform: rotate(180deg);
 }
 
-/* dropdown list */
-.dropdown-list{
+.dropdown-list {
   position: absolute;
   left: 0;
   right: 0;
@@ -135,43 +205,40 @@ LOAN DETAILS SECTION
   margin-top: 10px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   display: none;
   z-index: 10;
- text-transform: capitalize;
+  text-transform: capitalize;
   font-family: "DM Sans", sans-serif;
 }
 
-.custom-dropdown.open .dropdown-list{
+.custom-dropdown.open .dropdown-list {
   display: block;
 }
 
-/* dropdown items */
-.dropdown-list li{
+.dropdown-list li {
   padding: 12px 15px;
   font-size: 14px;
   cursor: pointer;
 }
 
-.dropdown-list li:hover{
+.dropdown-list li:hover {
   background: var(--color-primary);
+  color: var(--color-white);
 }
 
-/* property identified */
-.property-identyfy label{
+.property-identyfy label {
   display: block;
   font-size: 14px;
   margin-bottom: 12px;
   text-transform: capitalize;
 }
 
-
-/* Pin Code */ 
-.form-group input[type="text"]{
+.form-group input[type="text"] {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #cfcfcf;
-  padding: 10px 0;         
+  border-bottom: 1px solid #bdbdbd;
+  padding: 10px 0;
   font-size: 18px;
   font-family: inherit;
   color: #000;
@@ -179,27 +246,22 @@ LOAN DETAILS SECTION
   outline: none;
 }
 
-/* placeholder look */
-.form-group input[type="text"]::placeholder{
-  color: #9a9a9a;
+.form-group input[type="text"]::placeholder {
+  color: #626161;
   font-size: 16px;
 }
 
-.property-identyfy label{
+.property-identyfy label {
   font-size: 16px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* .form-group input[type="text"]:focus{
-  border-bottom-color: #3f63e0;
-} */
 
-
-.radio-btns{
+.radio-btns {
   display: flex;
 }
 
-.radio-btn{
+.radio-btn {
   padding: 10px 26px;
   border-radius: 25px;
   border: 1px solid var(--color-primary);
@@ -208,26 +270,25 @@ LOAN DETAILS SECTION
   cursor: pointer;
   margin-right: 12px;
   transition: all 0.2s ease;
-  font-size:14px;
+  font-size: 14px;
   color: var(--color-black);
 }
 
-.radio-btn:last-child{
+.radio-btn:last-child {
   margin-right: 0;
 }
 
-.radio-btn:focus{
+.radio-btn:focus {
   background: var(--color-primary);
   color: #fff;
   outline: none;
 }
 
-/* next button */
-.nextbtn{
+.nextbtn {
   margin-top: 30px;
 }
 
-.nextbtn a{
+.nextbtn a {
   display: block;
   text-align: center;
   padding: 12px;
@@ -236,81 +297,260 @@ LOAN DETAILS SECTION
   color: var(--color-white);
   font-size: 16px;
   text-decoration: none;
-   font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
+/* 
+=====================================
+  LOAN DETAILS SECTION  RESPONSIVE 
+=====================================
+ */
 
- /*
- ======================
- HOW IT WORKS SECTION
- ======================
+/* 1200 */
+@media (max-width: 1200px) {
+  .loan-details-img {
+    width: 90%;
+  }
+
+  .right-loan-details-card {
+    right: 5%;
+    width: 380px;
+  }
+}
+
+/* 992 */
+@media (max-width: 992px) {
+  .loan-details-section {
+    padding: 80px 0;
+  }
+
+  .loan-details-img {
+    width: 100%;
+  }
+
+  .loan-details-img img {
+    height: 450px;
+  }
+
+  .right-loan-details-card {
+    width: 340px;
+    padding: 25px;
+    right: 5%;
+  }
+  .right-loan-details-card .heading-3 {
+    font-size: 32px;
+  }
+}
+
+/* 768 */
+@media (max-width: 768px) {
+  .loan-details-wrapper {
+    flex-direction: column;
+  }
+
+  .loan-details-img {
+    width: 100%;
+  }
+
+  .loan-details-img img {
+    height: auto;
+  }
+
+  .right-loan-details-card {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Mobile 480*/
+@media (max-width: 480px) {
+  .loan-details-section {
+    padding: 60px 0;
+  }
+
+  .right-loan-details-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .right-loan-details-card .heading-3 {
+    font-size: 28px;
+  }
+
+  .dropdown-head {
+    font-size: 16px;
+  }
+
+  .form-group input[type="text"] {
+    font-size: 16px;
+  }
+
+  .radio-btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .nextbtn a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/*
+====================================
+HOW IT WORKS SECTION
+====================================
 */
-.how-it-work-sec{
+.how-it-work-sec {
   padding: 100px 0;
 }
-.how-it-work-sec .heading-2{
+
+.how-it-work-sec .heading-2 {
   color: var(--color-black);
 }
-.how-it-work-sec .heading-2 span{
+
+.how-it-work-sec .heading-2 span {
   color: var(--color-primary);
 }
 
-.how-itwork-card{
-  background: rgba(55,93,217,10%);
+.how-it-work-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px -15px 0;
+}
+
+.col-25 {
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.how-itwork-card {
+  background: rgba(55, 93, 217, 0.1);
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid rgba(55, 93, 217, 20%);
+  border: 1px solid rgba(55, 93, 217, 0.2);
+  height: 100%;
 }
-.how-itwork-card svg{
+
+.how-itwork-card svg {
   width: 50px;
   height: 50px;
 }
-/* .how-it-work-card-desc{
-  margin-top: 20px;
-} */
-.how-it-work-card-desc .card-heading{
+
+/* CARD TEXT */
+
+.how-it-work-card-desc .card-heading {
   font-size: 24px;
   font-weight: 600;
   color: var(--color-black);
   text-transform: capitalize;
-  line-height: calc(31/24);
+  line-height: 1.3;
   margin: 20px 0 16px 0;
   font-family: "DM Sans", sans-serif;
 }
- .how-it-work-card-pera{
+
+.how-it-work-card-pera {
   font-size: 18px;
-  font-weight: 600px;
-  list-style: calc(23/18);
+  font-weight: 500;
+  line-height: 1.4;
   color: var(--color-black);
   text-transform: capitalize;
   font-family: "DM Sans", sans-serif;
 }
 
-/* search box */
+/*
+====================================
+HOW IT WORKS SECTION RESPONSIVE
+====================================
+*/
+
+/* 1400px */
+@media (max-width: 1400px) {
+  .col-25 {
+    width: 50%;
+  }
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+  .col-25 {
+    width: 50%;
+  }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+  .col-25 {
+    width: 100%;
+  }
+
+  .how-it-work-sec .heading-2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .how-it-work-card-desc .card-heading {
+    font-size: 20px;
+  }
+
+  .how-it-work-card-pera {
+    font-size: 16px;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  .heading-2 {
+    font-size: 32px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .heading-2 {
+    font-size: 28px;
+  }
+
+  .how-it-work-card-desc .card-heading {
+    font-size: 18px;
+  }
+
+  .how-it-work-card-pera {
+    font-size: 14px;
+  }
+}
+
+/* 
+=================================================
+            SEARCH BOX
+=================================================
+*/
+
 .search-box {
   display: flex;
   align-items: center;
-  padding: 20px 5px;
+  padding: 20px 10px;
   border: 1px solid var(--color-border);
   border-radius: 10px;
   background: var(--color-white);
   width: 100%;
   max-width: 777px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
-/* search icon */
-.search-icon svg {
-  width: 19px;
-  height: 19px;
-  margin-left: 10px;
-}
 .search-icon {
   display: flex;
   align-items: center;
 }
 
-/* input text */
+.search-icon svg {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
+
 .search-box input {
   border: none;
   outline: none;
@@ -323,73 +563,151 @@ LOAN DETAILS SECTION
 .search-box input::placeholder {
   color: #535353;
 }
-.how-it-work-sec .search-box{
-  margin-top: 40px;
-}
 
+/* =====================
+FINANCE MENU
+===================== */
 
-/* finance menu */
 .finance-menu-list {
   margin: 50px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .finance-menu-list a {
   border: 0.5px solid var(--color-border);
   padding: 10px 20px;
   border-radius: 50px;
   color: var(--color-black);
-  margin: 5px 10px 5px 0;
+  margin: 5px;
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
   white-space: nowrap;
+  transition: 0.3s ease;
 }
-.last-menu {
-  margin: 0;
-}
-.finace-menu-list .active {
+
+.finance-menu-list a:hover,
+.finance-menu-list .active {
   background: var(--color-primary);
   color: var(--color-white);
 }
-.finance-menu-list a:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
+
+/*
+====================================
+RESPONSIVE
+====================================
+*/
+
+/* 992px */
+@media (max-width: 992px) {
+  .search-box {
+    padding: 16px 10px;
+  }
+
+  .search-box input {
+    font-size: 15px;
+  }
+
+  .finance-menu-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+  }
+
+  .finance-menu-list a {
+    flex: 0 0 auto;
+    font-size: 18px;
+    padding: 8px 18px;
+  }
+
+  .finance-menu-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .finance-menu-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  .search-box {
+    padding: 14px 10px;
+  }
+
+  .search-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .finance-menu-list a {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .search-box {
+    padding: 12px 8px;
+  }
+
+  .search-box input {
+    font-size: 13px;
+  }
+
+  .finance-menu-list a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
 }
 
 /*
 ============================
 BANK INFORMATION SECTION
 ============================
- */
+*/
 
-/* .bank-information-sec{
+.bank-information-sec {
   padding: 100px 0;
-} */
-.bank-information-sec .heading-2{
+}
+
+.bank-information-sec .heading-2 {
   color: var(--color-black);
 }
-.bank-information-sec .heading-2 span{
+
+.bank-information-sec .heading-2 span {
   color: var(--color-primary);
 }
 
-.bank-information-row{
-  display: flex;
-  flex-wrap: wrap;       
+.col-33 {
+  margin-bottom: 30px;
 }
 
-/* card */
+/* CARD DESIGN */
 .bank-information-card {
-  background: rgba(55,93,217,10%);
-  border: 1.5px solid rgba(55,93,217,70%);
+  background: rgba(55, 93, 217, 0.1);
+  border: 1.5px solid rgba(55, 93, 217, 0.7);
   border-radius: 20px;
   padding: 28px;
- margin-bottom: 24px;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.bank-information-card:hover {
+  transform: translateY(-5px);
 }
 
 .bank-card-header {
   display: flex;
-  align-items: center;     
+  align-items: center;
   margin-bottom: 22px;
 }
 
@@ -398,21 +716,19 @@ BANK INFORMATION SECTION
   height: 70px;
   border-radius: 10px;
   object-fit: contain;
-  display: block;         
-  margin-right: 15px;      
+  margin-right: 15px;
 }
 
 .bank-card-header h3 {
-  margin: 0;               
+  margin: 0;
   font-size: 36px;
   font-weight: 600;
-  line-height: calc(47/36);         
+  line-height: 1.3;
   color: var(--color-black);
-   font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-
-/* list style */
+/* LIST */
 .card-informations {
   list-style: none;
   padding: 0;
@@ -421,97 +737,232 @@ BANK INFORMATION SECTION
 
 .card-informations li {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
-
 
 .card-informations li span {
   display: flex;
   align-items: center;
   font-size: 16px;
-   font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
   color: #555;
 }
 
-
 .card-informations li span svg {
   width: 22px;
   height: 22px;
+  margin-right: 10px;
   flex-shrink: 0;
-  margin-right: 10px;   
 }
 
 .card-informations li strong {
-    font-size: 20px;
-   font-family: "DM Sans", sans-serif;
-  text-transform: capitalize;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   color: var(--color-black);
 }
 
-/* bottom text */
 .bank-information-card p {
   margin-top: 18px;
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
   color: #666;
-  line-height: calc(26/20);
+  line-height: 1.5;
 }
 
 /*
 ============================
- LOAN BUYING PROCESS SECTION 
+RESPONSIVE
 ============================
 */
-.loan-buying-process-sec{
+
+/* 1200px*/
+@media (max-width: 1400px) {
+  .col-33 {
+    width: 50%;
+  }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+  .col-33 {
+    width: 100%;
+  }
+
+  .bank-card-header h3 {
+    font-size: 28px;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  .bank-information-sec {
+    padding: 70px 0;
+  }
+
+  .bank-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bank-card-header img {
+    margin-bottom: 10px;
+  }
+
+  .bank-card-header h3 {
+    font-size: 24px;
+  }
+
+  .card-informations li strong {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .bank-information-card {
+    padding: 20px;
+  }
+
+  .bank-card-header h3 {
+    font-size: 20px;
+  }
+
+  .card-informations li span {
+    font-size: 14px;
+  }
+
+  .card-informations li strong {
+    font-size: 16px;
+  }
+
+  .bank-information-card p {
+    font-size: 14px;
+  }
+}
+
+/*
+==============================
+LOAN BUYING PROCESS SECTION
+==============================
+*/
+
+.loan-buying-process-sec {
   padding: 100px 0;
 }
-.loan-buying-process-header .heading-2{
+
+.loan-buying-process-header .heading-2 {
   color: var(--color-black);
   margin: 0;
 }
-.loan-buying-process-header .heading-2 span{
+
+.loan-buying-process-header .heading-2 span {
   color: var(--color-primary);
 }
-.loan-buying-process-header p{
-  margin-top: 15px;
+
+.loan-buying-process-header p {
+  margin: 15px 0 50px;
   font-size: 16px;
   font-weight: 500;
-  color: #4A4A4A;
   font-family: "DM Sans", sans-serif;
-  margin-bottom: 50px;
+  color: #4a4a4a;
+  line-height: 1.6;
 }
 
-/* cards */
-.loan-buying-process-card-wrapper{
+.loan-process-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col-50 {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* CARD */
+.loan-buying-process-card-wrapper {
   margin-top: 40px;
 }
-.loan-buying-card img{
+
+.loan-buying-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.loan-buying-card img {
   width: 130px;
   height: 90px;
   object-fit: cover;
   border-radius: 10px;
-  margin-right: 24px;
-}
-.loan-buying-card{
-  display: flex;
-  align-items: center;
-}
-.loan-process-description p{
-  font-size: 16px;
-  font-weight: 500;
-   font-family: "DM Sans", sans-serif;
-   color: #4A4A4A;
-   line-height: calc(26/20);
+  flex-shrink: 0;
 }
 
-.loan-process-row{
-  display: flex;
-  flex-wrap: wrap;
+.loan-process-description p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 
+==============================
+   RESPONSIVE
+==============================
+ */
+
+/* 992*/
+@media (max-width: 992px) {
+  .col-50 {
+    width: 100%;
+  }
+
+  .loan-buying-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .loan-buying-card img {
+    margin-bottom: 15px;
+  }
+}
+
+/* 480 */
+@media (max-width: 480px) {
+  .loan-buying-process-sec {
+    padding: 60px 0;
+  }
+
+  .loan-buying-process-header p {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .loan-process-description p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .loan-buying-card img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .loan-buying-process-card-wrapper {
+    margin-top: 30px;
+  }
+  .loan-process-description h4 {
+    font-size: 20px;
+  }
 }
 
 /* 
@@ -520,266 +971,551 @@ EMI CALCULATOR SECTION
 ===========================
 */
 
-.emi-calculator-sec{
+.emi-calculator-sec {
   padding: 100px 0;
 }
 
-.emi-calculator-sec .heading-2{
+.emi-calculator-sec .heading-2 {
   color: var(--color-black);
 }
-.emi-calculator-sec .heading-2 span{
+.emi-calculator-sec .heading-2 span {
   color: var(--color-primary);
 }
 
-
-
-/* 
-.row{
-  display:flex;
-  justify-content:space-between;
-}
-
-.col-50{
-  width:48%;
-} */
-
-/* LEFT */
-/* .heading-2{
-  font-size:38px;
-  font-weight:700;
-  margin-bottom:28px;
-} */
-/* .heading-2 span{
-  color:#3f5bd8;
-} */
-
-/* .select-bank{
-  margin-bottom:48px;
-}
-
-.select-bank label{
-  color:#3f5bd8;
-  font-size:15px;
-  font-weight:500;
-  display:block;
-  margin-bottom:6px;
-} */
-
-/* .bank-dropdown{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  color:#3f5bd8;
-  cursor:pointer;
-} */
-
-/* .arrow{
-  width:9px;
-  height:9px;
-  border-right:2px solid #3f5bd8;
-  border-bottom:2px solid #3f5bd8;
-  transform:rotate(45deg);
-  margin-top:-4px;
-} */
-
 /* EMI FIELD */
-.emi-field{
-  padding:30px 0 32px;
-  border-top:1px solid #cdcaca;
+.emi-field {
+  padding: 30px 0 32px;
+  border-top: 1px solid #cdcaca;
 }
 
-.field-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:20px;
+.field-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.field-top label{
-  font-weight:600;
-  font-size:24px;
+.field-top label {
+  font-weight: 600;
+  font-size: 24px;
   text-transform: capitalize;
-     font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-.amount-value{
-  border:1px solid rgba(55,93,217,30%);
-  padding:10px 20px;
-  border-radius:50px;
+.amount-value {
+  border: 1px solid rgba(55, 93, 217, 30%);
+  padding: 10px 20px;
+  border-radius: 50px;
   font-size: 18px;
-  font-weight:600;
+  font-weight: 600;
 }
 
 /* RANGE */
-input[type="range"]{
-  width:100%;
-  height:15px;
-  background:#AFADAD;
-  border-radius:20px;
-  appearance:none;
-  outline:none;
+input[type="range"] {
+  width: 100%;
+  height: 15px;
+  background: #afadad;
+  border-radius: 20px;
+  appearance: none;
+  outline: none;
 }
 
-input[type="range"]::-webkit-slider-thumb{
-  appearance:none;
-  width:35px;
-  height:35px;
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 35px;
+  height: 35px;
   background: var(--color-primary);
-  border-radius:50%;
-  cursor:pointer;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.range-info{
-  display:flex;
-  justify-content:space-between;
-  margin-top:10px;
-  color:var(--color-primary);
-  font-size:16px;
-  font-weight:500;
+.range-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* RIGHT PART */
-/* .emi-calculator-right-part{
-  text-align:center;
+.emi-calculator-right-part {
+  text-align: center;
 }
 
-.emi-result p{
-  font-size:20px;
-  font-weight:600;
+.emi-result p {
+  font-size: 20px;
+  font-weight: 600;
   color: var(--color-black);
   text-transform: capitalize;
 }
 
-.emi-result h3{
-  margin:12px 0 36px;
-}
-
-
-.emi-chart{
-  width:300px;
-  height:300px;
-  margin:0 auto 30px;
-  border-radius:50%;
-  background:conic-gradient(
-    #375DD9 0% 81.38%,
-    #00CCFF 81.38% 99.59%,
-    #FF00B7 99.59% 100%
-  );
-}
-
-.emi-breakdown{
-  list-style:none;
-  max-width:320px;
-  margin:auto;
-  text-align:center;
-}
-
-.emi-breakdown li{
-  margin-bottom:20px;
-  font-size:16px;
-  color:#666;
-}
-
-.emi-breakdown strong{
-  display:block;
-  margin-top:8px;
-  font-size:16px;
-  font-weight:700;
-  color:var(--color-black);
-}
-
-
-.dot{
-  width:15px;
-  height:15px;
-  border-radius:50%;
-  display:inline-block;
-  margin-right:10px;
-}
-
-.dot.loan{background:#3f5bd8;}
-.dot.interest{background:#00CCFF;}
-.dot.fee{background:#FF00B7;}
-
-
-
-
-
-.emi-chart{
-  background: conic-gradient(
-    #3f5bd8 0% 70%,
-    #05c6f9 70% 90%,
-    #ff00b8 90% 100%
-  );
-  
-} */
-/* RIGHT PART */
-.emi-calculator-right-part{
-  text-align:center;
-}
-
-/* EMI RESULT */
-.emi-result p{
-  font-size:20px;
-  font-weight:600;
-  color: var(--color-black);
-  text-transform: capitalize;
-}
-
-.emi-result h3{
-  margin:12px 0 36px;
-  font-size:36px;
-  font-weight:700;
-  color: var(--color-black);
+.emi-result h3 {
+  margin: 12px 0 36px;
 }
 
 /* CHART */
-.emi-chart{
-  width:300px;
-  height:300px;
-  margin:0 auto 30px;
-  border-radius:50%;
+.emi-chart {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+
   background: conic-gradient(
-    #3f5bd8 0% 81.38%,
-    #00CCFF 81.38% 99.59%,
-    #FF00B7 99.59% 100%
+    #3f5bd8 0% 71.38%,
+    #00ccff 71.38% 89.59%,
+    #ff00b7 89.59% 100%
   );
+
+  transform: rotate(20deg);
 }
 
-/* BREAKDOWN */
-.emi-breakdown{
-  list-style:none;
-  max-width:320px;
-  margin:0 auto;
-  padding:0;
+.emi-breakdown {
+  list-style: none;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
 }
 
-.emi-breakdown li{
-  margin-bottom:22px;
-  font-size:16px;
-  color:#666;
-  text-align:left;
+.emi-breakdown li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.emi-breakdown strong{
-  display:block;
-  margin-top:6px;
-  font-size:16px;
-  font-weight:700;
-  color:var(--color-black);
+.emi-breakdown strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-black);
 }
 
-/* DOT */
-.dot{
-  width:15px;
-  height:15px;
-  border-radius:50%;
-  display:inline-block;
-  margin-right:10px;
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5px;
 }
 
+<<<<<<< HEAD
 .dot.loan{background:#3f5bd8;}
 .dot.interest{background:#00CCFF;}
 .dot.fee{background:#FF00B7;}
 =======
 >>>>>>> parent of c832fa8 (update)
+=======
+.dot.loan {
+  background: #3f5bd8;
+}
+.dot.interest {
+  background: #00ccff;
+}
+.dot.fee {
+  background: #ff00b7;
+}
+
+/* RESPONSIVE */
+/* 768 */
+@media (max-width: 768px) {
+  .emi-field label {
+    font-size: 20px;
+  }
+  .emi-calculator-right-part h3 {
+    font-size: 32px;
+  }
+}
+/* 480 */
+@media (max-width: 480px) {
+  .emi-field label {
+    font-size: 18px;
+  }
+  .amount-value {
+    font-size: 16px;
+  }
+  .emi-calculator-right-part h3 {
+    font-size: 28px;
+  }
+
+  /* CHART */
+  .emi-chart {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* 
+ =============================
+ HOME LOAN AMORTIZATION TABLE
+ =============================
+  */
+
+/* .amortization-section{
+  padding:60px 0; 
+}   */
+
+.amortization-box {
+  background: rgba(55, 93, 217, 10%);
+  padding: 30px 35px;
+  border-radius: 15px;
+  margin: auto;
+  font-family: "DM Sans", sans-serif;
+}
+
+.amortization-section .heading-4 {
+  margin-bottom: 25px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  /* border-collapse:collapse; */
+}
+
+/* HEADER */
+thead th {
+  font-size: 20px;
+  padding-bottom: 18px;
+  color: var(--color-black);
+}
+
+thead span {
+  font-size: 16px;
+  color: #727171;
+}
+
+tbody td {
+  padding: 12px 0;
+  font-size: 18px;
+}
+
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+thead th:first-child,
+tbody td:first-child {
+  text-align: left;
+}
+
+thead th:last-child,
+tbody td:last-child {
+  text-align: right;
+}
+
+thead th:not(:first-child):not(:last-child),
+tbody td:not(:first-child):not(:last-child) {
+  text-align: center;
+}
+
+tbody a {
+  color: #375dd9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/*
+==========================
+   RESPONSIVE
+==========================
+*/
+
+@media (max-width: 992px) {
+  thead th {
+    font-size: 18px;
+  }
+
+  tbody td {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .amortization-box {
+    padding: 20px;
+  }
+
+  thead th {
+    font-size: 16px;
+  }
+
+  thead span {
+    font-size: 14px;
+  }
+
+  tbody td {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .amortization-box {
+    padding: 10px;
+  }
+
+  thead th {
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+
+  tbody td {
+    font-size: 12px;
+    padding: 6px 4px;
+  }
+}
+
+/* 
+=========================
+HOME LOAN NEWS SECTION
+=========================
+ */
+.home-loan-news-section {
+  margin: 100px 0;
+}
+
+.home-loan-news-section .heading-2 {
+  color: var(--color-black);
+}
+
+.home-loan-news-section .heading-2 span {
+  color: var(--color-primary);
+}
+
+.img-wrapper {
+  border-radius: 28px;  
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.img-wrapper img {
+  width: 100%;
+    height: 250px; 
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.home-loan-news-card:hover .img-wrapper img {
+  transform: scale(1.08);
+}
+
+
+.home-loan-card-description-heading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  color: var(--color-black);
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.home-loan-news-card-descriptions-pera {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* 
+===============================================
+HOME LOAN NEWS SECTION RESPONSIVE
+===============================================
+ */
+
+@media (max-width: 992px) {
+  .img-wrapper img {
+    height: 220px;
+  }
+
+  .home-loan-card-description-heading {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .home-loan-news-card-descriptions-pera {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* 576 */
+@media (max-width: 576px) {
+  .img-wrapper img {
+    height: 200px;
+  }
+
+  .home-loan-card-description-heading {
+    font-size: 18px;
+  }
+
+  .home-loan-news-card-descriptions-pera {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .img-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+/* 
+========================
+ACCORDION SECTION
+========================
+  */
+.accordion-section {
+  /* padding: 100px 0; */
+
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.accordion-section .heading-2 {
+  text-align: center;
+  margin: auto;
+}
+.accordion-section span {
+  color: var(--color-primary);
+}
+
+.accordion-section {
+  padding: 100px 20px;
+}
+
+.faq-item {
+  padding: 24px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-header .heading-4 {
+  margin: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.faq-toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Common line */
+.faq-toggle::before,
+.faq-toggle::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  transition: 0.3s ease;
+}
+
+.faq-toggle::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.faq-toggle::after {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.faq-item.active .faq-toggle::after {
+  transform: translateX(-50%) scaleY(0);
+}
+
+.faq-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.faq-content p {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+/* 992px */
+@media (max-width: 992px) {
+  .accordion-section {
+    padding: 80px 20px;
+  }
+
+  .faq-header .heading-4 {
+    font-size: 18px;
+  }
+
+  .faq-content p {
+    font-size: 14px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .accordion-section {
+    padding: 70px 15px;
+  }
+
+  .faq-header {
+    align-items: flex-start;
+  }
+
+  .faq-header .heading-4 {
+    font-size: 16px;
+  }
+
+  .faq-content p {
+    font-size: 14px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .accordion-section {
+    padding: 60px 15px;
+  }
+
+  .faq-header .heading-4 {
+    font-size: 15px;
+  }
+
+  .faq-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .faq-toggle {
+    width: 16px;
+    height: 16px;
+  }
+}
+>>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825

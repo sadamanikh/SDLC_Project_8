@@ -38,6 +38,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- link finace.css -->
     <link rel="stylesheet" href="./css/finance.css" />
+    <!-- link finace all.css -->
+    <link rel="stylesheet" href="./css/finance-all.css" />
+    <!-- link finace find best offer.css -->
+    <link rel="stylesheet" href="./css/finance-find-best-offer.css" />
   </head>
 
   <body>
@@ -87,113 +91,95 @@
 
     <!-- main start -->
     <main>
-      <!-- finance hero section -->
+      <!-- FINACE HERO SECTION -->
       <section class="finance-hero-sec">
         <div class="container hero-wrapper">
           <h1 class="heading-1">Finance</h1>
         </div>
       </section>
 
-      <!-- loan details section -->
+      <!-- LOAN DETAILS SECTION -->
       <section class="loan-details-section">
         <div class="container">
           <div class="loan-details-wrapper">
             <div class="loan-details-img">
               <img src="./image/finance-page-img/loan-details-img.png" alt="" />
-<<<<<<< HEAD
-            </div>
-
-            <div class="right-loan-details-card">
-                <h2 class="heading-2">enter the loan details</h2>
-            <form class="loan-details-form" action="">
-                <div>
-                    
-=======
 
               <div class="right-loan-details-card">
-                <h3 class="heading-3">enter the loan details</h3>
+                <!-- Back Button -->
+                <div class="back-btn">
+                  <a href="./finance-all.html">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.318083 6.22234L6.46383 0L8 1.55531L2.62233 7L8 12.4447L6.46383 14L0.318083 7.77766C0.114415 7.57139 0 7.29166 0 7C0 6.70834 0.114415 6.42861 0.318083 6.22234Z"
+                        fill="black"
+                      />
+                    </svg>
+                    Back
+                  </a>
+                </div>
+
+                <div class="profession-types">
+                  <p>Select your Profession Type</p>
+
+                  <div class="btn-group">
+                    <input
+                      type="radio"
+                      name="profession"
+                      id="sal"
+                      checked
+                      hidden
+                    />
+                    <label for="sal">Salaried</label>
+
+                    <input type="radio" name="profession" id="self" hidden />
+                    <label for="self">Self Employed</label>
+
+                    <input type="radio" name="profession" id="ret" hidden />
+                    <label for="ret">Retired</label>
+
+                    <input type="radio" name="profession" id="home" hidden />
+                    <label for="home">Home Maker</label>
+                  </div>
+                </div>
 
                 <form action="">
-                  <!-- property amount -->
-                  <div class="form-group custom-dropdown">
-                    <div class="dropdown-head">
-                      <span class="selected-text">select property amount</span>
-
-                      <!-- arrow -->
-                      <svg
-                        width="20"
-                        height="12"
-                        viewBox="0 0 20 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          opacity="0.5"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M8.88906 11.5229L0 2.30425L2.22187 0L10 8.0665L17.7781 0L20 2.30425L11.1109 11.5229C10.8163 11.8284 10.4167 12 10 12C9.58334 12 9.18373 11.8284 8.88906 11.5229Z"
-                          fill="black"
-                        />
-                      </svg>
-                    </div>
-
-                    <ul class="dropdown-list">
-                      <li>upto 15 lacs</li>
-                      <li>15-25 lacs</li>
-                      <li>60-75 lacs</li>
-                      <li>75 lacs+</li>
-                    </ul>
-                  </div>
-
-                  <!-- select city -->
-                  <div class="form-group custom-dropdown">
-                    <div class="dropdown-head">
-                      <span class="selected-text">Select city</span>
-                      <!-- arrow -->
-                      <svg
-                        width="20"
-                        height="12"
-                        viewBox="0 0 20 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          opacity="0.5"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M8.88906 11.5229L0 2.30425L2.22187 0L10 8.0665L17.7781 0L20 2.30425L11.1109 11.5229C10.8163 11.8284 10.4167 12 10 12C9.58334 12 9.18373 11.8284 8.88906 11.5229Z"
-                          fill="black"
-                        />
-                      </svg>
-                    </div>
-
-                    <ul class="dropdown-list">
-                      <li>Mumbai</li>
-                      <li>Bengaluru</li>
-                      <li>Chennai</li>
-                      <li>Delhi</li>
-                      <li>Kolkata</li>
-                      <li>Ahmedabad</li>
-                    </ul>
-                  </div>
-
-                  <!-- pin code -->
                   <div class="form-group">
-                    <input type="text" placeholder="Pin Code" />
+                    <input type="text" placeholder="Your Current Company" />
                   </div>
 
-                  <!-- property identified -->
-                  <div class="form-group property-identyfy">
-                    <label>property identified</label>
-                    <div class="radio-btns">
-                      <button type="button" class="radio-btn">Yes</button>
-                      <button type="button" class="radio-btn">No</button>
-                    </div>
+                  <!-- Salary Group -->
+                  <div class="salary-group">
+                    <input type="radio" name="salary" id="s1" hidden />
+                    <label for="s1">10K-20K</label>
+
+                    <input type="radio" name="salary" id="s2" hidden />
+                    <label for="s2">40K-60K</label>
+
+                    <input type="radio" name="salary" id="s3" hidden />
+                    <label for="s3">60K-1L</label>
+
+                    <input type="radio" name="salary" id="s4" hidden />
+                    <label for="s4">1-2L</label>
+
+                    <input type="radio" name="salary" id="s5" hidden />
+                    <label for="s5">2-4L</label>
+
+                    <input type="radio" name="salary" id="s6" hidden />
+                    <label for="s6">4L+</label>
                   </div>
 
-                  <!-- next btn -->
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Any Existing EMI Amount (Optional)"
+                    />
+                  </div>
+
                   <div class="nextbtn">
-                    <a href="./finance-all.html">Next</a>
+                    <a href="./finance-best-offer.html">Find Best Offer</a>
                   </div>
                 </form>
               </div>
@@ -204,12 +190,14 @@
         </div>
       </section>
 
+      <!-- END END -->
+
       <!-- HOW IT WORKS SECTION -->
       <section class="how-it-work-sec">
         <div class="container">
           <h2 class="heading-2">How It <span>Works</span></h2>
 
-          <div class="row how-it-work-row">
+          <div class="row">
             <!-- 1st card -->
             <div class="col-25">
               <div class="how-itwork-card">
@@ -245,15 +233,40 @@
                   <p class="how-it-work-card-pera">
                     Comparing various bank offers you find the best interest.
                   </p>
->>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825
                 </div>
-                
-            </form>
-             
+              </div>
+            </div>
 
+            <!-- 2nd card -->
+            <div class="col-25">
+              <div class="how-itwork-card">
+                <svg
+                  width="49"
+                  height="46"
+                  viewBox="0 0 49 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.951 45.2618C27.4908 45.2618 27.1674 44.8974 27.1674 44.4874V35.3314C27.1674 34.8758 26.7993 34.557 26.3852 34.557C25.695 34.557 25.327 33.6915 25.8331 33.1904L36.5999 22.5311C36.922 22.2123 37.4281 22.2123 37.7502 22.5311L41.3392 26.0842L43.6858 28.4074L48.5171 33.1904C49.0232 33.6915 48.6551 34.557 47.9649 34.557H47.8269C47.3668 34.557 47.0447 34.9214 47.0447 35.3314L46.9066 44.4874C46.9066 44.9429 46.5385 45.2618 46.1244 45.2618H27.951Z"
+                    fill="#375DD9"
+                  />
+                  <path
+                    d="M33.9336 33.8288H40.2833M33.9336 31.779H40.2833M35.6821 31.7334C37.2005 31.7334 38.3968 32.9633 38.3968 34.421C38.3968 35.8787 37.1544 37.1086 35.6821 37.1086H34.2557L38.4888 40.8894"
+                    stroke="white"
+                    stroke-width="0.993"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.9348 39.7503H0.710938V0.711914H37.1065V19.1151M16.3551 19.6617H6.37043M24.2429 13.0111H6.37043M27.1219 6.31486H6.37043"
+                    stroke="#375DD9"
+                    stroke-width="1.423"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
 
-<<<<<<< HEAD
-=======
                 <div class="how-it-work-card-desc">
                   <p class="card-heading">Compare various bank offers</p>
                   <p class="how-it-work-card-pera">
@@ -377,15 +390,11 @@
               <a href="./finance-calculator.html">EMI Calculator</a>
               <a href="./finance-news-.html">News</a>
               <a class="last-menu" href="./finance-faq.html">FAQs</a>
->>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825
             </div>
           </div>
         </div>
       </section>
 
-<<<<<<< HEAD
-
-=======
       <!-- BANK INFORMATION SECTION -->
       <section class="bank-information-sec">
         <div class="container">
@@ -2282,6 +2291,15 @@
             <div class="col-50">
               <div class="emi-calculator-left-part">
                 <h2 class="heading-2">EMI <span>Calculator</span></h2>
+
+                <!-- <div class="select-bank">
+            <label>Select Bank</label>
+            <div class="bank-dropdown">
+              <span>Select Bank</span>
+              <i class="arrow"></i>
+            </div>
+          </div> -->
+
                 <!-- Loan Amount -->
                 <div class="emi-field">
                   <div class="field-top">
@@ -2451,105 +2469,102 @@
         </div>
       </section>
 
-    <!-- HOME LOAN NEWS SECTION -->
-<section class="home-loan-news-section">
-  <div class="container">
-    <h2 class="heading-2">home <span>loan news</span></h2>
+      <!-- HOME LOAN NEWS SECTION -->
+      <section class="home-loan-news-section">
+        <div class="container">
+          <h2 class="heading-2">home <span>loan news</span></h2>
 
-    <div class="row">
+          <div class="row">
+            <!-- card 1 -->
+            <div class="col-25">
+              <div class="home-loan-news-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-1.png"
+                    alt=""
+                  />
+                </div>
 
-      <!-- card 1 -->
-      <div class="col-25">
-        <div class="home-loan-news-card">
-          
-          <div class="img-wrapper">
-            <img
-              src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-1.png"
-              alt=""
-            />
-          </div>
+                <div class="home-loan-news-card-descriptions">
+                  <h3 class="home-loan-card-description-heading">
+                    Should you prepay your home loan or invest instead?
+                  </h3>
+                  <p class="home-loan-news-card-descriptions-pera">
+                    Owning a home is a major milestone in India. What should you
+                    do with your surplus income?
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="home-loan-news-card-descriptions">
-            <h3 class="home-loan-card-description-heading">
-              Should you prepay your home loan or invest instead?
-            </h3>
-            <p class="home-loan-news-card-descriptions-pera">
-              Owning a home is a major milestone in India. What should you do with your surplus income?
-            </p>
+            <!-- card 2 -->
+            <div class="col-25">
+              <div class="home-loan-news-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-2.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="home-loan-news-card-descriptions">
+                  <h3 class="home-loan-card-description-heading">
+                    Should you get pre-approved for a home loan?
+                  </h3>
+                  <p class="home-loan-news-card-descriptions-pera">
+                    In India, buying a home is a major financial decision shaped
+                    by affordability and financing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-25">
+              <div class="home-loan-news-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-3.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="home-loan-news-card-descriptions">
+                  <h3 class="home-loan-card-description-heading">
+                    Home Loan Sanction Letter Explained
+                  </h3>
+                  <p class="home-loan-news-card-descriptions-pera">
+                    Planning to buy a house? Understand the three key stages of
+                    the home loan process.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-25">
+              <div class="home-loan-news-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-4.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="home-loan-news-card-descriptions">
+                  <h3 class="home-loan-card-description-heading">
+                    Buying a Resale Flat in Gurgaon? Know This First
+                  </h3>
+                  <p class="home-loan-news-card-descriptions-pera">
+                    Gurugram is a prime hub, driven by its closeness to Delhi
+                    and metro connectivity.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- card 2 -->
-      <div class="col-25">
-        <div class="home-loan-news-card">
-
-          <div class="img-wrapper">
-            <img
-              src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-2.png"
-              alt=""
-            />
-          </div>
-
-          <div class="home-loan-news-card-descriptions">
-            <h3 class="home-loan-card-description-heading">
-              Should you get pre-approved for a home loan?
-            </h3>
-            <p class="home-loan-news-card-descriptions-pera">
-              In India, buying a home is a major financial decision shaped by affordability and financing.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- card 3 -->
-      <div class="col-25">
-        <div class="home-loan-news-card">
-
-          <div class="img-wrapper">
-            <img
-              src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-3.png"
-              alt=""
-            />
-          </div>
-
-          <div class="home-loan-news-card-descriptions">
-            <h3 class="home-loan-card-description-heading">
-              Home Loan Sanction Letter Explained
-            </h3>
-            <p class="home-loan-news-card-descriptions-pera">
-              Planning to buy a house? Understand the three key stages of the home loan process.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- card 4 -->
-      <div class="col-25">
-        <div class="home-loan-news-card">
-
-          <div class="img-wrapper">
-            <img
-              src="./image/finance-page-img/home-loan-news-sec/home-loan-news-img-4.png"
-              alt=""
-            />
-          </div>
-
-          <div class="home-loan-news-card-descriptions">
-            <h3 class="home-loan-card-description-heading">
-              Buying a Resale Flat in Gurgaon? Know This First
-            </h3>
-            <p class="home-loan-news-card-descriptions-pera">
-              Gurugram is a prime hub, driven by its closeness to Delhi and metro connectivity.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+      </section>
 
       <!-- ACCORDION PART -->
       <section class="accordion-section">
@@ -2608,7 +2623,6 @@
           </div>
         </div>
       </section>
->>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825
     </main>
 
     <!-- main end -->
@@ -2731,8 +2745,6 @@
           nextArrow: $(".next-btn"),
         });
       });
-<<<<<<< HEAD
-=======
 
       // FINANCE PAGE LOAN DETAILS CARD DROP DOWN JS START //
       document.addEventListener("click", (e) => {
@@ -2767,7 +2779,6 @@
               toggle.closest(".faq-item").classList.toggle("active")),
         );
       <!-- FINANCE PAGE ACCORDIAN JS END -->
->>>>>>> 54f06bf1b763517040684d9c65f4485cfaa0e825
     </script>
 
     <!-- leatest blog CDN AND JS -->
