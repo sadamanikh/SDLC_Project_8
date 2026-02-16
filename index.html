@@ -42,9 +42,8 @@
                     <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li> -->
                     <li><a href="./services.html">our services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./services.html">Contact us </a></li>
-                    <!-- <li><a href="./services.html">Contact us </a></li> -->
-                    <li><a href="./services.html">properties </a></li>
+                    <li><a href="./contactus.html">Contact us </a></li>
+                    <li><a href="./for-buyers.html">properties </a></li>
                     <!-- <li><a href="./services.html">blogs <i class="fa-solid fa-angle-down"></i></a></li> -->
                     <!-- <li><a href="./news-&-Guide.html">news & Guide</a></li> -->
                 </ul>
@@ -131,7 +130,8 @@
             <div class="banner-btm-sec">
                 <div class="container ">
                     <div class="banner-bottom">
-                        <a href="#" class="banner-bottom-btn">discover <span class="highlight-text-color"> latest
+                        <a href="blog.html" class="banner-bottom-btn">discover <span class="highlight-text-color">
+                                latest
                                 archievement</span>
                             <div class="right-arrow-icon">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -208,6 +208,7 @@
                 <div class="featured-btn-wrapper">
                     <a href="#" class="featured-btn cmn-btn">see more</a>
                 </div>
+            </div>
         </section>
         <!-- featured listing sec end -->
 
@@ -252,12 +253,18 @@
         <section class="explore-our-Services-sec cmn-gap">
             <div class="container">
                 <div class="explore-our-Services-upper-child">
-                    <h2 class="heading-3">explore our <span class="highlight-text-color">Services</span></h2>
-                    <p>Simplify your property journey with <span class="highlight-text-color">EstateVista</span> — buy,
-                        sell, rent, and
-                        finance homes with confidence.</p>
+                    <h2 class="heading-3">
+                        explore our <span class="highlight-text-color">Services</span>
+                    </h2>
+                    <p>
+                        Simplify your property journey with
+                        <span class="highlight-text-color">EstateVista</span> — buy,
+                        sell, rent, and finance homes with confidence.
+                    </p>
                 </div>
+
                 <div class="explore-our-Services-child">
+
                     <!-- cmn-explore-our-Services-1 -->
                     <a href="#" class="cmn-explore-our-Services">
                         <div class="explore-our-Services-img">
@@ -265,11 +272,15 @@
                         </div>
                         <div class="explore-our-Services-content">
                             <h3>finance a home</h3>
-                            <p>get quick home loan pre-approval and be ready to buy the right property without delays.
+                            <p>
+                                get quick home loan pre-approval and be ready to buy the right property without delays.
                             </p>
-                            <button class="explore-our-Services-btn cmn-btn">learn more<span></span></button>
+                            <div class="explore-our-Services-btn cmn-btn">
+                                learn more <span></span>
+                            </div>
                         </div>
                     </a>
+
                     <!-- cmn-explore-our-Services-2 -->
                     <a href="#" class="cmn-explore-our-Services">
                         <div class="explore-our-Services-img">
@@ -277,11 +288,16 @@
                         </div>
                         <div class="explore-our-Services-content">
                             <h3>sell a home</h3>
-                            <p>list your property easily and reach serious buyers faster with a seamless selling
-                                experience.</p>
-                            <button class="explore-our-Services-btn cmn-btn">learn more<span></span></button>
+                            <p>
+                                list your property easily and reach serious buyers faster with a seamless selling
+                                experience.
+                            </p>
+                            <div class="explore-our-Services-btn cmn-btn">
+                                learn more <span></span>
+                            </div>
                         </div>
                     </a>
+
                     <!-- cmn-explore-our-Services-3 -->
                     <a href="#" class="cmn-explore-our-Services">
                         <div class="explore-our-Services-img">
@@ -289,10 +305,15 @@
                         </div>
                         <div class="explore-our-Services-content">
                             <h3>rent a home</h3>
-                            <p>search verified rental properties and find a home that fits your lifestyle and budget</p>
-                            <button class="explore-our-Services-btn cmn-btn">learn more<span></span></button>
+                            <p>
+                                search verified rental properties and find a home that fits your lifestyle and budget
+                            </p>
+                            <div class="explore-our-Services-btn cmn-btn">
+                                learn more <span></span>
+                            </div>
                         </div>
                     </a>
+
                 </div>
             </div>
         </section>
@@ -824,6 +845,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
     <!-- footer sec end -->
 
@@ -864,33 +886,14 @@
         });
     </script>
 
+
+
+
     <!-- leatest blog CDN AND JS -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <!-- <script>
-        var swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
-            direction: getDirection(),
-            navigation: {
-                nextEl: '.swiper-button-next-own',
-                prevEl: '.swiper-button-prev-own',
-            },
-            on: {
-                resize: function () {
-                    swiper.changeDirection(getDirection());
-                },
-            },
-        });
-
-        function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-            return direction;
-        }
-    </script> -->
     <script>
         var swiper = new Swiper('.swiper', {
             slidesPerView: 3,
@@ -926,39 +929,6 @@
         }
     </script>
 
- <!-- toggler-js -->
-    <script>
-        const toggleBtn = document.getElementById('menu-bar');
-        const navLinks = document.querySelector('.nav-links');
-        const icon = toggleBtn.querySelector('i');
-
-        toggleBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-
-            if (navLinks.classList.contains('active')) {
-                // Menu open
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-                document.body.style.overflow = 'hidden';
-            } else {
-                // Menu close
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Reset menu on window resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 991.98) {
-                // Desktop view - reset everything
-                navLinks.classList.remove('active');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
 </body>
 
 </html>
