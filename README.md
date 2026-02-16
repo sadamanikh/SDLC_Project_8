@@ -7,5 +7,5 @@
 
 
 
-22/01/26 - about us page - Nishant
+22/01/26 - about us page - Nishat
 22/01/26 - terms & condition & policy - Sajid 

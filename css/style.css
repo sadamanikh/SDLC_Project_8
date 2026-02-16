@@ -135,10 +135,6 @@ p {
 /* cmn class end */
 
 /* header sec start */
-.menu-bar {
-    display: none;
-}
-
 .header-sec {
     background-color: #fff;
     padding: 25px 0;
@@ -156,10 +152,6 @@ p {
     background-color: #e0e0e065;
     padding: 10px 34px;
     border-radius: 100px;
-}
-
-.nav-logo img {
-    display: block;
 }
 
 .nav-links li {
@@ -357,10 +349,10 @@ p {
     background-color: var(--color-white);
 }
 
-.right-arrow-icon:hover i {
+.right-arrow-icon:hover i{
     transform: translateX(20px);
     overflow: hidden;
-
+    
 }
 
 .highlight-text-color {
@@ -567,15 +559,9 @@ p {
     transition: all 0.3s ease;
 }
 
-<<<<<<< HEAD
 .cmn-explore-our-Services:hover{
     box-shadow: 5px 5px 50px rgba(9, 6, 31, 0.4);
     transform: translateY(-10px);
-=======
-.cmn-explore-our-Services:hover {
-    box-shadow: 5px 20px 50px rgba(9, 6, 31, 0.4);
-    transform: scale(1.03);
->>>>>>> b0340bf5b4112572ad8c7101f72c59f6b83f8655
 }
 
 .explore-our-Services-content p {
@@ -1318,7 +1304,6 @@ input[type="email"]::placeholder {
 
 
 
-<<<<<<< HEAD
 /* media query start */
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
@@ -1352,9 +1337,6 @@ input[type="email"]::placeholder {
 
 
 
-=======
-/* media quaries */
->>>>>>> b0340bf5b4112572ad8c7101f72c59f6b83f8655
 @media screen and (max-width: 1400px) {
 
     .banner-lower {
@@ -1375,7 +1357,7 @@ input[type="email"]::placeholder {
     }
 
     .nav-links {
-        /* display: none; */
+        display: none;
     }
 
     .footer-left {
@@ -1400,43 +1382,12 @@ input[type="email"]::placeholder {
         font-size: 30px;
     }
 
-    .testimonials-cmn-card {
-        padding: 25px 10px 17px 20px;
-    }
-
-    .testimonials-bottom p {
-        margin-bottom: 15px;
-    }
-
-    .testimonials-bottom p {
-        font-size: 18px;
-    }
-
-    .testimonials-cmn-card {
-        margin-right: 10px;
-    }
-
-    .testimonials-top {
-        width: 43px;
-        margin-bottom: 15px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width: 1200px) {
+    .banner-lower {
+        width: 1000px;
+    }
 
     .room-details {
         padding: 14px 15px;
@@ -1456,11 +1407,27 @@ input[type="email"]::placeholder {
         align-content: center;
         width: 100%;
         height: 500px;
-        order: -1;
     }
 
     .footer-left {
         width: 100%;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .banner-lower {
+        width: 805px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 54px;
     }
 
     .banner-upper {
@@ -1469,6 +1436,58 @@ input[type="email"]::placeholder {
         padding-bottom: 156px;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .banner-lower {
+        width: 805px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 54px;
+    }
+
+    .banner-upper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 156px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .banner-lower {
+        width: 805px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 54px;
+    }
+
+    .banner-upper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 156px;
+    }
+
+    .banner-lower {
+        width: 680px;
+    }
+
+    h1,
+    .heading-1 {
+        font-size: 45px;
+    }
+
+    .room-details {
+        display: none;
+    }
+
+    .banner-lower {
+        width: 630px;
+    }
 
     .banner-bottom-btn {
         display: flex;
@@ -1485,7 +1504,7 @@ input[type="email"]::placeholder {
     }
 
     .cmn-featured {
-        width: calc(50% - 15px);
+        width: calc(50% - 30px);
         margin-bottom: 20px;
     }
 
@@ -1497,7 +1516,7 @@ input[type="email"]::placeholder {
 
     .cmn-explore-our-Services {
         width: calc(50% - 15px);
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .cmn-explore-our-Services {
@@ -1509,8 +1528,8 @@ input[type="email"]::placeholder {
     }
 
 
-<<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
     .banner-upper {
         display: flex;
@@ -2072,28 +2091,4 @@ input[type="email"]::placeholder {
     .footer-end {
         flex-wrap: wrap;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-<<<<<<< HEAD
-@media screen and (max-width: 420px) {}
-=======
-@media screen and (max-width: 420px) {
-    --
->>>>>>> b0340bf5b4112572ad8c7101f72c59f6b83f8655
-}
->>>>>>> b47d73470a98e1eebe9ccbf19c72582799a7a4df
