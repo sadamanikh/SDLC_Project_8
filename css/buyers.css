@@ -34,8 +34,8 @@ BUYERS MAIN SEC
 }
 .buyers-heading {
   max-width: 804px;
-  font-size: 64px;
-  font-weight: bold;
+  font-size: 64px ;
+  font-weight: bold ;
   color: var(--color-black);
   line-height: calc(83 / 64);
   font-family: "DM Sans", sans-serif;
@@ -98,19 +98,21 @@ BUYERS MAIN SEC
 /* buyers menu */
 .buyers-menu-list {
   margin: 50px auto 0;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 .buyers-menu-list a {
   border: 0.5px solid var(--color-border);
   padding: 10px 20px;
   border-radius: 50px;
   color: var(--color-black);
-  margin: 5px 10px 5px 0;
+   margin: 5px 10px 5px 0; 
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
-  white-space: nowrap;
+   white-space: nowrap;
+
 }
 .last-menu {
   margin: 0;
@@ -199,7 +201,7 @@ BUYERS MAIN SEC
 }
 
 .buyers-card-txet {
-  max-width: 100%;
+  max-width: 308px;
   font-size: 20px;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
@@ -253,32 +255,27 @@ BUYERS MAIN SEC
   margin-left: 6px;
 }
 
-/* View Details Button */
+/* view details button */
 .buyers-card-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  width: fit-content;
   background: var(--color-primary);
   padding: 10px 60px;
   border-radius: 10px;
   margin: 0 auto;
   margin-top: auto;
-  transition: 0.3s ease;
 }
 
 .buyers-card-btn a {
-  display: inline-flex;
-  align-items: center;
-
+  display: inline-block;
   color: var(--color-white);
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
 }
 
-.buyers-card-btn:hover {
-  background: var(--color-primary);
-  transform: translateY(-3px);
+.buyers-card-btn svg {
+  margin-left: 20px;
 }
 
 /* wish icon */
@@ -324,28 +321,21 @@ BUYERS MAIN SEC
 BUYERS MAIN SEC RESPONSIVE
 ===========================
  */
-/* -------1200------- */
-@media screen and (max-width: 1440px) {
-  .col-33 {
+
+  /* -------1200------- */
+ @media screen and (max-width:1200px){
+  .col-33{
     width: 50%;
   }
-}
 
-
-/* -------1200------- */
-@media screen and (max-width: 1200px) {
-  .col-33 {
-    width: 50%;
-  }
-}
-
-/* -------992------- */
-@media screen and (max-width: 992px) {
-  .buyers-heading {
+ }
+ /* -------992------- */
+ @media screen and (max-width:992px){
+  .buyers-heading{
     font-size: 48px;
   }
 
-  .search-box {
+    .search-box {
     max-width: 90%;
     padding: 16px 8px;
   }
@@ -355,92 +345,46 @@ BUYERS MAIN SEC RESPONSIVE
   }
 
   /* buyers menu*/
-  .buyers-menu-list a {
+   .buyers-menu-list a {
     font-size: 16px;
     padding: 8px 16px;
   }
-
-  .buyers-menu-list {
-    display: flex;
-    flex-wrap: nowrap;         
-    overflow-x: auto;           
-    justify-content: flex-start;
-    margin-top: 30px;
-  }
-
-  .buyers-menu-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .buyers-menu-list a {
-    flex-shrink: 0;           
-    margin: 0 10px 0 0;        
-  }
-
-    /* card part heading */
-  .buyers-card-hdr-wrpr .title-3 {
-    font-size: 30px;
-  }
-  /* crad */
-  .col-33 {
-    width: 50%;
-  }
-
-  .buyers-property-price {
-    font-size: 28px;
-  }
-  .buyers-card-txet {
-    font-size: 18px;
-  }
- .buyers-card span{
-    font-size: 18px;
-  }
-  .buyers-card-btn {
-    padding: 10px 40px;
-  }
-   
+  
+/* card */
+.col-33{
+  width: 50%;
 }
+
+ }
 
 /* --------768-------- */
-@media screen and (max-width: 768px) {
-  .buyers-heading {
+  @media screen and (max-width:768px){
+  .buyers-heading{
     font-size: 36px;
   }
-  .buyers-hdr-pera {
+  .buyers-hdr-pera{
     font-size: 18px;
   }
+  
+  /* card */
 
- 
-   /* card part heading */
-  .buyers-card-hdr-wrpr .title-3 {
-    font-size: 24px;
-  }
-  .buyers-subtitle {
-    font-size: 16px;
-  }
-   /* card */
-  .col-33 {
-    width: 100%;
-  }
-  .property-villa {
-    font-size: 18px;
-  }
-   .buyers-card span{
-    font-size: 16px;
-  }
+  .col-33{
+  width: 100%;
 }
+  
+ }
 
 
-/* --------576-------- */
-@media screen and (max-width: 576px) {
-  .buyers-heading {
+ /* --------576-------- */
+  @media screen and (max-width:576px){
+  .buyers-heading{
     font-size: 28px;
   }
-  .buyers-hdr-pera {
+   .buyers-hdr-pera{
     font-size: 14px;
   }
 
-  .search-box {
+    .search-box {
     max-width: 100%;
     padding: 12px 6px;
     border-radius: 8px;
@@ -459,10 +403,11 @@ BUYERS MAIN SEC RESPONSIVE
     font-size: 13px;
   }
 
+
   /* buyers menu */
-  .buyers-menu-list {
-    flex-wrap: nowrap;
-    /* overflow-x: hidden; */
+    .buyers-menu-list {
+    flex-wrap: wrap;        
+    overflow-x: hidden;    
     justify-content: center;
   }
 
@@ -471,65 +416,13 @@ BUYERS MAIN SEC RESPONSIVE
     padding: 6px 14px;
   }
 
-     /* card part heading */
-  .buyers-card-hdr-wrpr .title-3 {
-    font-size: 20px;
-  }
-  .buyers-subtitle {
-    font-size: 14px;
-  }
+  
+ }
 
-  /* card */
-   .col-33 {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .property-villa {
-    font-size: 14px;
-  }
 
-  .buyers-card {
-    margin: 0 auto 24px;
-  }
-  .buyers-property-price {
-    font-size: 24px;
-  }
-  .buyers-card-txet {
-    font-size: 16px;
-  }
-
-  .buyers-card-btn {
-    padding: 10px 22px;
-  }
-
-  .buyers-card-btn a {
-    font-size: 18px;
-    white-space: nowrap;
-  }
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .buyers-card-btn {
-    padding: 10px 22px;
-  }
-
-  .buyers-card-btn a {
-    font-size: 18px;
-    white-space: nowrap;
-  }
-
-  .buyers-sec {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-/* --------320-------- */
-@media screen and (max-width: 320px) {
-  .buyers-heading {
+  /* --------320-------- */
+  @media screen and (max-width:320px){
+  .buyers-heading{
     font-size: 22px;
   }
 
@@ -539,25 +432,8 @@ BUYERS MAIN SEC RESPONSIVE
     padding: 5px 12px;
     margin-right: 6px;
   }
-  .buyers-sec {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-/* card */
- .buyers-property-price {
-    font-size: 20px;
-  }
-  .buyers-card-txet {
-    font-size: 14px;
-  }
-  .buyers-location p{
-    font-size: 14px;
-  }
-  .buyers-card span{
-    font-size: 14px;
-  }
-}
+  
+ }
 
 /*
 ========================
@@ -614,40 +490,3 @@ BUYERS MAIN SEC RESPONSIVE
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
 }
-
-@media screen and (max-width: 992px) {
-  .looking-for-heading{
-    font-size: 28px;
-  }
-  .looking-for-pera{
-    font-size: 18px;
-  }
-  .looking-for-btn{
-    padding: 18px 20px;
-
-  }
-  .looking-for-btn a {
-    font-size: 18px;
-  }
-
-}
-
-@media screen and (max-width: 576px) {
-  .looking-for-heading{
-    font-size: 24px;
-  }
-  .looking-for-pera{
-    font-size: 14px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
