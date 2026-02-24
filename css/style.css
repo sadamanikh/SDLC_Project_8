@@ -139,12 +139,8 @@ p {
     display: none;
 }
 
-.nav-right {
-    display: none;
-}
-
 .mobile-menu {
-  display: none;
+    display: none;
 }
 
 .header-sec {
@@ -1342,6 +1338,10 @@ input[type="email"]::placeholder {
         display: none;
     }
 
+    .nav-right {
+        display: none;
+    }
+
     .footer-left {
         width: 70%;
         padding: 50px 47px 36px 0;
@@ -1598,9 +1598,13 @@ input[type="email"]::placeholder {
         display: block;
     }
 
+    .nav-right {
+        display: none;
+    }
+
     .mobile-menu {
-    display: block;
-  }
+        display: block;
+    }
 
     .nav-links {
         display: inline-block;
