@@ -39,23 +39,9 @@
                 <ul class="nav-links">
                     <li><a href="./index.html">home</a></li>
                     <li><a href="./about_us.html" class="active-page-select">about us</a></li>
-<<<<<<< HEAD
-                    <!-- <li><a href="#exampless">about us</a></li>
-                        <li><a href="./for-buyers.html">for buyers <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li> -->
                     <li><a href="./services.html">our services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./services.html">Contact us </a></li>
-                    <li><a href="./services.html">properties </a></li>
-                    <!-- <li><a href="./services.html">blogs <i class="fa-solid fa-angle-down"></i></a></li> -->
-                    <!-- <li><a href="./news-&-Guide.html">news & Guide</a></li> -->
-=======
-                    <li><a href="./for-buyers.html">for buyers <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./for-sellers.html">for sellers <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./services.html">services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="./news-&-Guide.html">news & Guide</a></li>
->>>>>>> 62ee7169e01d5818f59da8dc905886f8dabbae67
+                    <li><a href="./contactus.html">Contact us </a></li>
+                    <li><a href="./for-buyers.html">properties </a></li>
                 </ul>
                 <div class="nav-right">
                     <div class="nav-right-2">
@@ -63,6 +49,8 @@
                         <a href="./sign_up.html" class="cmn-btn">sign up</a>
                     </div>
                 </div>
+                <!-- menu-bar -->
+                <a class="menu-bar" id="menu-bar"><i class="fa-solid fa-bars"></i></a>
             </nav>
         </div>
     </header>
@@ -392,6 +380,40 @@
 
             return direction;
         }
+    </script>
+
+    <!-- toggler-js -->
+    <script>
+        const toggleBtn = document.getElementById('menu-bar');
+        const navLinks = document.querySelector('.nav-links');
+        const icon = toggleBtn.querySelector('i');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+
+            if (navLinks.classList.contains('active')) {
+                // Menu open
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+                document.body.style.overflow = 'hidden';
+            } else {
+                // Menu close
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Reset menu on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 991.98) {
+                // Desktop view - reset everything
+                navLinks.classList.remove('active');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = '';
+            }
+        });
     </script>
 
 </body>

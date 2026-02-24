@@ -29,28 +29,18 @@
 
 <body>
   <!-- header sec start -->
-  <!-- <header class="header-sec">
+  <header class="header-sec">
     <div class="container">
       <nav class="nav">
         <a href="./index.html" class="nav-logo">
-          <img src="./image/Home-page-images/nav-logo.png" alt="nav-logo" />
+          <img src="./image/Home-page-images/nav-logo.png" alt="nav-logo">
         </a>
         <ul class="nav-links">
           <li><a href="./index.html">home</a></li>
           <li><a href="./about_us.html">about us</a></li>
-          <li>
-            <a href="./for-buyers.html" class="active-page-select">for buyers <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-          <li>
-            <a href="./for-sellers.html" >for sellers <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-          <li>
-            <a href="./for-tenants.html">for tenants <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-          <li>
-            <a href="./services.html">services <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-          <li><a href="./news-&-Guide.html">news & Guide</a></li>
+          <li><a href="./services.html">our services <i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="./contactus.html">Contact us </a></li>
+          <li><a href="./for-buyers.html" class="active-page-select">properties </a></li>
         </ul>
         <div class="nav-right">
           <div class="nav-right-2">
@@ -58,9 +48,11 @@
             <a href="./sign_up.html" class="cmn-btn">sign up</a>
           </div>
         </div>
+        <!-- menu-bar -->
+        <a class="menu-bar" id="menu-bar"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </div>
-  </header> -->
+  </header>
   <!-- header sec end -->
   <!-- main start -->
   <main>
@@ -716,7 +708,7 @@
   <!-- main end -->
 
   <!-- footer sec start -->
-   <!-- <footer class="footer-sec">
+  <footer class="footer-sec">
         <div class="container">
             <div class="footer-child">
                 <div class="footer-left">
@@ -732,9 +724,9 @@
                     <div class="footer-mid">
                         <div class="cmn-footer">
                             <div class="footer-heading">get in touch</div>
-                            <ul class="footer-links"> -->
+                            <ul class="footer-links">
                                 <!-- <li><a href="#"><i class="fa-solid fa-location-dot"></i> 5609 E Sprague Ave, Spokane Valley, WA 99212, USA</a></li> -->
-                                <!-- <li>
+                                <li>
                                     <a href="#" class="location-perent" id="location">
                                         <div class="location-icon">
                                             <i class="fa-solid fa-location-dot"></i>
@@ -758,17 +750,17 @@
                                 <li><a href="./blog.html">Our blog</a></li>
                             </ul>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Footer Bottom -->
-                    <!-- <div class="footer-end">
+                    <div class="footer-end">
                         <div class="copy-right">copyright<i class="fa-regular fa-copyright copyright-icon"></i>2025
                             <a href="./index.html" class="brand-a">estate vistara.</a><span class="reserved-text">
                                 all
                                 rights reserved</span>
                         </div>
                         <div class="privacy-terms">
-                            <a href="./privacy-policy.html">privacy & cookie policy</a>
-                            <a href="./terms-of-service.html">terms of service</a>
+                            <a href="./terms&conditions.html">privacy & cookie policy</a>
+                            <a href="./terms&conditions.html">terms of service</a>
                         </div>
                     </div>
                 </div>
@@ -784,7 +776,7 @@
                     </div>
                 </div>
             </div>
-    </footer> -->
+    </footer>
   <!-- footer sec end -->
 
   <!-- testimonials CDN AND JS -->
@@ -833,6 +825,41 @@
 
       return direction;
     }
+  </script>
+
+
+  <!-- toggler-js -->
+  <script>
+    const toggleBtn = document.getElementById('menu-bar');
+    const navLinks = document.querySelector('.nav-links');
+    const icon = toggleBtn.querySelector('i');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+
+      if (navLinks.classList.contains('active')) {
+        // Menu open
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+        document.body.style.overflow = 'hidden';
+      } else {
+        // Menu close
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Reset menu on window resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 991.98) {
+        // Desktop view - reset everything
+        navLinks.classList.remove('active');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
   </script>
 </body>
 
